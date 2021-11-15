@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 namespace LSB
 {
@@ -8,7 +9,10 @@ namespace LSB
     {
         public Animator anim;
         public AnimatorControllerStates controller;
-        public Text mainText;
+
+        [SerializeField]
+        public TextMeshPro mainText;
+        //public Text mainText;
 
         public float animationDuration;
         public float animationSpeed;

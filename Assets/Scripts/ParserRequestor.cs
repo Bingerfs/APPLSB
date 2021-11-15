@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using TMPro;
 
 namespace LSB
 {
@@ -16,7 +17,10 @@ namespace LSB
 
         public InputField inputField;
 
-        public Text mainText;
+        [SerializeField]
+        public TextMeshPro mainText;
+
+        //public Text mainText;
 
         public GameObject connectionStatusImage;
         private void Start()
@@ -34,7 +38,7 @@ namespace LSB
         private IEnumerator Request(string word)
         {
             setConnectionStatusImage(); 
-            mainText.color = Color.red;
+            //mainText.color = Color.red;
             mainText.text = "Cargando...";
             UnityWebRequest request = new UnityWebRequest(API_URL, "POST");
             request.timeout = 10;
@@ -48,7 +52,7 @@ namespace LSB
             if (OnResult != null)
             {
                 mainText.text = "";
-                mainText.color = Color.black;
+                //mainText.color = Color.black;
                 OnResult.Invoke(request, word);
             }
         }

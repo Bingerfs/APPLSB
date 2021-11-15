@@ -10,6 +10,8 @@ namespace LSB
         public Animator anim;
         public AnimatorControllerStates controller;
 
+        public GameObject mainTextToolTip; 
+
         [SerializeField]
         public TextMeshPro mainText;
         //public Text mainText;
@@ -58,7 +60,7 @@ namespace LSB
 
         public IEnumerator scene(ExpressionList expressions)
         {
-            anim.speed = animationSpeed; 
+            anim.speed = animationSpeed;
              
             foreach (Expression expression in expressions.tokens)
             {
@@ -88,6 +90,7 @@ namespace LSB
             anim.speed = DEFAULT_SPEED;
             anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
             mainText.text = "";
+            mainTextToolTip.SetActive(false);
         }
          
     }

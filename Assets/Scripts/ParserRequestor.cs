@@ -19,6 +19,7 @@ namespace LSB
 
         public GameObject connectionStatusImage;
         public GameObject mainTextToolTip;
+        public GameObject progressIndicator;
 
         [SerializeField]
         public TextMeshPro mainText;
@@ -39,9 +40,7 @@ namespace LSB
 
         private IEnumerator Request(string word)
         {
-            setConnectionStatusImage(); 
-            //mainText.color = Color.red;
-            mainText.text = "Cargando...";
+            setConnectionStatusImage();
             UnityWebRequest request = new UnityWebRequest(API_URL, "POST");
             request.timeout = 10;
             byte[] bodyRaw = Encoding.UTF8.GetBytes(JsonUtility.ToJson(createRequest(word)));
@@ -54,7 +53,9 @@ namespace LSB
             if (OnResult != null)
             {
                 mainText.text = "";
-                //mainText.color = Color.black;
+                connectionStatusImage.SetActive(false);
+                progressIndicator.SetActive(false);
+                mainTextToolTip.SetActive(true);
                 OnResult.Invoke(request, word);
             }
         }
@@ -65,11 +66,13 @@ namespace LSB
             {
                 connectionStatusImage.SetActive(true);
                 mainTextToolTip.SetActive(false);
+                progressIndicator.SetActive(false);
             }
             else
             {
                 connectionStatusImage.SetActive(false);
-                mainTextToolTip.SetActive(true);
+                mainTextToolTip.SetActive(false);
+                progressIndicator.SetActive(true);
             }
         }
 

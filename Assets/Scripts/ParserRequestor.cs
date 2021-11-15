@@ -17,12 +17,14 @@ namespace LSB
 
         public InputField inputField;
 
+        public GameObject connectionStatusImage;
+        public GameObject mainTextToolTip;
+
         [SerializeField]
         public TextMeshPro mainText;
 
         //public Text mainText;
 
-        public GameObject connectionStatusImage;
         private void Start()
         {
             //OnRequest("venir");
@@ -62,10 +64,12 @@ namespace LSB
             if (hasConnectionProblems())
             {
                 connectionStatusImage.SetActive(true);
+                mainTextToolTip.SetActive(false);
             }
             else
             {
                 connectionStatusImage.SetActive(false);
+                mainTextToolTip.SetActive(true);
             }
         }
 

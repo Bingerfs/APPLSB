@@ -1491,12 +1491,12 @@ PrefabInstance:
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 626981924}
+      objectReference: {fileID: 626981925}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
-      objectReference: {fileID: 1655692978}
+      objectReference: {fileID: 1655692979}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
@@ -1505,22 +1505,22 @@ PrefabInstance:
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: OnStartRecognizer
+      value: OnStartRecording
       objectReference: {fileID: 0}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
-      value: StartRecognizer
+      value: StartRecording
       objectReference: {fileID: 0}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: LSB.SpeechRecognizer, Assembly-CSharp
+      value: DictationManager, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
-      value: FantomLib.SpeechRecognizerController, Assembly-CSharp
+      value: Microsoft.MixedReality.Toolkit.Input.DictationHandler, Microsoft.MixedReality.Toolkit.SDK
       objectReference: {fileID: 0}
     - target: {fileID: 2064496018249462858, guid: 9a7c24f281a2c3d45a9b8befe608bf77,
         type: 3}
@@ -2158,6 +2158,7 @@ GameObject:
   m_Component:
   - component: {fileID: 626981923}
   - component: {fileID: 626981924}
+  - component: {fileID: 626981925}
   m_Layer: 0
   m_Name: Main
   m_TagString: Untagged
@@ -2186,7 +2187,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 626981922}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f67b010a7a5bd742a35c56859bfc279, type: 3}
   m_Name: 
@@ -2209,6 +2210,33 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: asdas
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &626981925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626981922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1cce05f7cf79ba479691c3cb792ea6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnRequest:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 197309043}
+        m_TargetAssemblyTypeName: LSB.ParserRequestor, Assembly-CSharp
+        m_MethodName: OnRequest
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!1 &681824605
@@ -5193,6 +5221,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1655692977}
   - component: {fileID: 1655692978}
+  - component: {fileID: 1655692979}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
@@ -5221,7 +5250,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1655692976}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 29c9ddd870bfbf245a9cb2c4ed682f21, type: 3}
   m_Name: 
@@ -5281,6 +5310,83 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: 
         m_MethodName: OnError
         m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1655692979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1655692976}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8de1283adb8ab574da200bee434b4524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isFocusRequired: 0
+  initialSilenceTimeout: 5
+  autoSilenceTimeout: 20
+  recordingTime: 10
+  startRecordingOnStart: 0
+  OnDictationHypothesis:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626981925}
+        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
+        m_MethodName: OnHypo
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDictationResult:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626981925}
+        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
+        m_MethodName: OnResult
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDictationComplete:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626981925}
+        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
+        m_MethodName: OnComplete
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnDictationError:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626981925}
+        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
+        m_MethodName: OnError
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

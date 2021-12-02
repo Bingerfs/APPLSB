@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2230,7 +2230,7 @@ MonoBehaviour:
       - m_Target: {fileID: 197309043}
         m_TargetAssemblyTypeName: LSB.ParserRequestor, Assembly-CSharp
         m_MethodName: OnRequest
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5341,7 +5341,7 @@ MonoBehaviour:
       - m_Target: {fileID: 626981925}
         m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
         m_MethodName: OnHypo
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5356,7 +5356,7 @@ MonoBehaviour:
       - m_Target: {fileID: 626981925}
         m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
         m_MethodName: OnResult
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5371,7 +5371,7 @@ MonoBehaviour:
       - m_Target: {fileID: 626981925}
         m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
         m_MethodName: OnComplete
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -5386,7 +5386,7 @@ MonoBehaviour:
       - m_Target: {fileID: 626981925}
         m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
         m_MethodName: OnError
-        m_Mode: 5
+        m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -6338,7 +6338,7 @@ PrefabInstance:
     - target: {fileID: 8219002942482847169, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}

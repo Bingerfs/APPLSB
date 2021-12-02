@@ -28,7 +28,7 @@ namespace LSB
 
         private void Start()
         {
-            //OnRequest("venir");
+            OnRequest("comer");
         }
 
         public void OnRequest(string word)

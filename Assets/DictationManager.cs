@@ -35,30 +35,33 @@ public class DictationManager : MonoBehaviour
 
     public void OnStartRecording()
     {
-        Debug.Log("Recording started");
+        Debug.Log("------------------------------Recording started");
     }
 
     public void OnResult(string sentence)
     {
-        Debug.Log("Result");
+        Debug.Log("------------------------------Result");
         Debug.Log(sentence);
     }
 
     public void OnComplete(string sentence)
     {
-        Debug.Log("Complete");
+        Debug.Log("-----------------------Complete");
         Debug.Log(sentence);
+        string[] bufferString = new string[1];
+        bufferString[0] = sentence;
+        SwitchWebSearch(bufferString);
     }
 
     public void OnHypo(string sentence)
     {
-        Debug.Log("hypothesis");
+        Debug.Log("-------------------------hypothesis");
         Debug.Log(sentence);
     }
 
     public void OnError(string message)
     {
-        Debug.Log("Error");
+        Debug.Log("----------------------------------Error");
         Debug.Log(message);
     }
 

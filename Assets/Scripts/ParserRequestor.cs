@@ -53,8 +53,9 @@ namespace LSB
             if (OnResult != null)
             {
                 mainText.text = "";
-                connectionStatusImage.SetActive(false);
+                //connectionStatusImage.SetActive(false);
                 progressIndicator.SetActive(false);
+                mainTextToolTip.hideFlags = HideFlags.None;
                 mainTextToolTip.SetActive(true);
                 OnResult.Invoke(request, word);
             }
@@ -71,7 +72,8 @@ namespace LSB
             else
             {
                 connectionStatusImage.SetActive(false);
-                mainTextToolTip.SetActive(false);
+                mainTextToolTip.SetActive(true);
+                mainTextToolTip.hideFlags = HideFlags.HideInHierarchy;
                 progressIndicator.SetActive(true);
             }
         }

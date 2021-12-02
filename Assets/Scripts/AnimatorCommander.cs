@@ -19,7 +19,7 @@ namespace LSB
         public float animationDuration;
         public float animationSpeed;
 
-        private static float DEFAULT_SPEED = 1.0f;
+        private static float DEFAULT_SPEED = 1.5f;
         private string OMITTED_CATEGORY = "#99";
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
         public void Start()

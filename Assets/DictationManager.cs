@@ -6,11 +6,20 @@ using UnityEngine.UI;
 using FantomLib;
 using UnityEngine.Events;
 using UnityEngine.Android;
+using TMPro;
 
 public class DictationManager : MonoBehaviour
 {
     [Serializable] public class ResultHandler : UnityEvent<string> { }
     public ResultHandler OnRequest;
+
+
+    public ResultHandler OnStopRecording;
+
+    public GameObject mainTextToolTip;
+
+    [SerializeField]
+    public TextMeshPro mainText;
 
     // Start is called before the first frame update
     void Start()
@@ -36,6 +45,8 @@ public class DictationManager : MonoBehaviour
     public void OnStartRecording()
     {
         Debug.Log("------------------------------Recording started");
+        mainTextToolTip.SetActive(true);
+        mainText.text = "Grabando...";
     }
 
     public void OnResult(string sentence)
@@ -47,10 +58,12 @@ public class DictationManager : MonoBehaviour
     public void OnComplete(string sentence)
     {
         Debug.Log("-----------------------Complete");
+        mainTextToolTip.SetActive(false);
         Debug.Log(sentence);
         string[] bufferString = new string[1];
         bufferString[0] = sentence;
         SwitchWebSearch(bufferString);
+        OnStopRecording.Invoke("");
     }
 
     public void OnHypo(string sentence)
@@ -63,6 +76,9 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
+        mainText.text = "Error: " + message;
+        mainTextToolTip.SetActive(false);
+        OnStopRecording.Invoke("");
     }
 
     // Update is called once per frame

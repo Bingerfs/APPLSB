@@ -2195,7 +2195,7 @@ MonoBehaviour:
   recongizerButton: {fileID: 1478921699}
   circleAnimator: {fileID: 935406228}
   voiceAnimator: {fileID: 1503636969}
-  speechRecognizerControl: {fileID: 1655692978}
+  speechRecognizerControl: {fileID: 0}
   mainText: {fileID: 301244723}
   OnRequest:
     m_PersistentCalls:
@@ -2239,6 +2239,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+  OnStopRecording:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1655692979}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.Input.DictationHandler,
+          Microsoft.MixedReality.Toolkit.SDK
+        m_MethodName: StopRecording
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  mainTextToolTip: {fileID: 1017310697}
+  mainText: {fileID: 2027094970}
 --- !u!1 &681824605
 GameObject:
   m_ObjectHideFlags: 0
@@ -3725,7 +3743,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1655692978}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: StartRecognizer
         m_Mode: 1
@@ -4322,7 +4340,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1655692978}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: StartRecognizer
         m_Mode: 1
@@ -4560,7 +4578,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 1655692978}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: 
         m_MethodName: StartRecognizer
         m_Mode: 1
@@ -5220,7 +5238,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1655692977}
-  - component: {fileID: 1655692978}
   - component: {fileID: 1655692979}
   m_Layer: 0
   m_Name: Controller
@@ -5243,81 +5260,6 @@ Transform:
   m_Father: {fileID: 1427476099}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1655692978
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1655692976}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 29c9ddd870bfbf245a9cb2c4ed682f21, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  locale: 
-  saveSetting: 0
-  saveKey: recognizer
-  OnReady:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 626981924}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnReady
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnBegin:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 626981924}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnBegin
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnResult:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 626981924}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnResult
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-  OnError:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 626981924}
-        m_TargetAssemblyTypeName: 
-        m_MethodName: OnError
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1655692979
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5331,9 +5273,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFocusRequired: 0
-  initialSilenceTimeout: 5
+  initialSilenceTimeout: 20
   autoSilenceTimeout: 20
-  recordingTime: 10
+  recordingTime: 5
   startRecordingOnStart: 0
   OnDictationHypothesis:
     m_PersistentCalls:
@@ -6338,7 +6280,7 @@ PrefabInstance:
     - target: {fileID: 8219002942482847169, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}
@@ -6802,7 +6744,7 @@ MonoBehaviour:
   DirectionalTarget: {fileID: 2113111391}
   MinIndicatorScale: 0.05
   MaxIndicatorScale: 0.2
-  VisibilityScaleFactor: 0.8
+  VisibilityScaleFactor: 1.5
   ViewOffset: 0.2
 --- !u!114 &2064194194
 MonoBehaviour:

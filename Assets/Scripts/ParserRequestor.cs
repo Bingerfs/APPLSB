@@ -28,13 +28,12 @@ namespace LSB
 
         private void Start()
         {
-            OnRequest("comer");
+            OnRequest("Hola, como estas vamos a comer");
         }
 
         public void OnRequest(string word)
         {
             inputField.text = "";
-             
             StartCoroutine(Request(word));
         }
 
@@ -52,11 +51,11 @@ namespace LSB
             yield return request.SendWebRequest();
             if (OnResult != null)
             {
-                mainText.text = "";
+
                 //connectionStatusImage.SetActive(false);
                 progressIndicator.SetActive(false);
-                mainTextToolTip.hideFlags = HideFlags.None;
                 mainTextToolTip.SetActive(true);
+                mainText.text = "";
                 OnResult.Invoke(request, word);
             }
         }
@@ -73,7 +72,6 @@ namespace LSB
             {
                 connectionStatusImage.SetActive(false);
                 mainTextToolTip.SetActive(true);
-                mainTextToolTip.hideFlags = HideFlags.HideInHierarchy;
                 progressIndicator.SetActive(true);
             }
         }

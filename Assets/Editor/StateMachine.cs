@@ -161,8 +161,8 @@ public class StateMachine : MonoBehaviour
                 hasExitTime = false,
                 exitTime = float.Parse("0,75"),
                 hasFixedDuration = true,
-                duration = float.Parse("0,5"),
-                canTransitionToSelf = false
+                duration = float.Parse("1"),
+                canTransitionToSelf = false,
             };
             String currentSign = "";
             if (destinationAnimatorState.name == "MainIdle")

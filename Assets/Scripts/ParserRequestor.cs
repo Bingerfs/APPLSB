@@ -28,7 +28,7 @@ namespace LSB
 
         private void Start()
         {
-            OnRequest("Hola, como estas vamos a comer");
+            OnRequest("casa roja");
         }
 
         public void OnRequest(string word)

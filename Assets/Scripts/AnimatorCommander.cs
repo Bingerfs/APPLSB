@@ -25,7 +25,7 @@ namespace LSB
         public void Start()
         {
             //animationDuration = 1.5f;
-            animationSpeed = 1.0f;
+            animationSpeed = 1.5f;
         } 
 
         public void SetSlowSpeed()
@@ -76,14 +76,14 @@ namespace LSB
                 }
                 foreach(string code in selected.code)
                 {
-                    anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, int.Parse(code.Substring(1)));
                      
                     AnimationClip clip = controller.GetAnimationClip(anim,code.Substring(1));
                     if (clip)
                     {
                         animationDuration = clip.length; 
                     }
-                      
+
+                    anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, int.Parse(code.Substring(1)));
                     yield return new WaitForSeconds(animationDuration); 
                 }
             }

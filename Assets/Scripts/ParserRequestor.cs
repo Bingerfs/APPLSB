@@ -6,6 +6,7 @@ using UnityEngine.Events;
 using UnityEngine.Networking;
 using UnityEngine.UI;
 using TMPro;
+using Microsoft.MixedReality.Toolkit.UI;
 
 namespace LSB
 {
@@ -24,7 +25,13 @@ namespace LSB
         [SerializeField]
         public TextMeshPro mainText;
 
+        private IProgressIndicator progressIndicatorRotatingOrbs;
+
         //public Text mainText;
+        private void OnEnable()
+        {
+            progressIndicatorRotatingOrbs = progressIndicator.GetComponent<IProgressIndicator>();
+        }
 
         private void Start()
         {
@@ -53,7 +60,7 @@ namespace LSB
             {
 
                 //connectionStatusImage.SetActive(false);
-                progressIndicator.SetActive(false);
+                HandleProgressIndicator(progressIndicatorRotatingOrbs);
                 mainTextToolTip.SetActive(true);
                 mainText.text = "";
                 OnResult.Invoke(request, word);
@@ -66,7 +73,7 @@ namespace LSB
             {
                 connectionStatusImage.SetActive(true);
                 mainTextToolTip.SetActive(false);
-                progressIndicator.SetActive(false);
+                HandleProgressIndicator(progressIndicatorRotatingOrbs);
             }
             else
             {
@@ -86,6 +93,26 @@ namespace LSB
         private bool hasConnectionProblems()
         {
             return Application.internetReachability == NetworkReachability.NotReachable;
+        }
+
+        private async void HandleProgressIndicator(IProgressIndicator indicator)
+        {
+            await indicator.AwaitTransitionAsync();
+
+            switch (indicator.State)
+            {
+                case ProgressIndicatorState.Closed:
+                    OpenProgressIndicator(indicator);
+                    break;
+                case ProgressIndicatorState.Open:
+                    await indicator.CloseAsync();
+                    break;
+            }
+        }
+
+        private async void OpenProgressIndicator(IProgressIndicator indicator)
+        {
+            await indicator.OpenAsync();
         }
     }
 }

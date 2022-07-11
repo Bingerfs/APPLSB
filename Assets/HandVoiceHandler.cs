@@ -13,6 +13,9 @@ public class HandVoiceHandler : MonoBehaviour
     [Serializable] public class ResultHandler : UnityEvent<string> { }
     public ResultHandler OnRecord;
 
+    [Serializable] public class LoadHandler : UnityEvent { }
+    public LoadHandler OnProcessing;
+
     [SerializeField]
     private TrackedHandJoint trackedHandJoint = TrackedHandJoint.ThumbTip;
 
@@ -67,6 +70,7 @@ public class HandVoiceHandler : MonoBehaviour
         {
             Debug.Log("OnRecord through gesture");
             OnRecord.Invoke("");
+            OnProcessing.Invoke();
         }
     }
 }

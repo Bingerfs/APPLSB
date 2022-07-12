@@ -2,6 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Microsoft.MixedReality.Toolkit.UI;
 
 namespace LSB
 {
@@ -9,11 +10,8 @@ namespace LSB
     {
         public Animator anim;
         public AnimatorControllerStates controller;
-
-        public GameObject mainTextToolTip; 
-
         [SerializeField]
-        public TextMeshPro mainText;
+        public GameObject mainTextToolTip; 
         //public Text mainText;
 
         public float animationDuration;
@@ -22,11 +20,17 @@ namespace LSB
         private static float DEFAULT_SPEED = 1.5f;
         private string OMITTED_CATEGORY = "#99";
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
+        private ToolTip toolTip;
         public void Start()
         {
             //animationDuration = 1.5f;
             animationSpeed = 1.5f;
-        } 
+        }
+
+        public void OnEnable()
+        {
+            toolTip = mainTextToolTip.GetComponent<ToolTip>();
+        }
 
         public void SetSlowSpeed()
         {
@@ -66,7 +70,8 @@ namespace LSB
             {
                 if (!expression.getList().Contains(OMITTED_CATEGORY))
                 {
-                    mainText.text = expression.word;
+                    mainTextToolTip.SetActive(true);
+                    toolTip.ToolTipText = expression.word;
                 }
                 
 		        Expression selected = expression;
@@ -89,7 +94,7 @@ namespace LSB
             }
             anim.speed = DEFAULT_SPEED;
             anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
-            mainText.text = "";
+            toolTip.ToolTipText = "";
             mainTextToolTip.SetActive(false);
         }
          

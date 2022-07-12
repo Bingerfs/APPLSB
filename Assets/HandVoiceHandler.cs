@@ -68,6 +68,7 @@ public class HandVoiceHandler : MonoBehaviour
         }
         else
         {
+            //previousHandPose = currentPose;
             Debug.Log("OnRecord through gesture");
             OnRecord.Invoke("");
             OnProcessing.Invoke();

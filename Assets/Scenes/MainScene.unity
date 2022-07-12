@@ -620,7 +620,6 @@ MonoBehaviour:
   anim: {fileID: 1461777770}
   controller: {fileID: 1999706635}
   mainTextToolTip: {fileID: 1017310697}
-  mainText: {fileID: 2027094970}
   animationDuration: 1.5
   animationSpeed: 1
 --- !u!1 &197309041
@@ -685,7 +684,6 @@ MonoBehaviour:
   connectionStatusImage: {fileID: 681824605}
   mainTextToolTip: {fileID: 1017310697}
   progressIndicator: {fileID: 813913186}
-  mainText: {fileID: 2027094970}
 --- !u!1 &263623392
 GameObject:
   m_ObjectHideFlags: 0
@@ -2261,7 +2259,6 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
   mainTextToolTip: {fileID: 1017310697}
-  mainText: {fileID: 2027094970}
 --- !u!1 &681824605
 GameObject:
   m_ObjectHideFlags: 0
@@ -6521,7 +6518,7 @@ PrefabInstance:
     - target: {fileID: 8219002942482847169, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8222481329602893483, guid: 247dc8aebe30ca2408e8293a883c75df,
         type: 3}
@@ -6945,18 +6942,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2025203003}
   m_CullTransparentMesh: 0
---- !u!114 &2027094970 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1537115806125884074, guid: 247dc8aebe30ca2408e8293a883c75df,
-    type: 3}
-  m_PrefabInstance: {fileID: 1913152791}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9541d86e2fd84c1d9990edf0852d74ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2064194192 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4985375469225735148, guid: eb65bb040d2dce144a90d568ed97f32a,

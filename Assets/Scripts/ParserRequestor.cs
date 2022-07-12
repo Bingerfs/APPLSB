@@ -19,11 +19,12 @@ namespace LSB
         public InputField inputField;
 
         public GameObject connectionStatusImage;
+        [SerializeField]
         public GameObject mainTextToolTip;
         public GameObject progressIndicator;
 
-        [SerializeField]
-        public TextMeshPro mainText;
+
+        private ToolTip toolTip;
 
         private IProgressIndicator progressIndicatorRotatingOrbs;
 
@@ -31,16 +32,17 @@ namespace LSB
         private void OnEnable()
         {
             progressIndicatorRotatingOrbs = progressIndicator.GetComponent<IProgressIndicator>();
+            toolTip = mainTextToolTip.GetComponent<ToolTip>();
         }
 
         private void Start()
         {
-            OnRequest("casa roja");
+            OnRequest("mi casa roja");
         }
 
         public void OnRequest(string word)
         {
-            inputField.text = "";
+            HandleProgressIndicator(progressIndicatorRotatingOrbs);
             StartCoroutine(Request(word));
         }
 
@@ -56,13 +58,13 @@ namespace LSB
             request.downloadHandler = new DownloadHandlerBuffer();
             request.SetRequestHeader("Content-Type", "application/json");
             yield return request.SendWebRequest();
+            HandleProgressIndicator(progressIndicatorRotatingOrbs);
+            while (progressIndicatorRotatingOrbs.State != ProgressIndicatorState.Closed)
+            {
+                yield return null;
+            }
             if (OnResult != null)
             {
-
-                //connectionStatusImage.SetActive(false);
-                HandleProgressIndicator(progressIndicatorRotatingOrbs);
-                mainTextToolTip.SetActive(true);
-                mainText.text = "";
                 OnResult.Invoke(request, word);
             }
         }
@@ -73,13 +75,12 @@ namespace LSB
             {
                 connectionStatusImage.SetActive(true);
                 mainTextToolTip.SetActive(false);
-                HandleProgressIndicator(progressIndicatorRotatingOrbs);
             }
             else
             {
                 connectionStatusImage.SetActive(false);
-                mainTextToolTip.SetActive(true);
-                progressIndicator.SetActive(true);
+                toolTip.ToolTipText = "";
+                mainTextToolTip.SetActive(false);
             }
         }
 

@@ -7,6 +7,7 @@ using FantomLib;
 using UnityEngine.Events;
 using UnityEngine.Android;
 using TMPro;
+using Microsoft.MixedReality.Toolkit.UI;
 
 public class DictationManager : MonoBehaviour
 {
@@ -16,15 +17,20 @@ public class DictationManager : MonoBehaviour
 
     public ResultHandler OnStopRecording;
 
+    [SerializeField]
     public GameObject mainTextToolTip;
 
-    [SerializeField]
-    public TextMeshPro mainText;
+    private ToolTip toolTip;
 
     // Start is called before the first frame update
     void Start()
     {
         RequestUserMicrophonePermission();
+    }
+
+    private void OnEnable()
+    {
+        toolTip = mainTextToolTip.GetComponent<ToolTip>();
     }
 
     private static void RequestUserMicrophonePermission()
@@ -46,7 +52,7 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("------------------------------Recording started");
         mainTextToolTip.SetActive(true);
-        mainText.text = "Grabando...";
+        toolTip.ToolTipText = "Grabando...";
     }
 
     public void OnResult(string sentence)
@@ -76,7 +82,7 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
-        mainText.text = "Error: " + message;
+        toolTip.ToolTipText = "Error: " + message;
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
     }

@@ -50,6 +50,11 @@ namespace LSB
             animationSpeed = 3.0f;
         }
 
+        public void SetSpeed(SliderEventData eventData)
+        {
+            animationSpeed = eventData.NewValue;
+        }
+
         public void OnCommand(ExpressionList expressions)
         { 
             StartCoroutine(scene(expressions));
@@ -92,7 +97,7 @@ namespace LSB
                     yield return new WaitForSeconds(animationDuration); 
                 }
             }
-            anim.speed = DEFAULT_SPEED;
+
             anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
             toolTip.ToolTipText = "";
             mainTextToolTip.SetActive(false);

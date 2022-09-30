@@ -16,8 +16,11 @@ public class HandVoiceHandler : MonoBehaviour
     [Serializable] public class LoadHandler : UnityEvent { }
     public LoadHandler OnProcessing;
 
+    [Serializable] public class CancelHandler : UnityEvent { }
+    public CancelHandler OnCancel;
+
     [SerializeField]
-    private TrackedHandJoint trackedHandJoint = TrackedHandJoint.ThumbTip;
+    private TrackedHandJoint trackedHandJoint = TrackedHandJoint.Palm;
 
     [SerializeField]
     private Handedness trackedHand = Handedness.Right;
@@ -30,6 +33,8 @@ public class HandVoiceHandler : MonoBehaviour
 
     private MixedRealityPose? previousHandPose;
 
+    private Vector3? previousDirectionVector = null;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -39,39 +44,55 @@ public class HandVoiceHandler : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        var handPose = GetHandPose(trackedHand, previousHandPose != null);
-        if (handPose != null)
-        {
-            ProcessPoseChange(previousHandPose, handPose);
-        }
+        var handPose = GetHandPose(trackedHand);
+        ProcessPoseChange(previousHandPose, handPose);
     }
 
-    private MixedRealityPose? GetHandPose(Handedness hand, bool hasBeenDoneAlready)
+    private Vector3? GetHandPose(Handedness hand)
     {
         if ((trackedHand & hand) == hand)
         {
-            if (HandJointService.IsHandTracked(hand) && GestureUtils.IsDoingStartVoiceRecordingGesture(hand) && !hasBeenDoneAlready)
+            if (HandJointService.IsHandTracked(hand))
             {
-                var jointTransform = HandJointService.RequestJointTransform(trackedHandJoint, hand);
-                return new MixedRealityPose(jointTransform.position);
+                if (GestureUtils.IsDoingVoiceRecordingGesture(hand, HandJointService, Vector3.up))
+                {
+                    return Vector3.up;
+                }
+                else
+                {
+                    if (GestureUtils.IsDoingVoiceRecordingGesture(hand, HandJointService, Vector3.down))
+                    {
+                        return Vector3.down;
+                    }
+                }
             }
         }
 
         return null;
     }
 
-    private void ProcessPoseChange(MixedRealityPose? previousPose, MixedRealityPose? currentPose)
+    private void ProcessPoseChange(MixedRealityPose? previousPose, Vector3? currentDirection)
     {
-        if (previousPose == currentPose)
+        if (previousDirectionVector == currentDirection)
         {
             return;
         }
         else
         {
-            //previousHandPose = currentPose;
-            Debug.Log("OnRecord through gesture");
-            OnRecord.Invoke("");
-            OnProcessing.Invoke();
+            previousDirectionVector = currentDirection;
+            if (Vector3.up == currentDirection)
+            {
+                Debug.Log("OnRecord through gesture");
+                OnRecord.Invoke("");
+                OnProcessing.Invoke();
+            }
+
+            if (Vector3.down == currentDirection)
+            {
+                Debug.Log("OnStop through gesture");
+                OnCancel.Invoke();
+            }
+            
         }
     }
 }

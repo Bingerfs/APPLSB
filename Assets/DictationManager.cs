@@ -87,6 +87,13 @@ public class DictationManager : MonoBehaviour
         OnStopRecording.Invoke("");
     }
 
+    public void OnCancel()
+    {
+        Debug.Log("________________Cancelled");
+        mainTextToolTip.SetActive(false);
+        OnStopRecording.Invoke("");
+    }
+
     // Update is called once per frame
     void Update()
     {

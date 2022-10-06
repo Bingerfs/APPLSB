@@ -1,10 +1,12 @@
 using Assets;
-using System.Collections;
+using LSB;
+using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using Newtonsoft.Json;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class EvaluationController : MonoBehaviour
 {
@@ -16,20 +18,56 @@ public class EvaluationController : MonoBehaviour
     static string ANIMATIONS_FOLDER_PATH = @"Animations";
     static string CODE_SEPARATOR_CLIP = "_";
     static string NAME_CODES_FILE = "Codes.txt";
-    public int SelectedModule { get; set; }
+    public int SelectedModule { get; set; } = 1;
 
-    private IEnumerable<string> _randomisedBaseSignCodes;
+    public int NumberOfSigns { get; set; } = 5;
+
+    [Serializable] public class ResultHandler : UnityEvent<ExpressionList> { }
+    public ResultHandler OnResult;
+
+    [SerializeField]
+    private bool _hasEvaluationBeenActivated = false;
+
+    /// <summary>
+    /// Shows white trim around edge of tooltip.
+    /// </summary>
+    public bool HasEvaluationBeenActivated { get => _hasEvaluationBeenActivated; set => _hasEvaluationBeenActivated = value; }
+
+    private IEnumerable<string> _signCodes = new List<string>();
+
+    private IEnumerable<string> RandomisedSignCodes
+    {
+        get
+        {
+            var moduleName = $"Módulo {SelectedModule}";
+            var listOfBaseCodes = _modulesDictionary[moduleName];
+            var filteredSignCodes = _signCodes.Where(code => listOfBaseCodes.Any(baseCode => code.Contains(baseCode)));
+            System.Random rnd = new System.Random();
+            return filteredSignCodes.OrderBy(code => rnd.Next()).Take(NumberOfSigns);
+        }
+    }
+
+    private IEnumerable<EvaluationResponse> EvaluationResponses { get; set; }
+
+    private Dictionary<string, IEnumerable<string>> _modulesDictionary = new Dictionary<string, IEnumerable<string>>(); 
 
     void Start()
     {
+        TextAsset readCodes = (TextAsset)Resources.Load("Codes");
+        char[] delimiters = new char[] { '\r', '\n' };
+        var listOfCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+        foreach (string code in listOfCodes)
+        {
+            _signCodes = _signCodes.Append(code);
+        }
+
         using (StreamReader reader = new StreamReader(CONFIG_PATH))
         {
             var readData = reader.ReadToEnd();
             var listOfModules = JsonConvert.DeserializeObject<List<Module>>(readData);
-            var modulesDictionary = new Dictionary<Module, IEnumerable<string>>();
             foreach (var module in listOfModules)
             {
-                modulesDictionary.Add(module, GetAllModuleCategories(module));
+                _modulesDictionary.Add(module.Name, GetAllModuleCategories(module));
             }
         }
     }
@@ -37,7 +75,15 @@ public class EvaluationController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (HasEvaluationBeenActivated)
+        {
+            ExpressionList expressionList = new ExpressionList();
+            var randomisedExpressionsList = RandomisedSignCodes.Select(code => new Expression(code)).ToList();
+            var evaluationResponses = randomisedExpressionsList.Select(expression => new EvaluationResponse(expression));
+            var currentSignEvaluated = EvaluationResponses.FirstOrDefault(evaluationResponse => !evaluationResponse.IsAlreadyResponded);
+            expressionList.tokens = new List<Expression> { currentSignEvaluated.Expression };
+            OnResult.Invoke(expressionList);
+        }
     }
 
     private IEnumerable<string> GetAllModuleCategories(Module module)

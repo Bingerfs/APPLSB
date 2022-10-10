@@ -1,7 +1,8 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO; 
+using System.IO;
+using System.Linq;
 using UnityEngine;
 
 namespace LSB
@@ -9,30 +10,54 @@ namespace LSB
     public class AnimatorControllerStates : MonoBehaviour
     {
         private List<string> AnimationList = new List<string>();
+
+        private Animator _animator;
+
+        public Animator Animator
+        {
+            get { return _animator; }
+
+            set { _animator = value; }
+        }
+
+        public AnimatorControllerStates(Animator animator)
+        {
+            Animator = animator;
+            TextAsset codes = (TextAsset)Resources.Load("Codes");
+
+            char[] delimiters = new char[] { '\r', '\n' };
+            foreach (string s in codes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries))
+            {
+                AnimationList.Add(s);
+            }
+        }
+
         void Start()
         { 
-            TextAsset codes = (TextAsset) Resources.Load("Codes");
+            /*TextAsset codes = (TextAsset) Resources.Load("Codes");
             
             char[] delimiters = new char[] { '\r', '\n' };
             foreach(string s in codes.text.Split(delimiters,StringSplitOptions.RemoveEmptyEntries))
             {               
                 AnimationList.Add(s);
-            }
+            }*/
         }
 
-        public bool HasStateName(string stateName)
-        { 
-            foreach(string stateSelected in AnimationList)
+        public bool ExpressionHasAllStates(Expression expression)
+        {
+            return expression.IsPartOf(AnimationList);
+            /*foreach(string stateSelected in AnimationList)
             {
                 if (stateSelected.Contains(stateName))
                 {
                     return true;
                 }
             }
-            return false;  
+
+            return false;  */
         }
 
-        public bool HasAllStateNames(List<string> stateNames)
+        /*public bool HasAllStateNames(List<Expression> expressions)
         {
             foreach(string stateName in stateNames)
             {
@@ -42,13 +67,25 @@ namespace LSB
                 }
             }
             return true;
+        }*/
+
+        public bool ExpressionHasAnimationClips(Expression expression)
+        {
+            try
+            {
+                return TryGetAnimationClips(out _, expression);
+            }
+            catch (Exception)
+            {
+                return false;
+            }
         }
 
-        public bool StateHasAnimationClip(Animator animator, Expression expression)
+        /*public bool StateHasAnimationClip(Animator animator, Expression expression)
         {
             try
             { 
-                string expressionCode = expression.getList().Substring(1);
+                string expressionCode = expression.GetStringList().Substring(1);
                 return HasAllStateNames(expression.code) && ExistAnimationOfExpression(animator, expressionCode);
             }
             catch (Exception)
@@ -57,26 +94,26 @@ namespace LSB
             }
         }
 
-        private bool ExistAnimationOfExpression(Animator animator, string expressionCode)
+        private bool ExistAnimationOfExpression(Expression expression)
         {
             if (GetAnimationClip(animator, expressionCode))
             {
                 return true;
             }
             return false;
+        }*/
+
+        public IEnumerable<AnimationClip> GetAnimationClip(Expression expression)
+        {
+            var animations = Animator.runtimeAnimatorController.animationClips.AsEnumerable();
+            return animations.Where(animation => expression.Codes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));            
         }
 
-        public AnimationClip GetAnimationClip(Animator animator, string code)
+        public bool TryGetAnimationClips(out IEnumerable<AnimationClip> filteredAnimations, Expression expression)
         {
-            AnimationClip[] clips = animator.runtimeAnimatorController.animationClips;
-            foreach (AnimationClip clip in clips)
-            {
-                if (clip.name.Contains(code))
-                {
-                    return clip;
-                }
-            }
-            return null;
+            var animations = Animator.runtimeAnimatorController.animationClips.AsEnumerable();
+            filteredAnimations = animations.Where(animation => expression.Codes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));
+            return filteredAnimations.Any();
         }
 
         public List<string> GetAnimationList()

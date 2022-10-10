@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Util;
+using System;
 using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
@@ -31,20 +32,23 @@ namespace LSB
             foreach (string word in list)
             { 
                 Expression expression = new Expression();
-                expression.word = RemoveDiacritics(word.ToLower());
-                expression.code = new List<string>();
+                expression.Word = RemoveDiacritics(word.ToLower());
+                var auxCodes = new List<string>();
                 foreach (string animation in animationListCodes)
                 { 
                     char[] delimiters = new char[] { '#' };
                     string wordToMatch = RemoveDiacritics(animation.Split(delimiters)[0].ToLower());
                      
-                    if (expression.word==wordToMatch)
+                    if (expression.Word == wordToMatch)
                     {
                         string code = "#"+animation.Split(delimiters)[1]; 
-                        expression.code.Add(code);
+                        auxCodes.Add(code);
                         break;
                     }
                 }
+
+                var expressionCodes = auxCodes.Select(code => new ExpressionCode(code));
+                expression.Codes = expressionCodes;
                 output.tokens.Add(expression);
             }
             return output;
@@ -78,18 +82,18 @@ namespace LSB
             return phrases.Contains(input);
         }
 
-        public static Expression ParseExpression(string input)
+        public static Expression ParseExpression(Expression expression)
         {
-            Expression expression = new Expression();
-            expression.word = RemoveDiacritics(input.ToLower());
-            expression.code = new List<string>();
-            foreach (char letter in expression.word)
+            IEnumerable<ExpressionCode> expressionCodes = new List<ExpressionCode>();
+            foreach (char letter in expression.Word)
             {
                 if(letter != ' ')
                 {
-                    expression.code.Add(getLetterAnimationCode(letter));
+                    expressionCodes.Append(new ExpressionCode(getLetterAnimationCode(letter)));
                 }
             }
+
+            expression.Codes = expressionCodes;
             return expression;
         }
 

@@ -3,27 +3,36 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
+using Assets.Util;
+using System.Collections.Generic;
 
 namespace LSB
 {
     public class AnimatorCommander : MonoBehaviour
     {
         public Animator anim;
+
         public AnimatorControllerStates controller;
+
         [SerializeField]
         public GameObject mainTextToolTip; 
         //public Text mainText;
 
         public float animationDuration;
+
         public float animationSpeed;
 
         private static float DEFAULT_SPEED = 1.5f;
+
         private string OMITTED_CATEGORY = "#99";
+
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
+
         private ToolTip toolTip;
+
         public void Start()
         {
-            //animationDuration = 1.5f;
+            controller = new AnimatorControllerStates(anim);
             animationSpeed = 1.5f;
         }
 
@@ -55,7 +64,7 @@ namespace LSB
             animationSpeed = eventData.NewValue;
         }
 
-        public void OnCommand(ExpressionList expressions)
+        public void OnCommand(IEnumerable<Expression> expressions)
         { 
             StartCoroutine(scene(expressions));
         }
@@ -64,37 +73,42 @@ namespace LSB
         {
             ExpressionList expressions = LocalParser.ParseExpressionList(word);
             Debug.Log(expressions.tokens.Count);
-            StartCoroutine(scene(expressions));
+            StartCoroutine(scene(expressions.tokens));
         }
 
-        public IEnumerator scene(ExpressionList expressions)
+        public IEnumerator scene(IEnumerable<Expression> expressions)
         {
             anim.speed = animationSpeed;
              
-            foreach (Expression expression in expressions.tokens)
+            foreach (Expression expression in expressions)
             {
-                if (!expression.getList().Contains(OMITTED_CATEGORY))
+                if (expression.Type != ExpressionType.TENSE)
                 {
                     mainTextToolTip.SetActive(true);
-                    toolTip.ToolTipText = expression.word;
+                    toolTip.ToolTipText = expression.Word;
                 }
                 
 		        Expression selected = expression;
-                if(!controller.HasAllStateNames(expression.code) || !controller.StateHasAnimationClip(anim,expression))
+                if(!controller.ExpressionHasAllStates(expression) || !controller.ExpressionHasAnimationClips(expression))
                 {
-                    selected = LocalParser.ParseExpression(expression.word);
+                    selected = LocalParser.ParseExpression(expression);
                 }
-                foreach(string code in selected.code)
-                {
-                     
-                    AnimationClip clip = controller.GetAnimationClip(anim,code.Substring(1));
-                    if (clip)
-                    {
-                        animationDuration = clip.length; 
-                    }
 
-                    anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, int.Parse(code.Substring(1)));
-                    yield return new WaitForSeconds(animationDuration); 
+                IEnumerable<AnimationClip> animationsToPlay = new List<AnimationClip>();
+                if (controller.TryGetAnimationClips(out animationsToPlay, expression))
+                {
+                    foreach (var animationToPlay in animationsToPlay)
+                    {
+                        var splitAnimatioName = animationToPlay.name.Split('_');
+                        var integerCode = int.Parse(splitAnimatioName[1]);
+                        animationDuration = animationToPlay.length;
+                        anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode);
+                        yield return new WaitForSeconds(animationDuration);
+                    }
+                }
+                else
+                {
+                    yield break;
                 }
             }
 

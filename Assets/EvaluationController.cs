@@ -2,6 +2,7 @@ using Assets;
 using LSB;
 using Newtonsoft.Json;
 using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
@@ -26,6 +27,14 @@ public class EvaluationController : MonoBehaviour
     public ResultHandler OnResult;
 
     [SerializeField]
+    private bool _hasSetResponseBeenActivated = false;
+
+    /// <summary>
+    /// Shows white trim around edge of tooltip.
+    /// </summary>
+    public bool HasSetResponseBeenActivated { get => _hasSetResponseBeenActivated; set => _hasSetResponseBeenActivated = value; }
+
+    [SerializeField]
     private bool _hasEvaluationBeenActivated = false;
 
     /// <summary>
@@ -47,9 +56,13 @@ public class EvaluationController : MonoBehaviour
         }
     }
 
-    private IEnumerable<EvaluationResponse> EvaluationResponses { get; set; }
+    public List<EvaluationResponse> EvaluationResponses { get; set; }
+
+    private EvaluationResponse CurrentSignEvaluated { get; set; }
 
     private Dictionary<string, IEnumerable<string>> _modulesDictionary = new Dictionary<string, IEnumerable<string>>(); 
+
+
 
     void Start()
     {
@@ -77,12 +90,36 @@ public class EvaluationController : MonoBehaviour
     {
         if (HasEvaluationBeenActivated)
         {
-            ExpressionList expressionList = new ExpressionList();
+            HasEvaluationBeenActivated = false;
             var randomisedExpressionsList = RandomisedSignCodes.Select(code => new Expression(code)).ToList();
-            var evaluationResponses = randomisedExpressionsList.Select(expression => new EvaluationResponse(expression));
-            var currentSignEvaluated = EvaluationResponses.FirstOrDefault(evaluationResponse => !evaluationResponse.IsAlreadyResponded);
-            expressionList.tokens = new List<Expression> { currentSignEvaluated.Expression };
-            OnResult.Invoke(expressionList);
+            EvaluationResponses = randomisedExpressionsList.Select(expression => new EvaluationResponse(expression)).ToList();
+            StartCoroutine(Evaluate());
+        }
+
+        if (HasSetResponseBeenActivated)
+        {
+            OnEvaluationResponse("aah");
+        }
+    }
+
+    private IEnumerator Evaluate()
+    {
+        if (EvaluationResponses.Any())
+        {
+            while (!(EvaluationResponses.All(response => response.IsAlreadyResponded)))
+            {
+                ExpressionList expressionList = new ExpressionList();
+                CurrentSignEvaluated = EvaluationResponses.FirstOrDefault(evaluationResponse => !evaluationResponse.IsAlreadyResponded);
+                expressionList.tokens = new List<Expression> { CurrentSignEvaluated.Expression };
+                OnResult.Invoke(expressionList);
+                yield return new WaitUntil(() => CurrentSignEvaluated.IsAlreadyResponded);
+            }
+
+            EvaluationResponses = null;
+        }
+        else
+        {
+            yield break;
         }
     }
 
@@ -98,5 +135,11 @@ public class EvaluationController : MonoBehaviour
         }
 
         return categories;
+    }
+
+    public void OnEvaluationResponse(string response)
+    {
+        HasSetResponseBeenActivated = false;
+        CurrentSignEvaluated.Response = response;
     }
 }

@@ -7,15 +7,16 @@ using System.Threading.Tasks;
 
 namespace Assets
 {
+    [Serializable]
     public class EvaluationResponse
     {
         public Expression Expression { get; private set; }
 
         public string Response { get; set; }
 
-        public bool IsCorrect => Expression.getWord().Equals(Response);
+        public bool IsCorrect => Expression.Word.Equals(Response);
 
-        public bool IsAlreadyResponded => string.IsNullOrWhiteSpace(Response);
+        public bool IsAlreadyResponded => !string.IsNullOrWhiteSpace(Response);
 
         public EvaluationResponse(Expression expression)
         {

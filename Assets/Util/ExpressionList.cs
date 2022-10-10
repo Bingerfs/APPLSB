@@ -1,5 +1,7 @@
-﻿using System;
+﻿using Assets.Util;
+using System;
 using System.Collections.Generic;
+using System.Linq;
 
 namespace LSB
 {
@@ -8,12 +10,19 @@ namespace LSB
     {
         public List<Expression> tokens;
 
+        public ExpressionList()
+        {
+
+        }
+
+        
+
         public string getexpressions()
         {
             string res="";
             foreach (var item in tokens)
             {
-                res += "WORD: " + item.getWord() + " CODE: " + item.getList()+"\n";
+                res += "WORD: " + item.Word + " CODE: " + item.GetStringList()+"\n";
             }
             return res;
         }

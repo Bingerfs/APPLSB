@@ -37,7 +37,7 @@ namespace LSB
 
         private void Start()
         {
-            //OnRequest("mi");
+            OnRequest("mi casa roja");
         }
 
         public void OnRequest(string word)

@@ -1,5 +1,6 @@
 using Assets;
 using LSB;
+using Microsoft.MixedReality.Toolkit.UI;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -25,6 +26,16 @@ public class EvaluationController : MonoBehaviour
 
     [Serializable] public class ResultHandler : UnityEvent<IEnumerable<Expression>> { }
     public ResultHandler OnResult;
+
+    [SerializeField]
+    private GameObject _responseFeedbackCorrect;
+
+    public GameObject ResponseFeedbackCorrect { get => _responseFeedbackCorrect; set => _responseFeedbackCorrect = value; }
+
+    [SerializeField]
+    private GameObject _responseFeedbackIncorrect;
+
+    public GameObject ResponseFeedbackIncorrect { get => _responseFeedbackIncorrect; set => _responseFeedbackIncorrect = value; }
 
     [SerializeField]
     private bool _hasSetResponseBeenActivated = false;
@@ -103,7 +114,7 @@ public class EvaluationController : MonoBehaviour
 
         if (HasSetResponseBeenActivated)
         {
-            OnEvaluationResponse("");
+            OnEvaluationResponse("aah");
         }
     }
 
@@ -113,6 +124,13 @@ public class EvaluationController : MonoBehaviour
         {
             while (!(EvaluationResponses.All(response => response.IsAlreadyResponded)))
             {
+                if (ResponseFeedbackCorrect.activeSelf || ResponseFeedbackIncorrect.activeSelf)
+                {
+                    yield return new WaitForSeconds(10);
+                    ResponseFeedbackIncorrect.SetActive(false);
+                    ResponseFeedbackCorrect.SetActive(false);
+                }
+                
                 ExpressionList expressionList = new ExpressionList();
                 CurrentSignEvaluated = EvaluationResponses.FirstOrDefault(evaluationResponse => !evaluationResponse.IsAlreadyResponded);
                 OnResult.Invoke(GetCurrentEvaluatedExpressionLoop(CurrentSignEvaluated));
@@ -153,7 +171,16 @@ public class EvaluationController : MonoBehaviour
 
     public void OnEvaluationResponse(string response)
     {
+        
         HasSetResponseBeenActivated = false;
         CurrentSignEvaluated.Response = response;
+        if (CurrentSignEvaluated.IsCorrect)
+        {
+            ResponseFeedbackCorrect.SetActive(true);
+        }
+        else
+        {
+            ResponseFeedbackIncorrect.SetActive(true);
+        }
     }
 }

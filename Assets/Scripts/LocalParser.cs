@@ -145,7 +145,7 @@ namespace LSB
             return "#00000";
         }
 
-        private static string RemoveDiacritics(string text)
+        public static string RemoveDiacritics(string text)
         {
             var normalizedString = text.Normalize(NormalizationForm.FormD);
             var stringBuilder = new StringBuilder();

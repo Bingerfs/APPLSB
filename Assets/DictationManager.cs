@@ -8,12 +8,14 @@ using UnityEngine.Events;
 using UnityEngine.Android;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
+using Assets.Util;
 
 public class DictationManager : MonoBehaviour
 {
     [Serializable] public class ResultHandler : UnityEvent<string> { }
     public ResultHandler OnRequest;
 
+    public ResultHandler OnEvaluationResponse;
 
     public ResultHandler OnStopRecording;
 
@@ -21,6 +23,8 @@ public class DictationManager : MonoBehaviour
     public GameObject mainTextToolTip;
 
     private ToolTip toolTip;
+
+    private LSBModule _currentModule = LSBModule.INTERPRETATION;
 
     // Start is called before the first frame update
     void Start()
@@ -68,7 +72,17 @@ public class DictationManager : MonoBehaviour
         Debug.Log(sentence);
         string[] bufferString = new string[1];
         bufferString[0] = sentence;
-        SwitchWebSearch(bufferString);
+        switch (_currentModule)
+        {
+            case LSBModule.INTERPRETATION:
+                SwitchWebSearch(bufferString);
+                break;
+            case LSBModule.EVALUATION:
+                OnEvaluationResponse.Invoke(sentence);
+                break;
+            default:
+                break;
+        }
         OnStopRecording.Invoke("");
     }
 
@@ -92,6 +106,11 @@ public class DictationManager : MonoBehaviour
         Debug.Log("________________Cancelled");
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
+    }
+
+    public void OnSwapToEvaluationModule()
+    {
+        _currentModule = LSBModule.EVALUATION;
     }
 
     // Update is called once per frame

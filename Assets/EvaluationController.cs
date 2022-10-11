@@ -103,7 +103,7 @@ public class EvaluationController : MonoBehaviour
 
         if (HasSetResponseBeenActivated)
         {
-            OnEvaluationResponse("aah");
+            OnEvaluationResponse("");
         }
     }
 

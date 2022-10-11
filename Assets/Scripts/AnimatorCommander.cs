@@ -28,10 +28,34 @@ namespace LSB
 
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
 
+        private LSBModule _currentModule = LSBModule.INTERPRETATION;
+
+        private LSBModule _previousModule;
+
         public void Start()
         {
-            _controller = new AnimatorControllerEvaluation(anim, mainTextToolTip, CONDITIONAL_EVENT_PARAMETER);
+            _previousModule = _currentModule;
+            _controller = new AnimatorControllerStates(anim, mainTextToolTip, CONDITIONAL_EVENT_PARAMETER);
             animationSpeed = 1.5f;
+        }
+
+        public void Update()
+        {
+            if (_currentModule != _previousModule)
+            {
+                _previousModule = _currentModule;
+                switch (_currentModule)
+                {
+                    case LSBModule.INTERPRETATION:
+                        _controller = new AnimatorControllerStates(anim, mainTextToolTip, CONDITIONAL_EVENT_PARAMETER);
+                        break;
+                    case LSBModule.EVALUATION:
+                        _controller = new AnimatorControllerEvaluation(anim, mainTextToolTip, CONDITIONAL_EVENT_PARAMETER);
+                        break;
+                    default:
+                        break;
+                }
+            }
         }
 
         public void OnEnable()
@@ -74,47 +98,10 @@ namespace LSB
             StartCoroutine(_controller.Scene(expressions.tokens));
         }
 
-        /*public IEnumerator scene(IEnumerable<Expression> expressions)
+        public void OnSwapToEvaluationModule()
         {
-            anim.speed = animationSpeed;
-             
-            foreach (Expression expression in expressions)
-            {
-                if (expression.Type != ExpressionType.TENSE)
-                {
-                    mainTextToolTip.SetActive(true);
-                    toolTip.ToolTipText = expression.Word;
-                }
-                
-		        Expression selected = expression;
-                if(!controller.ExpressionHasAllStates(expression) || !controller.ExpressionHasAnimationClips(expression))
-                {
-                    selected = LocalParser.ParseExpression(expression);
-                }
-
-                IEnumerable<AnimationClip> animationsToPlay = new List<AnimationClip>();
-                if (controller.TryGetAnimationClips(out animationsToPlay, expression))
-                {
-                    foreach (var animationToPlay in animationsToPlay)
-                    {
-                        var splitAnimatioName = animationToPlay.name.Split('_');
-                        var integerCode = int.Parse(splitAnimatioName[1]);
-                        animationDuration = animationToPlay.length;
-                        var previousConditionalInteger = anim.GetInteger(CONDITIONAL_EVENT_PARAMETER);
-                        anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode == previousConditionalInteger ? 0 : integerCode);
-                        yield return new WaitForSeconds(animationDuration);
-                    }
-                }
-                else
-                {
-                    yield break;
-                }
-            }
-
-            anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
-            toolTip.ToolTipText = "";
-            mainTextToolTip.SetActive(false);
-        }*/
+            _currentModule = LSBModule.EVALUATION;
+        }
          
     }
 }

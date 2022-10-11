@@ -780,7 +780,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 108779981}
-  controller: {fileID: 1999706635}
   mainTextToolTip: {fileID: 1017310697}
   animationDuration: 1.5
   animationSpeed: 1
@@ -3424,7 +3423,8 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  _isEvaluationActive: 0
+  _hasSetResponseBeenActivated: 0
+  _hasEvaluationBeenActivated: 0
 --- !u!4 &1089773301
 Transform:
   m_ObjectHideFlags: 0
@@ -6928,14 +6928,13 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1999706634}
-  - component: {fileID: 1999706635}
   m_Layer: 0
   m_Name: Controller
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1999706634
 Transform:
   m_ObjectHideFlags: 0
@@ -6950,18 +6949,6 @@ Transform:
   m_Father: {fileID: 2113111391}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1999706635
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1999706633}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a49f4837519d87a4ab06b0c7f9d7f74c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2025203003
 GameObject:
   m_ObjectHideFlags: 0

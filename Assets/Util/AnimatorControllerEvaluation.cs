@@ -1,15 +1,16 @@
-﻿using Assets.Util;
+﻿using LSB;
 using Microsoft.MixedReality.Toolkit.UI;
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using UnityEngine;
 
-namespace LSB
+namespace Assets.Util
 {
-    public class AnimatorControllerStates : IAnimationController
+    public class AnimatorControllerEvaluation : IAnimationController
     {
         private List<string> AnimationList = new List<string>();
 
@@ -28,7 +29,7 @@ namespace LSB
 
         public GameObject _mainTextToolTip;
 
-        public AnimatorControllerStates(Animator animator, GameObject mainTextToolTip, string conditionalParameter)
+        public AnimatorControllerEvaluation(Animator animator, GameObject mainTextToolTip, string conditionalParameter)
         {
             Animator = animator;
             _mainTextToolTip = mainTextToolTip;
@@ -106,7 +107,7 @@ namespace LSB
         public IEnumerable<AnimationClip> GetAnimationClip(Expression expression)
         {
             var animations = Animator.runtimeAnimatorController.animationClips.AsEnumerable();
-            return animations.Where(animation => expression.Codes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));            
+            return animations.Where(animation => expression.Codes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));
         }
 
         public bool TryGetAnimationClips(out IEnumerable<AnimationClip> filteredAnimations, Expression expression)
@@ -127,11 +128,7 @@ namespace LSB
 
             foreach (Expression expression in expressions)
             {
-                if (expression.Type != ExpressionType.TENSE)
-                {
-                    _mainTextToolTip.SetActive(true);
-                    _toolTip.ToolTipText = expression.Word;
-                }
+                _mainTextToolTip.SetActive(false);
 
                 Expression selected = expression;
                 if (!ExpressionHasAllStates(expression) || !ExpressionHasAnimationClips(expression))
@@ -147,7 +144,9 @@ namespace LSB
                         var splitAnimatioName = animationToPlay.name.Split('_');
                         var integerCode = int.Parse(splitAnimatioName[1]);
                         var animationDuration = animationToPlay.length;
-                        Animator.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode);
+                        var previousConditionalInteger = Animator.GetInteger(CONDITIONAL_EVENT_PARAMETER);
+                        Animator.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode == previousConditionalInteger ? 0 : integerCode);
+                        Debug.Log(splitAnimatioName[0]);
                         yield return new WaitForSeconds(animationDuration);
                     }
                 }

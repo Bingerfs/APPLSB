@@ -12,7 +12,7 @@ namespace LSB
     {
         public Animator anim;
 
-        public AnimatorControllerStates controller;
+        private IAnimationController _controller;
 
         [SerializeField]
         public GameObject mainTextToolTip; 
@@ -28,17 +28,15 @@ namespace LSB
 
         private string CONDITIONAL_EVENT_PARAMETER = "currentSign";
 
-        private ToolTip toolTip;
-
         public void Start()
         {
-            controller = new AnimatorControllerStates(anim);
+            _controller = new AnimatorControllerEvaluation(anim, mainTextToolTip, CONDITIONAL_EVENT_PARAMETER);
             animationSpeed = 1.5f;
         }
 
         public void OnEnable()
         {
-            toolTip = mainTextToolTip.GetComponent<ToolTip>();
+            
         }
 
         public void SetSlowSpeed()
@@ -66,17 +64,17 @@ namespace LSB
 
         public void OnCommand(IEnumerable<Expression> expressions)
         { 
-            StartCoroutine(scene(expressions));
+            StartCoroutine(_controller.Scene(expressions));
         }
 
         public void OnError(string word)
         {
             ExpressionList expressions = LocalParser.ParseExpressionList(word);
             Debug.Log(expressions.tokens.Count);
-            StartCoroutine(scene(expressions.tokens));
+            StartCoroutine(_controller.Scene(expressions.tokens));
         }
 
-        public IEnumerator scene(IEnumerable<Expression> expressions)
+        /*public IEnumerator scene(IEnumerable<Expression> expressions)
         {
             anim.speed = animationSpeed;
              
@@ -102,7 +100,8 @@ namespace LSB
                         var splitAnimatioName = animationToPlay.name.Split('_');
                         var integerCode = int.Parse(splitAnimatioName[1]);
                         animationDuration = animationToPlay.length;
-                        anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode);
+                        var previousConditionalInteger = anim.GetInteger(CONDITIONAL_EVENT_PARAMETER);
+                        anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, integerCode == previousConditionalInteger ? 0 : integerCode);
                         yield return new WaitForSeconds(animationDuration);
                     }
                 }
@@ -115,7 +114,7 @@ namespace LSB
             anim.SetInteger(CONDITIONAL_EVENT_PARAMETER, 0);
             toolTip.ToolTipText = "";
             mainTextToolTip.SetActive(false);
-        }
+        }*/
          
     }
 }

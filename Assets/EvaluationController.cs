@@ -23,7 +23,7 @@ public class EvaluationController : MonoBehaviour
 
     public int NumberOfSigns { get; set; } = 5;
 
-    [Serializable] public class ResultHandler : UnityEvent<ExpressionList> { }
+    [Serializable] public class ResultHandler : UnityEvent<IEnumerable<Expression>> { }
     public ResultHandler OnResult;
 
     [SerializeField]
@@ -91,7 +91,12 @@ public class EvaluationController : MonoBehaviour
         if (HasEvaluationBeenActivated)
         {
             HasEvaluationBeenActivated = false;
-            var randomisedExpressionsList = RandomisedSignCodes.Select(code => new Expression(code)).ToList();
+            var randomisedExpressionsList = RandomisedSignCodes.Select(code => 
+            {
+                var splitCode = code.Split('#');
+                var auxExpression = new Expression($"#{splitCode[1]}", splitCode[0]);
+                return auxExpression;
+            }).ToList();
             EvaluationResponses = randomisedExpressionsList.Select(expression => new EvaluationResponse(expression)).ToList();
             StartCoroutine(Evaluate());
         }
@@ -110,8 +115,7 @@ public class EvaluationController : MonoBehaviour
             {
                 ExpressionList expressionList = new ExpressionList();
                 CurrentSignEvaluated = EvaluationResponses.FirstOrDefault(evaluationResponse => !evaluationResponse.IsAlreadyResponded);
-                expressionList.tokens = new List<Expression> { CurrentSignEvaluated.Expression };
-                OnResult.Invoke(expressionList);
+                OnResult.Invoke(GetCurrentEvaluatedExpressionLoop(CurrentSignEvaluated));
                 yield return new WaitUntil(() => CurrentSignEvaluated.IsAlreadyResponded);
             }
 
@@ -135,6 +139,16 @@ public class EvaluationController : MonoBehaviour
         }
 
         return categories;
+    }
+
+    private IEnumerable<Expression> GetCurrentEvaluatedExpressionLoop(EvaluationResponse evaluationResponse)
+    {
+        while (!evaluationResponse.IsAlreadyResponded)
+        {
+            yield return evaluationResponse.Expression;
+        }
+
+        yield break;
     }
 
     public void OnEvaluationResponse(string response)

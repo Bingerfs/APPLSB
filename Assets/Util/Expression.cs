@@ -20,12 +20,13 @@ namespace LSB
             Type = ExpressionType.REGULAR;
         }
 
-        public Expression(string code)
+        public Expression(string code, string word)
         {
             var expressionCode = new ExpressionCode(code);
             Codes = new List<ExpressionCode>();
             Codes = Codes.Append(expressionCode);
             Type = code.Contains("#99") ? ExpressionType.TENSE : ExpressionType.REGULAR;
+            Word = word;
         }
 
         public Expression(IEnumerable<string> codes, string word)

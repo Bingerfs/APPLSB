@@ -63,8 +63,6 @@ MonoBehaviour:
   OnClose:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: FantomLib.OKWithCheckBoxDialogController+CloseHandler, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114946659005782390
 MonoBehaviour:
   m_ObjectHideFlags: 0

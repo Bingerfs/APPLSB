@@ -58,23 +58,15 @@ MonoBehaviour:
   OnResult:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: FantomLib.PermissionCheckController+ResultHandler, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnGranted:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnDenied:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: UnityEngine.Events.UnityEvent, UnityEngine.CoreModule, Version=0.0.0.0,
-      Culture=neutral, PublicKeyToken=null
   OnAllowed:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: FantomLib.PermissionCheckController+AllowedHandler, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114881299326287516
 MonoBehaviour:
   m_ObjectHideFlags: 0

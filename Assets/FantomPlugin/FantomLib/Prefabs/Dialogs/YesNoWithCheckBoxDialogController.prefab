@@ -67,13 +67,9 @@ MonoBehaviour:
   OnYes:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: FantomLib.YesNoWithCheckBoxDialogController+YesHandler, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
   OnNo:
     m_PersistentCalls:
       m_Calls: []
-    m_TypeName: FantomLib.YesNoWithCheckBoxDialogController+NoHandler, Assembly-CSharp,
-      Version=0.0.0.0, Culture=neutral, PublicKeyToken=null
 --- !u!114 &114552799914657402
 MonoBehaviour:
   m_ObjectHideFlags: 0

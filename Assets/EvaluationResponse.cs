@@ -18,10 +18,11 @@ namespace Assets
         {
             get { return _response; }
             set 
-            { 
-                value = LocalParser.RemoveDiacritics(value);
-                value = value.Trim('.');
-                _response = value; 
+            {
+                var normalizedValue = value;
+                normalizedValue = LocalParser.RemoveDiacritics(normalizedValue);
+                normalizedValue = normalizedValue.Trim('.');
+                _response = normalizedValue; 
             }
         }
 

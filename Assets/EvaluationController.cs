@@ -131,7 +131,7 @@ public class EvaluationController : MonoBehaviour
             {
                 if (ResponseFeedbackCorrect.activeSelf || ResponseFeedbackIncorrect.activeSelf)
                 {
-                    yield return new WaitForSeconds(10);
+                    yield return new WaitForSeconds(5);
                     ResponseFeedbackIncorrect.SetActive(false);
                     ResponseFeedbackCorrect.SetActive(false);
                 }

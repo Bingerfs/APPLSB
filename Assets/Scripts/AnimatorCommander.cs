@@ -78,7 +78,7 @@ namespace LSB
         public void SetFastSpeed()
         {
             //animationDuration = 0.5f;
-            animationSpeed = 3.0f;
+            anim.speed = 3.0f;
         }
 
         public void SetSpeed(SliderEventData eventData)

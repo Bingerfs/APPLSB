@@ -38,6 +38,11 @@ public class EvaluationController : MonoBehaviour
     public GameObject ResponseFeedbackIncorrect { get => _responseFeedbackIncorrect; set => _responseFeedbackIncorrect = value; }
 
     [SerializeField]
+    private GameObject _moduleSelectionMenu;
+
+    public GameObject ModuleSelectionMenu { get => _moduleSelectionMenu; set => _moduleSelectionMenu = value; }
+
+    [SerializeField]
     private bool _hasSetResponseBeenActivated = false;
 
     /// <summary>
@@ -182,5 +187,12 @@ public class EvaluationController : MonoBehaviour
         {
             ResponseFeedbackIncorrect.SetActive(true);
         }
+    }
+
+    public void OnModuleSelected()
+    {
+        SelectedModule = 1;
+        ModuleSelectionMenu.SetActive(false);
+        HasEvaluationBeenActivated = true;
     }
 }

@@ -7,6 +7,7 @@ using MRTKGestureVoice;
 using UnityEngine;
 using System;
 using UnityEngine.Events;
+using Assets.Util;
 
 public class HandVoiceHandler : MonoBehaviour
 {
@@ -25,6 +26,9 @@ public class HandVoiceHandler : MonoBehaviour
     [SerializeField]
     private Handedness trackedHand = Handedness.Right;
 
+    [SerializeField]
+    private UserPreferences _userPreferences;
+
     private IMixedRealityHandJointService _handJointService;
 
     private IMixedRealityHandJointService HandJointService =>
@@ -38,12 +42,17 @@ public class HandVoiceHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        trackedHand = _userPreferences.PreferredHandedness;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (trackedHand != _userPreferences.PreferredHandedness)
+        {
+            trackedHand = _userPreferences.PreferredHandedness;
+        }
+
         var handPose = GetHandPose(trackedHand);
         ProcessPoseChange(previousHandPose, handPose);
     }

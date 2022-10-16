@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -2440,7 +2440,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &452480123
 Transform:
   m_ObjectHideFlags: 0
@@ -7424,6 +7424,37 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1091031548 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5842008468435884931, guid: f514427e4d7588143a828462e0fc1321,
+    type: 3}
+  m_PrefabInstance: {fileID: 1381025212}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1091031551 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5842008468435884934, guid: f514427e4d7588143a828462e0fc1321,
+    type: 3}
+  m_PrefabInstance: {fileID: 1381025212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091031548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55691ad5b034fe6966763a6e23818d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1091031556
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1091031548}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18607391e42150e41b82c4083908ec28, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
 --- !u!1 &1127928120
 GameObject:
   m_ObjectHideFlags: 0
@@ -9103,6 +9134,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 734399307}
     m_Modifications:
+    - target: {fileID: 150485414, guid: f514427e4d7588143a828462e0fc1321, type: 3}
+      propertyPath: solverHandler
+      value: 
+      objectReference: {fileID: 1091031551}
     - target: {fileID: 1377842336881781754, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: m_Enabled
@@ -10207,6 +10242,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HandMenu_Large_WorldLock_On_GrabAndPull
+      objectReference: {fileID: 0}
+    - target: {fileID: 5842008468435884934, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5842008468438690525, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
@@ -11549,6 +11589,7 @@ MonoBehaviour:
         m_CallState: 2
   trackedHandJoint: 6
   trackedHand: 2
+  _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
 --- !u!1 &1571592285
 GameObject:
   m_ObjectHideFlags: 0

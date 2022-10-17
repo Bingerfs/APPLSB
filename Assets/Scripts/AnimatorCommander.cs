@@ -8,7 +8,7 @@ using System.Collections.Generic;
 
 namespace LSB
 {
-    public class AnimatorCommander : MonoBehaviour
+    public class AnimatorCommander : MonoBehaviour, IDataPersistence
     {
         public Animator anim;
 
@@ -103,5 +103,14 @@ namespace LSB
             _currentModule = LSBModule.EVALUATION;
         }
          
+        public void LoadUserData(UserData userData)
+        {
+            
+        }
+
+        public void SaveUserData(ref UserData userData)
+        {
+            userData.userExperience = userData.userExperience + 1;
+        }
     }
 }

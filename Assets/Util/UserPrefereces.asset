@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dae05b04a02ae5c42821ed6d26575e99, type: 3}
   m_Name: UserPrefereces
   m_EditorClassIdentifier: 
-  _userId: 0
+  _userId: 
   _userName: 
   _preferredHandedness: 2

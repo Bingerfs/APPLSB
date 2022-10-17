@@ -45,6 +45,8 @@ namespace Assets.DataPersistence
                     Debug.LogError(e.Message);
                 }
             }
+
+            return userData;
         }
 
         public void Sava(UserData userData)

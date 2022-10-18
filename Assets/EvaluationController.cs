@@ -27,6 +27,12 @@ public class EvaluationController : MonoBehaviour
     [Serializable] public class ResultHandler : UnityEvent<IEnumerable<Expression>> { }
     public ResultHandler OnResult;
 
+    [Serializable] public class ExperienceHandler : UnityEvent<float> { }
+    public ExperienceHandler OnEvaluationExperience;
+
+    [Serializable] public class ProgressHandler : UnityEvent<IEnumerable<EvaluationResponse>> { }
+    public ProgressHandler OnEvaluationProgress;
+
     [SerializeField]
     private GameObject _responseFeedbackCorrect;
 
@@ -119,7 +125,7 @@ public class EvaluationController : MonoBehaviour
 
         if (HasSetResponseBeenActivated)
         {
-            OnEvaluationResponse("aah");
+            OnEvaluationResponse(CurrentSignEvaluated.Expression.Word);
         }
     }
 
@@ -142,6 +148,13 @@ public class EvaluationController : MonoBehaviour
                 yield return new WaitUntil(() => CurrentSignEvaluated.IsAlreadyResponded);
             }
 
+            float experienceGained = EvaluationResponses.Aggregate(0f, (current, next) => next.IsCorrect ? current + 1 : current);
+            if (experienceGained > 0)
+            {
+                OnEvaluationExperience.Invoke(experienceGained);
+            }
+
+            OnEvaluationProgress.Invoke(EvaluationResponses);
             EvaluationResponses = null;
         }
         else

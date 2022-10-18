@@ -5,18 +5,22 @@ using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
 using Assets.Util;
 using System.Collections.Generic;
+using UnityEngine.Events;
+using System;
 
 namespace LSB
 {
-    public class AnimatorCommander : MonoBehaviour, IDataPersistence
+    public class AnimatorCommander : MonoBehaviour
     {
         public Animator anim;
 
         private IAnimationController _controller;
 
         [SerializeField]
-        public GameObject mainTextToolTip; 
-        //public Text mainText;
+        public GameObject mainTextToolTip;
+
+        [Serializable] public class ResultHandler : UnityEvent<float> { }
+        public ResultHandler OnInterpretationExperience;
 
         public float animationDuration;
 
@@ -87,7 +91,12 @@ namespace LSB
         }
 
         public void OnCommand(IEnumerable<Expression> expressions)
-        { 
+        {
+            if (_currentModule == LSBModule.INTERPRETATION)
+            {
+                OnInterpretationExperience.Invoke(0.5f);
+            }
+            
             StartCoroutine(_controller.Scene(expressions));
         }
 
@@ -101,16 +110,6 @@ namespace LSB
         public void OnSwapToEvaluationModule()
         {
             _currentModule = LSBModule.EVALUATION;
-        }
-         
-        public void LoadUserData(UserData userData)
-        {
-            
-        }
-
-        public void SaveUserData(ref UserData userData)
-        {
-            userData.userExperience = userData.userExperience + 1;
         }
     }
 }

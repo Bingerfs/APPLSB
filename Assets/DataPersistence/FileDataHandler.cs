@@ -23,9 +23,9 @@ namespace Assets.DataPersistence
 
         public UserData Load()
         {
-            var fullPath = Path.Combine(_dataDirPath, _dataFileName);
+            var fullPath = _dataFileName != null ? Path.Combine(_dataDirPath, _dataFileName) : null;
             UserData userData = null;
-            if (File.Exists(fullPath))
+            if (fullPath != null && File.Exists(fullPath))
             {
                 try
                 {
@@ -68,6 +68,11 @@ namespace Assets.DataPersistence
             {
                 Debug.LogError(e.Message);
             }
+        }
+
+        public bool DoesFileExist(string fileName)
+        {
+            return File.Exists(Path.Combine(_dataDirPath, fileName));
         }
     }
 }

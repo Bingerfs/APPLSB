@@ -11,11 +11,13 @@ namespace Assets.Util
     [CreateAssetMenu(fileName = "UserPrefereces", menuName = "Scrtiprable Object/PreferencesAsset")]
     public class UserPreferences : ScriptableObject
     {
-        public string _userId = "";
+        public string _userId = null;
 
-        public string _userName = "";
+        public string _userName = null;
 
         public Handedness _preferredHandedness = Handedness.Right;
+
+        public bool isGuestUser = false;
 
         public string UserId { get => _userId; set => _userId = value; }
 
@@ -23,5 +25,6 @@ namespace Assets.Util
 
         public Handedness PreferredHandedness { get => _preferredHandedness; set => _preferredHandedness = value; }
 
+        public bool IsGuestUser { get => isGuestUser; set => isGuestUser = value; }
     }
 }

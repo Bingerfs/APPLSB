@@ -11,7 +11,7 @@ namespace Assets.Util
     {
         public string userName;
 
-        public int userExperience;
+        public float userExperience;
 
         public bool isFirstTime;
 

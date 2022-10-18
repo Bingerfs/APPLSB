@@ -124,6 +124,49 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &959257
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 959259}
+  - component: {fileID: 959258}
+  m_Layer: 0
+  m_Name: ExperienceController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &959258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959257}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 095ab9d5c94fcc548a5cdc2ff0aebd3d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &959259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959257}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1881382
 GameObject:
   m_ObjectHideFlags: 0
@@ -1343,6 +1386,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   anim: {fileID: 108779981}
   mainTextToolTip: {fileID: 1017310697}
+  OnInterpretationExperience:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 959258}
+        m_TargetAssemblyTypeName: ExperienceController, Assembly-CSharp
+        m_MethodName: OnExperienceIncrement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   animationDuration: 1.5
   animationSpeed: 1
 --- !u!1 &197309041
@@ -3172,6 +3230,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 583388156}
   m_CullTransparentMesh: 0
+--- !u!1 &626412403
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 626412405}
+  - component: {fileID: 626412404}
+  m_Layer: 0
+  m_Name: ProgressController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &626412404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626412403}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d256f836093c14ca81c8ba3cafd75e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &626412405
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 626412403}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &626981922
 GameObject:
   m_ObjectHideFlags: 0
@@ -6488,6 +6589,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b930e6cfbb4b88f4693f0b05aba1cc4a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _fileName: 
+  _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
 --- !u!4 &927737642
 Transform:
   m_ObjectHideFlags: 0
@@ -7439,6 +7542,36 @@ MonoBehaviour:
       - m_Target: {fileID: 196228218}
         m_TargetAssemblyTypeName: LSB.AnimatorCommander, Assembly-CSharp
         m_MethodName: OnCommand
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnEvaluationExperience:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 959258}
+        m_TargetAssemblyTypeName: ExperienceController, Assembly-CSharp
+        m_MethodName: OnExperienceIncrement
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  OnEvaluationProgress:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 626412404}
+        m_TargetAssemblyTypeName: ProgressController, Assembly-CSharp
+        m_MethodName: OnSaveProgressBySign
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9760,7 +9893,7 @@ PrefabInstance:
         type: 3}
       propertyPath: iconQuadTexture
       value: 
-      objectReference: {fileID: 2800000, guid: 937867e9be7912d4a903cd401ee0a959, type: 3}
+      objectReference: {fileID: 2800000, guid: 4494cfaf424cdde49895b91e2b559258, type: 3}
     - target: {fileID: 2717396915705140302, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: iconQuadTexture
@@ -10004,7 +10137,7 @@ PrefabInstance:
     - target: {fileID: 5729869668784571020, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: m_text
-      value: Tutorial
+      value: Perfil
       objectReference: {fileID: 0}
     - target: {fileID: 5729869668784571020, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}

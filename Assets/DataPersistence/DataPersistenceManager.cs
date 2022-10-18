@@ -11,6 +11,8 @@ public class DataPersistenceManager : MonoBehaviour
 
     private UserData _userData;
 
+    private IUserIdGenerator _userIdGenerator;
+
     private IEnumerable<IDataPersistence> _dataPersistenceObjects;
 
     [SerializeField]
@@ -33,51 +35,75 @@ public class DataPersistenceManager : MonoBehaviour
 
     void Start()
     {
-        _fileName = $"{_userPreferences.UserId}.json";
+        _fileName = string.IsNullOrEmpty(_userPreferences._userId) ? null : $"{_userPreferences.UserId}.json";
         dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
         _dataPersistenceObjects = FindAllDataPersistenceObjects();
-
+        _userIdGenerator = new GUIDUserIdGenerator(dataHandler);
+        LoadUserData();
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if (!string.IsNullOrEmpty(_userPreferences.UserId) && !_fileName.Contains(_userPreferences.UserId))
+        {
+            _fileName = $"{_userPreferences.UserId}.json";
+            dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
+        }
     }
 
     public void NewUserData(string userName)
     {
         _userData = new UserData(userName);
-    }
-
-    public void LoadUserData(string userCode)
-    {
-        _userData = dataHandler.Load();
-        if (_userData == null)
-        {
-            Debug.Log("No data found. Starting a guest session.");
-            _userData = new UserData();
-        }
-
-        foreach (var persistenceObject in _dataPersistenceObjects)
-        {
-            persistenceObject.LoadUserData(_userData);
-        }
-    }
-
-    public void UpdateUserData(string userCode)
-    {
-        foreach (var persistenceObject in _dataPersistenceObjects)
-        {
-            persistenceObject.SaveUserData(ref _userData);
-        }
-
+        _userPreferences.UserId = _userIdGenerator.GenerateUserId();
+        _fileName = $"{_userPreferences.UserId}.json";
+        dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
         dataHandler.Sava(_userData);
+    }
+
+    public void LoadUserData()
+    {
+        if (!_userPreferences.IsGuestUser)
+        {
+            _userData = dataHandler.Load();
+            if (_userData == null)
+            {
+                Debug.Log("No data found. Starting a guest session.");
+                NewUserData(_userPreferences.UserName);
+            }
+
+            foreach (var persistenceObject in _dataPersistenceObjects)
+            {
+                persistenceObject.LoadUserData(_userData);
+            }
+        }
+    }
+
+    public void UpdateUserData()
+    {
+        if (!_userPreferences.isGuestUser)
+        {
+            foreach (var persistenceObject in _dataPersistenceObjects)
+            {
+                persistenceObject.SaveUserData(ref _userData);
+            }
+
+            dataHandler.Sava(_userData);
+        }
     }
 
     public IEnumerable<IDataPersistence> FindAllDataPersistenceObjects()
     {
         IEnumerable<IDataPersistence> dataPersistenceObjects = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
         return dataPersistenceObjects;
+    }
+
+    public void OnApplicationQuit()
+    {
+        UpdateUserData();
+        _userPreferences.UserName = null;
+        _userPreferences.PreferredHandedness = Microsoft.MixedReality.Toolkit.Utilities.Handedness.Right;
+        _userPreferences.UserId = null;
+        _userPreferences.isGuestUser = false;
     }
 }

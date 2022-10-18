@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1374,7 +1374,7 @@ GameObject:
   - component: {fileID: 232098163}
   - component: {fileID: 232098162}
   m_Layer: 0
-  m_Name: Spline ToolTip(Clone)
+  m_Name: ReturninUserTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1444,15 +1444,15 @@ LineRenderer:
   - {x: -0.044741992, y: -0.090874255, z: 1.813664}
   - {x: -0.06571377, y: -0.03300819, z: 1.7393967}
   - {x: -0.08801652, y: 0.03124619, z: 1.6574699}
-  - {x: -0.11035843, y: 0.09967246, z: 1.5709869}
+  - {x: -0.11035842, y: 0.099672414, z: 1.570987}
   - {x: -0.13144782, y: 0.17005445, z: 1.4830514}
   - {x: -0.14999291, y: 0.24017568, z: 1.3967668}
   - {x: -0.16470198, y: 0.30782005, z: 1.3152366}
   - {x: -0.17428328, y: 0.37077105, z: 1.2415643}
-  - {x: -0.1774451, y: 0.42681256, z: 1.1788535}
+  - {x: -0.17744508, y: 0.42681253, z: 1.1788535}
   - {x: -0.17289567, y: 0.47372827, z: 1.1302075}
   - {x: -0.15934329, y: 0.50930184, z: 1.09873}
-  - {x: -0.13549621, y: 0.5313169, z: 1.0875244}
+  - {x: -0.1354962, y: 0.53131694, z: 1.0875244}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.01
@@ -3103,7 +3103,7 @@ GameObject:
   - component: {fileID: 657484495}
   - component: {fileID: 657484494}
   m_Layer: 0
-  m_Name: Spline ToolTip(Clone)
+  m_Name: GuestUserTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3173,15 +3173,15 @@ LineRenderer:
   - {x: 0.94272274, y: -0.10880386, z: 1.4977103}
   - {x: 0.93958485, y: -0.05933326, z: 1.461057}
   - {x: 0.93685716, y: -0.004406739, z: 1.4203548}
-  - {x: 0.9350084, y: 0.05407575, z: 1.3771924}
+  - {x: 0.9350084, y: 0.05407572, z: 1.3771924}
   - {x: 0.93450725, y: 0.114214465, z: 1.3331575}
   - {x: 0.93582255, y: 0.17410943, z: 1.2898387}
   - {x: 0.9394229, y: 0.23186092, z: 1.248824}
   - {x: 0.9457771, y: 0.285569, z: 1.2117019}
-  - {x: 0.955354, y: 0.3333339, z: 1.1800605}
+  - {x: 0.9553539, y: 0.33333385, z: 1.1800605}
   - {x: 0.9686221, y: 0.37325573, z: 1.155488}
   - {x: 0.9860503, y: 0.40343466, z: 1.1395726}
-  - {x: 1.0081073, y: 0.42197084, z: 1.1339028}
+  - {x: 1.0081073, y: 0.42197087, z: 1.1339028}
   m_Parameters:
     serializedVersion: 3
     widthMultiplier: 0.01
@@ -4323,7 +4323,7 @@ GameObject:
   - component: {fileID: 748435855}
   - component: {fileID: 748435854}
   m_Layer: 0
-  m_Name: Spline ToolTip(Clone)
+  m_Name: LeftHandedTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4908,7 +4908,7 @@ GameObject:
   - component: {fileID: 765591611}
   - component: {fileID: 765591610}
   m_Layer: 0
-  m_Name: Model_PushButton(Clone) (1)
+  m_Name: GuestUserButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4971,6 +4971,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 720190597}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 964385219}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnGuestUserSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   OnTouchUpdated:
     m_PersistentCalls:
@@ -5606,7 +5642,7 @@ GameObject:
   - component: {fileID: 858440510}
   - component: {fileID: 858440509}
   m_Layer: 0
-  m_Name: Model_PushButton(Clone)
+  m_Name: LeftHandednessButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5645,6 +5681,30 @@ MonoBehaviour:
       - m_Target: {fileID: 858440511}
         m_TargetAssemblyTypeName: 
         m_MethodName: SetInputUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnLeftHandednessSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnNextSceneLoad
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5862,7 +5922,7 @@ GameObject:
   - component: {fileID: 900696984}
   - component: {fileID: 900696983}
   m_Layer: 0
-  m_Name: Model_PushButton(Clone)
+  m_Name: ReturningUserButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5948,6 +6008,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnReturningUserSelected
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 19faf2ab
           m_BoolArgument: 1
         m_CallState: 2
   OnTouchUpdated:
@@ -8165,7 +8237,7 @@ GameObject:
   - component: {fileID: 1341017181}
   - component: {fileID: 1341017180}
   m_Layer: 0
-  m_Name: Model_PushButton(Clone) (1)
+  m_Name: RightHandednessButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8204,6 +8276,30 @@ MonoBehaviour:
       - m_Target: {fileID: 1341017182}
         m_TargetAssemblyTypeName: 
         m_MethodName: SetInputUp
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnNextSceneLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnRightHandednessSelected
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -9041,7 +9137,7 @@ GameObject:
   - component: {fileID: 1537002985}
   - component: {fileID: 1537002984}
   m_Layer: 0
-  m_Name: Spline ToolTip(Clone)
+  m_Name: RightHandedTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9446,7 +9542,7 @@ GameObject:
   - component: {fileID: 1597319806}
   - component: {fileID: 1597319805}
   m_Layer: 0
-  m_Name: Model_PushButton(Clone)
+  m_Name: NewUserButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9509,6 +9605,42 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1709716508}
+        m_TargetAssemblyTypeName: InitialDataHandler, Assembly-CSharp
+        m_MethodName: OnNewUserSelected
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 720190597}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 964385219}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
   OnTouchUpdated:
     m_PersistentCalls:
@@ -10326,6 +10458,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 887dee8dd536de943be57b8207a91e78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
 --- !u!1 &1719886898
 GameObject:
   m_ObjectHideFlags: 0
@@ -10846,7 +10979,7 @@ GameObject:
   - component: {fileID: 1954126580}
   - component: {fileID: 1954126579}
   m_Layer: 0
-  m_Name: Spline ToolTip(Clone)
+  m_Name: NewUserTooltip
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10916,12 +11049,12 @@ LineRenderer:
   - {x: -0.9716307, y: -0.09591791, z: 1.5459146}
   - {x: -0.98155916, y: -0.040461805, z: 1.5320687}
   - {x: -0.9916485, y: 0.021127228, z: 1.5165573}
-  - {x: -1.0010749, y: 0.08673495, z: 1.5000092}
+  - {x: -1.0010749, y: 0.086734906, z: 1.5000092}
   - {x: -1.0090147, y: 0.15424728, z: 1.4830528}
   - {x: -1.0146443, y: 0.22154997, z: 1.466317}
   - {x: -1.0171399, y: 0.28652897, z: 1.4504302}
   - {x: -1.0156779, y: 0.34707004, z: 1.436021}
-  - {x: -1.0094346, y: 0.4010591, z: 1.423718}
+  - {x: -1.0094346, y: 0.40105906, z: 1.423718}
   - {x: -0.99758613, y: 0.4463819, z: 1.4141499}
   - {x: -0.979309, y: 0.48092437, z: 1.4079453}
   - {x: -0.9537795, y: 0.50257236, z: 1.4057328}

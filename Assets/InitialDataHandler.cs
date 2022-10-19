@@ -1,4 +1,6 @@
 using Assets.Util;
+using Microsoft.MixedReality.Toolkit;
+using Microsoft.MixedReality.Toolkit.SceneSystem;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System;
 using System.Collections;
@@ -49,8 +51,9 @@ public class InitialDataHandler : MonoBehaviour
         _userPreferences.PreferredHandedness = Handedness.Left;
     }
 
-    public void OnNextSceneLoad()
+    public async void OnNextSceneLoad()
     {
-        SceneManager.LoadScene(1);
+        IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
+        await sceneSystem.LoadContent("MainScene", LoadSceneMode.Single);
     }
 }

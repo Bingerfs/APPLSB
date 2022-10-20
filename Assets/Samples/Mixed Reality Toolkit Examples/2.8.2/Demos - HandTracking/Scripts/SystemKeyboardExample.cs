@@ -18,11 +18,9 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
     [AddComponentMenu("Scripts/MRTK/Examples/SystemKeyboardExample")]
     public class SystemKeyboardExample : MonoBehaviour
     {
-#if WINDOWS_UWP
+
         private MixedRealityKeyboard wmrKeyboard;
-#elif UNITY_IOS || UNITY_ANDROID
-        private TouchScreenKeyboard touchscreenKeyboard;
-#endif
+
 
         [SerializeField]
         private TextMeshPro debugMessage = null;
@@ -39,11 +37,8 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
         /// </summary>
         public void OpenSystemKeyboard()
         {
-#if WINDOWS_UWP
             wmrKeyboard.ShowKeyboard(wmrKeyboard.Text, false);
-#elif UNITY_IOS || UNITY_ANDROID
-            touchscreenKeyboard = TouchScreenKeyboard.Open(string.Empty, TouchScreenKeyboardType.Default, false, false, false, false);
-#endif
+
         }
 
         #region MonoBehaviour Implementation
@@ -56,7 +51,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                 mixedRealityKeyboardPreview.gameObject.SetActive(false);
             }
 
-#if WINDOWS_UWP
+
             // Windows mixed reality keyboard initialization goes here
             wmrKeyboard = gameObject.AddComponent<MixedRealityKeyboard>();
             wmrKeyboard.DisableUIInteractionWhenTyping = disableUIInteractionWhenTyping;
@@ -81,16 +76,12 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                     }
                 });
             }
-#elif UNITY_IOS || UNITY_ANDROID
-            // non-Windows mixed reality keyboard initialization goes here
-#else
-            debugMessage.text = "Keyboard not supported on this platform.";
-#endif
+
         }
 
         private void Update()
         {
-#if WINDOWS_UWP
+
             // Windows mixed reality keyboard update goes here
             if (wmrKeyboard.Visible)
             {
@@ -130,33 +121,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
                     mixedRealityKeyboardPreview.CaretIndex = 0;
                 }
             }
-#elif UNITY_IOS || UNITY_ANDROID
-            // non-Windows mixed reality keyboard initialization goes here
-            // for non-Windows mixed reality keyboards just use Unity's default
-            // touchscreenkeyboard. 
-            // We will use touchscreenkeyboard once Unity bug is fixed
-            // Unity bug tracking the issue https://fogbugz.unity3d.com/default.asp?1137074_rttdnt8t1lccmtd3
-            if (touchscreenKeyboard != null)
-            {
-                string KeyboardText = touchscreenKeyboard.text;
-                if (TouchScreenKeyboard.visible)
-                {
-                    if (debugMessage != null)
-                    {
-                        debugMessage.text = "typing... " + KeyboardText;
-                    }
-                }
-                else
-                {
-                    if (debugMessage != null)
-                    {
-                        debugMessage.text = "typed " + KeyboardText;
-                    }
 
-                    touchscreenKeyboard = null;
-                }
-            }
-#endif
         }
 
         #endregion MonoBehaviour Implementation

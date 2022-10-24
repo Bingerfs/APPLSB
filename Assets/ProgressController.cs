@@ -1,5 +1,6 @@
 using Assets;
 using Assets.Util;
+using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ using UnityEngine;
 public class ProgressController : MonoBehaviour, IDataPersistence
 {
     private SerializableDictionary<string, int> _dictionaryProgressBySign;
+
+    [SerializeField]
+    private UserPreferences _userPreferences;
 
     public void LoadUserData(UserData userData)
     {

@@ -33,7 +33,6 @@ public class handHandler : MonoBehaviour, IMixedRealityPointerHandler
 
     public void OnPointerEnter(Vector3 cubePosition)
     {
-        GameObject cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
         cube.transform.localScale = Vector3.one * 0.1f;
         cube.transform.position = cubePosition;
     }

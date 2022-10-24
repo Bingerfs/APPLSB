@@ -19,6 +19,8 @@ namespace Assets.Util
 
         public bool isGuestUser = false;
 
+        public float _cachedExperience = 0f;
+
         public string UserId { get => _userId; set => _userId = value; }
 
         public string UserName { get => _userName; set => _userName = value; } 
@@ -26,5 +28,7 @@ namespace Assets.Util
         public Handedness PreferredHandedness { get => _preferredHandedness; set => _preferredHandedness = value; }
 
         public bool IsGuestUser { get => isGuestUser; set => isGuestUser = value; }
+
+        public float CachedExperience { get => _cachedExperience; set => _cachedExperience = value; }
     }
 }

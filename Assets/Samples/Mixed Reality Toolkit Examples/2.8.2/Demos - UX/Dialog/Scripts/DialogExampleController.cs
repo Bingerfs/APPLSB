@@ -2,6 +2,7 @@
 // Licensed under the MIT License.
 
 using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.Utilities;
 using UnityEngine;
 
 namespace Microsoft.MixedReality.Toolkit.Examples.Experimental.DialogTest
@@ -12,6 +13,16 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Experimental.DialogTest
     /// </summary>
     public class DialogExampleController : MonoBehaviour
     {
+        [SerializeField]
+        private GameObject slatePrefab;
+
+        public GameObject SlatePrefab { get => slatePrefab; set => slatePrefab = value; }
+
+        [SerializeField]
+        private bool isActive;
+
+        public bool IsActive { get => isActive; set => isActive = value; }
+
         [SerializeField]
         [Tooltip("Assign DialogLarge_192x192.prefab")]
         private GameObject dialogPrefabLarge;
@@ -49,6 +60,15 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Experimental.DialogTest
         {
             get => dialogPrefabSmall;
             set => dialogPrefabSmall = value;
+        }
+
+        private void Update()
+        {
+            if (IsActive)
+            {
+                IsActive = false;
+                Instantiate(SlatePrefab);
+            }
         }
 
         /// <summary>

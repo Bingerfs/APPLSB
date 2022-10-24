@@ -16,3 +16,4 @@ MonoBehaviour:
   _userName: 
   _preferredHandedness: 2
   isGuestUser: 0
+  _cachedExperience: 0

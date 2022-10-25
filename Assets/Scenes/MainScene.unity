@@ -3263,7 +3263,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
-  slatePrefab: {fileID: 0}
+  slatePrefab: {fileID: 5307488933587275968, guid: b248881ca410db34b8e147024c5cb9e4,
+    type: 3}
 --- !u!4 &626412405
 Transform:
   m_ObjectHideFlags: 0
@@ -9870,6 +9871,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2938491650763439583, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938491650763439583, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 959258}
@@ -9882,6 +9888,11 @@ PrefabInstance:
         type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: ExperienceController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938491650763439583, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4075042579796708967, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
@@ -10005,6 +10016,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5729869669372007292, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
+      propertyPath: m_Name
+      value: ProfileButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729869669372007292, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -10025,6 +10041,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5729869669833539191, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
+      propertyPath: m_Name
+      value: VoiceButton
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729869669833539191, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
@@ -10042,6 +10063,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalPosition.z
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5729869669953777870, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: m_Name
+      value: EvaluationButton
       objectReference: {fileID: 0}
     - target: {fileID: 5729869669953777870, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}

@@ -74,6 +74,8 @@ public class ProgressController : MonoBehaviour, IDataPersistence
         {
             progressScript.CategoriesProgress = categoriesProgress.ToList();
         }
+
+        instantiatedPrefab.SetActive(true);
     }
 
     void Start()

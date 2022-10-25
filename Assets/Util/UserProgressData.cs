@@ -11,8 +11,10 @@ namespace Assets.Util
     {
         public string signCode;
 
-        public int totalTries;
+        public string signWord;
 
-        public int correctResponses;
+        public long totalTries;
+
+        public long correctResponses;
     }
 }

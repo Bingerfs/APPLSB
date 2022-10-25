@@ -28,6 +28,11 @@ public class CategoryProgressContainer : MonoBehaviour
     [SerializeField]
     private GameObject _wordProgressPrefab;
 
+    [SerializeField]
+    private GameObject _scrollButtons;
+
+    [SerializeField]
+    private bool _areScrollButtonsActive;
     void Start()
     {
         _categoryNameText.SetText(_categoryName);
@@ -43,6 +48,8 @@ public class CategoryProgressContainer : MonoBehaviour
             var gridObjectCollection = _objectCollectionTransform.gameObject.GetComponent<GridObjectCollection>();
             gridObjectCollection.UpdateCollection();
         }
+
+        _scrollButtons.SetActive(_areScrollButtonsActive);
     }
 
     // Update is called once per frame

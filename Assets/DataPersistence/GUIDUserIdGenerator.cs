@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Assets.Util;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,9 +9,9 @@ namespace Assets.DataPersistence
 {
     public class GUIDUserIdGenerator : IUserIdGenerator
     {
-        private FileDataHandler _fileDataHandler;
+        private FileDataHandler<UserData> _fileDataHandler;
 
-        public GUIDUserIdGenerator(FileDataHandler fileDataHandler)
+        public GUIDUserIdGenerator(FileDataHandler<UserData> fileDataHandler)
         {
             _fileDataHandler = fileDataHandler;
         }

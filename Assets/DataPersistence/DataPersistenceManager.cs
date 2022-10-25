@@ -21,7 +21,7 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField]
     private UserPreferences _userPreferences;
 
-    private FileDataHandler dataHandler;
+    private FileDataHandler<UserData> dataHandler;
 
     private void Awake()
     {
@@ -36,7 +36,7 @@ public class DataPersistenceManager : MonoBehaviour
     void Start()
     {
         _fileName = string.IsNullOrEmpty(_userPreferences._userId) ? null : $"{_userPreferences.UserId}.json";
-        dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
+        dataHandler = new FileDataHandler<UserData>(Application.persistentDataPath, _fileName);
         _dataPersistenceObjects = FindAllDataPersistenceObjects();
         _userIdGenerator = new GUIDUserIdGenerator(dataHandler);
         LoadUserData();
@@ -48,7 +48,7 @@ public class DataPersistenceManager : MonoBehaviour
         if (!string.IsNullOrEmpty(_userPreferences.UserId) && !_fileName.Contains(_userPreferences.UserId))
         {
             _fileName = $"{_userPreferences.UserId}.json";
-            dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
+            dataHandler = new FileDataHandler<UserData>(Application.persistentDataPath, _fileName);
         }
     }
 
@@ -57,8 +57,8 @@ public class DataPersistenceManager : MonoBehaviour
         _userData = new UserData(userName);
         _userPreferences.UserId = _userIdGenerator.GenerateUserId();
         _fileName = $"{_userPreferences.UserId}.json";
-        dataHandler = new FileDataHandler(Application.persistentDataPath, _fileName);
-        dataHandler.Sava(_userData);
+        dataHandler = new FileDataHandler<UserData>(Application.persistentDataPath, _fileName);
+        dataHandler.Save(_userData);
     }
 
     public void LoadUserData()
@@ -88,7 +88,7 @@ public class DataPersistenceManager : MonoBehaviour
                 persistenceObject.SaveUserData(ref _userData);
             }
 
-            dataHandler.Sava(_userData);
+            dataHandler.Save(_userData);
         }
     }
 

@@ -1,16 +1,23 @@
 using Assets;
+using Assets.DataPersistence;
 using Assets.Util;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 
 public class ProgressController : MonoBehaviour, IDataPersistence
 {
-    private SerializableDictionary<string, int> _dictionaryProgressBySign;
+    private SerializableDictionary<string, UserProgressData> _dictionaryProgressBySign;
 
     [SerializeField]
     private UserPreferences _userPreferences;
+
+    [SerializeField]
+    private GameObject slatePrefab;
+
+    private GameObject _previosInstantiated;
 
     public void LoadUserData(UserData userData)
     {
@@ -26,28 +33,54 @@ public class ProgressController : MonoBehaviour, IDataPersistence
     {
         foreach (var evaluationResponse in evaluationResponses)
         {
-            int auxInteger = 0;
+            UserProgressData auxProgressData = null;
             foreach (var code in evaluationResponse.Expression.Codes)
             {
-                if (_dictionaryProgressBySign.TryGetValue(code.WholeCode, out auxInteger))
+                if (_dictionaryProgressBySign.TryGetValue(code.WholeCode, out auxProgressData))
                 {
-                    _dictionaryProgressBySign[code.WholeCode] = evaluationResponse.IsCorrect ? auxInteger - 1 : auxInteger + 1;
+                    auxProgressData.totalTries = auxProgressData.totalTries + 1;
+                    auxProgressData.correctResponses = evaluationResponse.IsCorrect ? auxProgressData.correctResponses + 1 : auxProgressData.correctResponses;
+                    _dictionaryProgressBySign[code.WholeCode] = auxProgressData;
                 }
                 else
                 {
-                    _dictionaryProgressBySign.Add(code.WholeCode, evaluationResponse.IsCorrect? 1: 0);
+                    auxProgressData = new UserProgressData();
+                    auxProgressData.totalTries = 1;
+                    auxProgressData.correctResponses = evaluationResponse.IsCorrect ? 1 : 0;
+                    auxProgressData.signCode = code.WholeCode;
+                    _dictionaryProgressBySign.Add(code.WholeCode, auxProgressData);
                 }
             }
         }
     }
 
-    // Start is called before the first frame update
+    public void OnProgressSlateSpawned(int moduleNumber)
+    {
+        var expressionsByModule = ModuleDataManager.Instance.GetExpressionsByModule(moduleNumber);
+        var signProgressByModule = _dictionaryProgressBySign.Values.Where(ps => expressionsByModule.Any(e => e.WholeCode.Equals(ps.signCode)));
+        expressionsByModule = expressionsByModule.Where(e => signProgressByModule.Any(sp => sp.signCode.Equals(e.WholeCode))).ToList();
+        var expressionGroupedByCategory = expressionsByModule.GroupBy(e => e.CategoryCode);
+        var categoriesProgress = expressionGroupedByCategory.Select(c => {
+            var categoryProgress = new UserCategoryProgress();
+            categoryProgress.categoryName = c.Key;
+            categoryProgress.expressionsProgress = signProgressByModule.Select(sp => new UserExpresssionProgress { wordCode = sp.signCode, totalCorrectResponses = sp.correctResponses, totalResponses = sp.totalTries }).ToList();
+            return categoryProgress;
+        });
+
+        var instantiatedPrefab = Instantiate(slatePrefab);
+        instantiatedPrefab.SetActive(false);
+        var progressScript = instantiatedPrefab.GetComponentInChildren<CategoryProgressCollection>();
+        if (progressScript != null)
+        {
+            progressScript.CategoriesProgress = categoriesProgress.ToList();
+        }
+    }
+
     void Start()
     {
         
     }
 
-    // Update is called once per frame
     void Update()
     {
         

@@ -13,6 +13,8 @@ public class CategoryProgressCollection : MonoBehaviour
     [SerializeField]
     private List<UserCategoryProgress> _categoriesProgress;
 
+    public List<UserCategoryProgress> CategoriesProgress { get => _categoriesProgress; set => _categoriesProgress = value; }
+
     [SerializeField]
     private GameObject _categoryContainerPrefab;
 

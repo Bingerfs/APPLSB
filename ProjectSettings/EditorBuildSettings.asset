@@ -5,21 +5,18 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.2/Scene System Resources/DefaultManagerScene.unity
     guid: ae7bb08d297fb69408695d8de0962524
-  - enabled: 0
+  - enabled: 1
     path: Assets/Samples/Mixed Reality Toolkit Foundation/2.8.2/Scene System Resources/DefaultLightingScene.unity
     guid: 7e54e36c44f826c438c95da79f8de638
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainMenuScene.unity
     guid: c06a574b0fa7553409b99527a45795a0
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/MainScene.unity
     guid: 5e048b3a449b76349a587b48167046f9
-  - enabled: 1
-    path: Assets/Scenes/Testing.unity
-    guid: c16e8532d457f4f45be576a1ee308558
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 5a7a0cb144371804a8fbe83c539ceed2,
       type: 2}

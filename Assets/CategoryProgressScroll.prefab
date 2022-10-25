@@ -2158,6 +2158,8 @@ MonoBehaviour:
   _objectCollectionTransform: {fileID: 1149353346136750856}
   _wordProgressPrefab: {fileID: 3366519493582637497, guid: 6ae0ac5997e8e6b4f9e58274c49a3b1b,
     type: 3}
+  _scrollButtons: {fileID: 1149353346247433557}
+  _areScrollButtonsActive: 0
 --- !u!1 &1149353346193130240
 GameObject:
   m_ObjectHideFlags: 0

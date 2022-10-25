@@ -1,4 +1,6 @@
-﻿using Assets.Util;
+﻿using Assets.DataPersistence.Models;
+using Assets.Util;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -9,7 +11,7 @@ using UnityEngine;
 
 namespace Assets.DataPersistence
 {
-    public class FileDataHandler
+    public class FileDataHandler<T>
     {
         private string _dataDirPath = "";
 
@@ -21,10 +23,10 @@ namespace Assets.DataPersistence
             _dataFileName = dataFileName;
         }
 
-        public UserData Load()
+        public T Load()
         {
             var fullPath = _dataFileName != null ? Path.Combine(_dataDirPath, _dataFileName) : null;
-            UserData userData = null;
+            T userData = default(T);
             if (fullPath != null && File.Exists(fullPath))
             {
                 try
@@ -38,7 +40,20 @@ namespace Assets.DataPersistence
                         }
                     }
 
-                    userData = JsonUtility.FromJson<UserData>(dataToLoad);
+                    userData = JsonUtility.FromJson<T>(dataToLoad);
+                }
+                catch (ArgumentException ex)
+                {
+                    string dataToLoad = "";
+                    using (FileStream stream = new FileStream(fullPath, FileMode.Open))
+                    {
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            dataToLoad = reader.ReadToEnd();
+                        }
+                    }
+
+                    userData = JsonConvert.DeserializeObject<T>(dataToLoad);
                 }
                 catch (Exception e)
                 {
@@ -49,13 +64,13 @@ namespace Assets.DataPersistence
             return userData;
         }
 
-        public void Sava(UserData userData)
+        public void Save(T data)
         {
             var fullPath = Path.Combine(_dataDirPath, _dataFileName);
             try
             {
                 Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
-                string dataToStore = JsonUtility.ToJson(userData, true);
+                string dataToStore = JsonUtility.ToJson(data, true);
                 using (FileStream stream = new FileStream(fullPath, FileMode.Create))
                 {
                     using (StreamWriter writer = new StreamWriter(stream))

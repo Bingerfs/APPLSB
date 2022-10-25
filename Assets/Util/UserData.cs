@@ -15,11 +15,11 @@ namespace Assets.Util
 
         public bool isFirstTime;
 
-        public SerializableDictionary<string, int> progress;
+        public SerializableDictionary<string, UserProgressData> progress;
 
         public UserData(string userName)
         {
-            progress = new SerializableDictionary<string, int>();
+            progress = new SerializableDictionary<string, UserProgressData>();
             this.userName = userName;
             userExperience = 0;
             isFirstTime = true;
@@ -27,7 +27,7 @@ namespace Assets.Util
 
         public UserData()
         {
-            progress = new SerializableDictionary<string, int>();
+            progress = new SerializableDictionary<string, UserProgressData>();
             userName = "";
             userExperience = 0;
             isFirstTime = true;

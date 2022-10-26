@@ -9482,6 +9482,11 @@ PrefabInstance:
       propertyPath: solverHandler
       value: 
       objectReference: {fileID: 1091031551}
+    - target: {fileID: 1377842336757870638, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee54abac29d49334d8b201e72483be6e, type: 2}
     - target: {fileID: 1377842336881781754, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: m_Enabled
@@ -9734,6 +9739,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1377842337254654945, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: ee54abac29d49334d8b201e72483be6e, type: 2}
+    - target: {fileID: 1377842337254654945, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
       propertyPath: m_Positions.Array.data[0].x
       value: 0.86849743
       objectReference: {fileID: 0}
@@ -9762,6 +9772,11 @@ PrefabInstance:
       propertyPath: m_Positions.Array.data[1].z
       value: 1.8407868
       objectReference: {fileID: 0}
+    - target: {fileID: 1377842337254654958, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: lineMaterial
+      value: 
+      objectReference: {fileID: 2100000, guid: ee54abac29d49334d8b201e72483be6e, type: 2}
     - target: {fileID: 1377842338104673808, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: m_Enabled
@@ -10079,6 +10094,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2938491648976802004, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
+      propertyPath: voiceCommand
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2938491648976802004, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
       value: 2
       objectReference: {fileID: 0}
@@ -10267,14 +10287,29 @@ PrefabInstance:
       propertyPath: VoiceCommand
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 4480280376263658316, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: voiceCommand
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 4480280376495530736, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: VoiceCommand
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480280376495530736, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: voiceCommand
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 4480280376925766270, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: VoiceCommand
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4480280376925766270, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
-      propertyPath: VoiceCommand
+      propertyPath: voiceCommand
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4610887702772789861, guid: f514427e4d7588143a828462e0fc1321,
@@ -10735,6 +10770,11 @@ PrefabInstance:
     - target: {fileID: 7764566737600953371, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: VoiceCommand
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 7764566737600953371, guid: f514427e4d7588143a828462e0fc1321,
+        type: 3}
+      propertyPath: voiceCommand
       value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []

@@ -9,7 +9,7 @@ using UnityEngine;
 namespace Assets.Util
 {
     [CreateAssetMenu(fileName = "UserPrefereces", menuName = "Scrtiprable Object/PreferencesAsset")]
-    public class UserPreferences : ScriptableObject
+    public class UserPreferences : ScriptableObject, IDataPersistence
     {
         public string _userId = null;
 
@@ -30,5 +30,15 @@ namespace Assets.Util
         public bool IsGuestUser { get => isGuestUser; set => isGuestUser = value; }
 
         public float CachedExperience { get => _cachedExperience; set => _cachedExperience = value; }
+
+        public void LoadUserData(UserData userData)
+        {
+            UserName = userData.userName;
+        }
+
+        public void SaveUserData(ref UserData userData)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

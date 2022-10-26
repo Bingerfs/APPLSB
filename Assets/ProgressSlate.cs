@@ -16,6 +16,8 @@ public class ProgressSlate : MonoBehaviour
 
     public float Progress { get => _progress; set => _progress = value; }
 
+    private float _previousProgress;
+
     private string _username;
 
     public string Username { get => _username; set => _username = value; }
@@ -24,13 +26,13 @@ public class ProgressSlate : MonoBehaviour
 
     public string UserId { get => _userId; set => _userId = value; }
 
-    async void Start()
+    void Start()
     {
         var indicator = _progressBar.GetComponent<ProgressIndicatorLoadingBar>();
         if (indicator != null)
         {
+            _previousProgress = Progress;
             indicator.Progress = _progress;
-            await indicator.OpenAsync();
         }
 
         var userTextMesh = _userInfoText.GetComponent<TextMeshPro>();
@@ -40,9 +42,31 @@ public class ProgressSlate : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (_previousProgress != Progress)
+        {
+            _previousProgress = Progress;
+            var indicator = _progressBar.GetComponent<ProgressIndicatorLoadingBar>();
+            indicator.Progress = Progress;
+        }
+    }
+
+    private async void OnEnable()
+    {
+        if (gameObject.activeSelf)
+        {
+            var indicator = _progressBar.GetComponent<ProgressIndicatorLoadingBar>();
+            await indicator.OpenAsync();
+        }
+    }
+
+    private async void OnDisable()
+    {
+        if (!gameObject.activeSelf)
+        {
+            var indicator = _progressBar.GetComponent<ProgressIndicatorLoadingBar>();
+            await indicator.CloseAsync();
+        }
     }
 }

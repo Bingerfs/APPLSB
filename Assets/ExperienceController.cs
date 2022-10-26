@@ -11,8 +11,6 @@ public class ExperienceController : MonoBehaviour, IDataPersistence
     [SerializeField]
     private GameObject slatePrefab;
 
-    private GameObject _previosInstantiated;
-
     [SerializeField]
     private UserPreferences _userPreferences;
 
@@ -33,13 +31,6 @@ public class ExperienceController : MonoBehaviour, IDataPersistence
 
     public void OnSlateSpawned()
     {
-        if (_previosInstantiated != null)
-        {
-            Destroy(_previosInstantiated);
-            _previosInstantiated = null;
-        }
-
-
         var cameraTransform = CameraCache.Main.transform;
         var cameraPosition = cameraTransform.position;
         switch (_userPreferences.PreferredHandedness)
@@ -55,12 +46,17 @@ public class ExperienceController : MonoBehaviour, IDataPersistence
         }
 
         cameraPosition.z = cameraPosition.z + 1.5f;
-        var directionToTarget = cameraTransform.position - transform.position;
-        _previosInstantiated = Instantiate(slatePrefab, cameraPosition, Quaternion.LookRotation(-directionToTarget));
-        var progressSlateComponent = _previosInstantiated.GetComponent<ProgressSlate>();
+        slatePrefab.transform.position = cameraPosition;
+        var directionToTarget = cameraTransform.position - slatePrefab.transform.position;
+        slatePrefab.transform.SetPositionAndRotation(cameraPosition, Quaternion.LookRotation(-directionToTarget));
+        var progressSlateComponent = slatePrefab.GetComponent<ProgressSlate>();
         progressSlateComponent.Progress = ProgressLevelUtil.GetPercentageToNextLevel(gainedExperience);
-        progressSlateComponent.UserId = _userPreferences.UserId;
         progressSlateComponent.Username = _userPreferences.UserName;
+        progressSlateComponent.UserId = _userPreferences.UserId;
+        if (!slatePrefab.activeSelf)
+        {
+            slatePrefab.SetActive(true);
+        }
     }
 
     // Start is called before the first frame update

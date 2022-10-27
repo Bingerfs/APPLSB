@@ -24,9 +24,9 @@ public class InitialDataHandler : MonoBehaviour
 
     }
 
-    public void OnReturningUserSelected(string userCode)
+    public void OnReturningUserSelected(string enteredUserCode)
     {
-        _userPreferences.UserId = userCode;
+        _userPreferences.UserId = enteredUserCode;
     }
 
     public void OnGuestUserSelected()
@@ -36,9 +36,9 @@ public class InitialDataHandler : MonoBehaviour
         _userPreferences.IsGuestUser = true;
     }
 
-    public void OnNewUserSelected()
+    public void OnNewUserSelected(string enteredUsername)
     {
-        _userPreferences.UserName = "bingerfs";
+        _userPreferences.UserName = enteredUsername;
     }
 
     public void OnRightHandednessSelected()

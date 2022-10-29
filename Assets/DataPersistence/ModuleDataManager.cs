@@ -59,7 +59,7 @@ namespace Assets.DataPersistence
 
         private void LoadAllData()
         {
-            TextAsset readCodes = (TextAsset)Resources.Load(ALL_SIGN_CODES_FILENAME);
+            TextAsset readCodes = Resources.Load<TextAsset>(ALL_SIGN_CODES_FILENAME);
             char[] delimiters = new char[] { '\r', '\n' };
             var signCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
             var modules = _fileDataHandlerModules.Load();

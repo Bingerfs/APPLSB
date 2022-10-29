@@ -12,14 +12,6 @@ using UnityEngine.Events;
 
 public class EvaluationController : MonoBehaviour
 {
-    static string UNITY_RESOURCES_FOLDER = Path.Combine("Assets", "Resources");
-    static string CATEGORY_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, "DataBase", "config", "categories.json");
-    static string CONFIG_PATH = Path.Combine(UNITY_RESOURCES_FOLDER, "DataBase", "config", "data.json");
-    static string NAME_ANIMATOR_CONTROLLER = "main.controller";
-    static string CODE_INDICATOR = "#";
-    static string ANIMATIONS_FOLDER_PATH = @"Animations";
-    static string CODE_SEPARATOR_CLIP = "_";
-    static string NAME_CODES_FILE = "Codes.txt";
     public int SelectedModule { get; set; } = 1;
 
     public int NumberOfSigns { get; set; } = 5;
@@ -88,7 +80,7 @@ public class EvaluationController : MonoBehaviour
 
     void Start()
     {
-        TextAsset readCodes = (TextAsset)Resources.Load("Codes");
+        TextAsset readCodes = Resources.Load<TextAsset>("Codes");
         char[] delimiters = new char[] { '\r', '\n' };
         var listOfCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
         foreach (string code in listOfCodes)
@@ -96,14 +88,11 @@ public class EvaluationController : MonoBehaviour
             _signCodes = _signCodes.Append(code);
         }
 
-        using (StreamReader reader = new StreamReader(CONFIG_PATH))
+        var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "data"));
+        var listOfModules = JsonConvert.DeserializeObject<List<Module>>(readData.text);
+        foreach (var module in listOfModules)
         {
-            var readData = reader.ReadToEnd();
-            var listOfModules = JsonConvert.DeserializeObject<List<Module>>(readData);
-            foreach (var module in listOfModules)
-            {
-                _modulesDictionary.Add(module.Name, GetAllModuleCategories(module));
-            }
+            _modulesDictionary.Add(module.Name, GetAllModuleCategories(module));
         }
     }
 
@@ -165,14 +154,11 @@ public class EvaluationController : MonoBehaviour
 
     private IEnumerable<string> GetAllModuleCategories(Module module)
     {
-        IEnumerable<string> categories = new List<string>();
-        using (StreamReader reader = new StreamReader(CATEGORY_PATH))
-        {
-            var readData = reader.ReadToEnd();
-            var listOfCategories = JsonConvert.DeserializeObject<IEnumerable<Category>>(readData);
-            categories = listOfCategories.Where(category => module.Categories.Any(category2 => category.Name.Equals(category2.Name))).Select(category => $"{category.Code}{1}");
-            var size = categories.Count();
-        }
+        IEnumerable<string> categories = Enumerable.Empty<string>();
+        var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "categories"));
+        var listOfCategories = JsonConvert.DeserializeObject<IEnumerable<Category>>(readData.text);
+        categories = listOfCategories.Where(category => module.Categories.Any(category2 => category.Name.Equals(category2.Name))).Select(category => $"{category.Code}{1}");
+        var size = categories.Count();
 
         return categories;
     }

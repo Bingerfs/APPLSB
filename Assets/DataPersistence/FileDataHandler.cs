@@ -11,7 +11,7 @@ using UnityEngine;
 
 namespace Assets.DataPersistence
 {
-    public class FileDataHandler<T>
+    public class FileDataHandler<T> : IDataHandler<T>
     {
         private string _dataDirPath = "";
 

@@ -1,10 +1,13 @@
 using Assets.Util;
 using Microsoft.MixedReality.Toolkit;
+using Microsoft.MixedReality.Toolkit.Extensions.SceneTransitions;
 using Microsoft.MixedReality.Toolkit.SceneSystem;
+using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -27,6 +30,8 @@ public class InitialDataHandler : MonoBehaviour
     public void OnReturningUserSelected(string enteredUserCode)
     {
         _userPreferences.UserId = enteredUserCode;
+        _userPreferences.UserName = "";
+        _userPreferences.isGuestUser = false;
     }
 
     public void OnGuestUserSelected()
@@ -39,6 +44,8 @@ public class InitialDataHandler : MonoBehaviour
     public void OnNewUserSelected(string enteredUsername)
     {
         _userPreferences.UserName = enteredUsername;
+        _userPreferences.UserId = "";
+        _userPreferences.IsGuestUser = false;
     }
 
     public void OnRightHandednessSelected()
@@ -54,6 +61,35 @@ public class InitialDataHandler : MonoBehaviour
     public async void OnNextSceneLoad()
     {
         IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
-        await sceneSystem.LoadContent("MainScene", LoadSceneMode.Single);
+        ISceneTransitionService transition = MixedRealityToolkit.Instance.GetService<ISceneTransitionService>();
+        //ListenToSceneTransition(sceneSystem, transition);
+        if (!transition.TransitionInProgress)
+        {
+            await transition.DoSceneTransition(
+            () => sceneSystem.LoadContent("MainScene", LoadSceneMode.Single)
+        );
+        }
+        
     }
+
+    //private async void ListenToSceneTransition(IMixedRealitySceneSystem sceneSystem, ISceneTransitionService transition)
+    //{
+    //    transition.SetProgressMessage("Starting transition...");
+
+    //    while (transition.TransitionInProgress)
+    //    {
+    //        if (sceneSystem.SceneOperationInProgress)
+    //        {
+    //            transition.SetProgressMessage("Loading scene...");
+    //            transition.SetProgressValue(sceneSystem.SceneOperationProgress);
+    //        }
+    //        else
+    //        {
+    //            transition.SetProgressMessage("Finished loading scene...");
+    //            transition.SetProgressValue(1);
+    //        }
+
+    //        await Task.Yield();
+    //    }
+    //}
 }

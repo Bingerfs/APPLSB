@@ -1,4 +1,6 @@
 using Assets;
+using Assets.DataPersistence;
+using Assets.Util;
 using LSB;
 using Microsoft.MixedReality.Toolkit.UI;
 using Newtonsoft.Json;
@@ -80,20 +82,20 @@ public class EvaluationController : MonoBehaviour
 
     void Start()
     {
-        TextAsset readCodes = Resources.Load<TextAsset>("Codes");
-        char[] delimiters = new char[] { '\r', '\n' };
-        var listOfCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
-        foreach (string code in listOfCodes)
-        {
-            _signCodes = _signCodes.Append(code);
-        }
+        //TextAsset readCodes = Resources.Load<TextAsset>("Codes");
+        //char[] delimiters = new char[] { '\r', '\n' };
+        //var listOfCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+        //foreach (string code in listOfCodes)
+        //{
+        //    _signCodes = _signCodes.Append(code);
+        //}
 
-        var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "data"));
-        var listOfModules = JsonConvert.DeserializeObject<List<Module>>(readData.text);
-        foreach (var module in listOfModules)
-        {
-            _modulesDictionary.Add(module.Name, GetAllModuleCategories(module));
-        }
+        //var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "data"));
+        //var listOfModules = JsonConvert.DeserializeObject<List<Module>>(readData.text);
+        //foreach (var module in listOfModules)
+        //{
+        //    _modulesDictionary.Add(module.Name, GetAllModuleCategories(module));
+        //}
     }
 
     // Update is called once per frame
@@ -102,13 +104,12 @@ public class EvaluationController : MonoBehaviour
         if (HasEvaluationBeenActivated)
         {
             HasEvaluationBeenActivated = false;
-            var randomisedExpressionsList = RandomisedSignCodes.Select(code => 
+            var expressionsData = ModuleDataManager.Instance.GetExpressionsByModule(SelectedModule);
+            EvaluationResponses = RandomiseExpressionDataList(expressionsData).Select(expression =>
             {
-                var splitCode = code.Split('#');
-                var auxExpression = new Expression($"#{splitCode[1]}", splitCode[0]);
-                return auxExpression;
+                var expressionEv = new Expression(expression.WholeCode, expression.Expression);
+                return new EvaluationResponse(expressionEv);
             }).ToList();
-            EvaluationResponses = randomisedExpressionsList.Select(expression => new EvaluationResponse(expression)).ToList();
             StartCoroutine(Evaluate());
         }
 
@@ -118,15 +119,21 @@ public class EvaluationController : MonoBehaviour
         }
     }
 
+    private List<ExpressionData> RandomiseExpressionDataList(List<ExpressionData> moduleExpressionsData)
+    {
+        System.Random rnd = new System.Random();
+        return moduleExpressionsData.OrderBy(code => rnd.Next()).Take(NumberOfSigns).ToList();
+    }
+
     private IEnumerator Evaluate()
     {
-        if (EvaluationResponses.Any())
+        if (null != EvaluationResponses && EvaluationResponses.Any())
         {
             while (!(EvaluationResponses.All(response => response.IsAlreadyResponded)))
             {
                 if (ResponseFeedbackCorrect.activeSelf || ResponseFeedbackIncorrect.activeSelf)
                 {
-                    yield return new WaitForSeconds(5);
+                    yield return new WaitForSeconds(3);
                     ResponseFeedbackIncorrect.SetActive(false);
                     ResponseFeedbackCorrect.SetActive(false);
                 }
@@ -137,6 +144,8 @@ public class EvaluationController : MonoBehaviour
                 yield return new WaitUntil(() => CurrentSignEvaluated.IsAlreadyResponded);
             }
 
+            ResponseFeedbackIncorrect.SetActive(false);
+            ResponseFeedbackCorrect.SetActive(false);
             float experienceGained = EvaluationResponses.Aggregate(0f, (current, next) => next.IsCorrect ? current + 1 : current);
             if (experienceGained > 0)
             {
@@ -152,16 +161,16 @@ public class EvaluationController : MonoBehaviour
         }
     }
 
-    private IEnumerable<string> GetAllModuleCategories(Module module)
-    {
-        IEnumerable<string> categories = Enumerable.Empty<string>();
-        var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "categories"));
-        var listOfCategories = JsonConvert.DeserializeObject<IEnumerable<Category>>(readData.text);
-        categories = listOfCategories.Where(category => module.Categories.Any(category2 => category.Name.Equals(category2.Name))).Select(category => $"{category.Code}{1}");
-        var size = categories.Count();
+    //private IEnumerable<string> GetAllModuleCategories(Module module)
+    //{
+    //    IEnumerable<string> categories = Enumerable.Empty<string>();
+    //    var readData = Resources.Load<TextAsset>(Path.Combine("DataBase", "config", "categories"));
+    //    var listOfCategories = JsonConvert.DeserializeObject<IEnumerable<Category>>(readData.text);
+    //    categories = listOfCategories.Where(category => module.Categories.Any(category2 => category.Name.Equals(category2.Name))).Select(category => $"{category.Code}{1}");
+    //    var size = categories.Count();
 
-        return categories;
-    }
+    //    return categories;
+    //}
 
     private IEnumerable<Expression> GetCurrentEvaluatedExpressionLoop(EvaluationResponse evaluationResponse)
     {
@@ -188,9 +197,9 @@ public class EvaluationController : MonoBehaviour
         }
     }
 
-    public void OnModuleSelected()
+    public void OnModuleSelected(int module)
     {
-        SelectedModule = 1;
+        SelectedModule = module;
         ModuleSelectionMenu.SetActive(false);
         HasEvaluationBeenActivated = true;
     }

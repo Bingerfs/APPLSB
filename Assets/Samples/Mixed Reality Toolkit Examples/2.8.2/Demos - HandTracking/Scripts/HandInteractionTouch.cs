@@ -79,7 +79,7 @@ namespace Microsoft.MixedReality.Toolkit.Examples.Demos
 
             if ((TargetRenderer != null) && (TargetRenderer.material != null))
             {
-                TargetRenderer.material.color = Color.Lerp(Color.green, Color.red, t);
+                TargetRenderer.material.color = Color.Lerp(Color.blue, Color.magenta, t);
                 t = Mathf.PingPong(Time.time, duration) / duration;
             }
         }

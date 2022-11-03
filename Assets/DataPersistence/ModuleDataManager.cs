@@ -18,21 +18,21 @@ namespace Assets.DataPersistence
 
         private static readonly string RESOURCES_DIR = Path.Combine("Assets", "Resources");
 
-        private static readonly string CONFIG_DIR = Path.Combine(RESOURCES_DIR, "DataBase", "config");
+        private static readonly string CONFIG_DIR = Path.Combine("DataBase", "config");
 
         private static readonly string DATA_DIR = Path.Combine(RESOURCES_DIR, "DataBase", "data");
 
-        private static readonly string MODULES_CONFIG_FILENAME = "data.json";
+        private static readonly string MODULES_CONFIG_FILENAME = "data";
 
-        private static readonly string CATEGORY_CONFIG_FILENAME = "categories.json";
+        private static readonly string CATEGORY_CONFIG_FILENAME = "categories";
 
         private static readonly string ALL_SIGN_CODES_FILENAME = "Codes";
 
         private IDictionary<int, IDictionary<string, CategoryData>> _moduleDictionary;
 
-        private FileDataHandler<List<ModuleDataModel>> _fileDataHandlerModules;
+        private IDataHandler<List<ModuleDataModel>> _fileDataHandlerModules;
 
-        private FileDataHandler<List<CategoryCodeFileModel>> _fileDataHandlerCategories;
+        private IDataHandler<List<CategoryCodeFileModel>> _fileDataHandlerCategories;
 
         private void Awake()
         {
@@ -46,8 +46,8 @@ namespace Assets.DataPersistence
 
         void Start()
         {
-            _fileDataHandlerModules = new FileDataHandler<List<ModuleDataModel>>(CONFIG_DIR, MODULES_CONFIG_FILENAME);
-            _fileDataHandlerCategories = new FileDataHandler<List<CategoryCodeFileModel>>(CONFIG_DIR, CATEGORY_CONFIG_FILENAME);
+            _fileDataHandlerModules = new AssetsDataHandler<List<ModuleDataModel>>(CONFIG_DIR, MODULES_CONFIG_FILENAME);
+            _fileDataHandlerCategories = new AssetsDataHandler<List<CategoryCodeFileModel>>(CONFIG_DIR, CATEGORY_CONFIG_FILENAME);
             _moduleDictionary = new Dictionary<int, IDictionary<string, CategoryData>>();
             LoadAllData();
         }
@@ -106,6 +106,11 @@ namespace Assets.DataPersistence
             }
 
             return moduleExpressions;
+        }
+
+        public IDictionary<int, IDictionary<string, CategoryData>> GetModules()
+        {
+            return _moduleDictionary;
         }
     }
 }

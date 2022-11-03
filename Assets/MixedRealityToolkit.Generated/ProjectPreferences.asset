@@ -24,7 +24,7 @@ MonoBehaviour:
     keys:
     - MixedRealityToolkit_Editor_AudioSpatializerCount
     - _MixedRealityToolkit_Editor_ConfiguratorState
-    values: 0000000000000000
+    values: 01000000f4010000
   floatPreferences:
     keys: []
     values: []
@@ -32,4 +32,4 @@ MonoBehaviour:
     keys:
     - BuildDeployWindow_AppLauncherModelLocation
     values:
-    - 
+    - Assets/Icons/3dIcon/AnyConv.com__ImageToStl.com_ic_launcher-web.glb

@@ -11,7 +11,7 @@ using Assets.Util;
 
 public class HandVoiceHandler : MonoBehaviour
 {
-    [Serializable] public class ResultHandler : UnityEvent<string> { }
+    [Serializable] public class ResultHandler : UnityEvent { }
     public ResultHandler OnRecord;
 
     [Serializable] public class LoadHandler : UnityEvent { }
@@ -92,7 +92,7 @@ public class HandVoiceHandler : MonoBehaviour
             if (Vector3.up == currentDirection)
             {
                 Debug.Log("OnRecord through gesture");
-                OnRecord.Invoke("");
+                OnRecord.Invoke();
                 OnProcessing.Invoke();
             }
 

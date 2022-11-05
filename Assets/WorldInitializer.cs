@@ -23,6 +23,8 @@ public class WorldInitializer : MonoBehaviour
     [SerializeField]
     private TextMeshPro _debugText;
 
+    private bool isPageLancuhed = false;
+
     private Renderer _targetRenderer;
 
     private Color _originalColor;
@@ -43,22 +45,28 @@ public class WorldInitializer : MonoBehaviour
             _originalColor = _targetRenderer.material.color;
         }
 
-        UnityEngine.WSA.Launcher.LaunchUri(uri, false);
-        GameObject[] allGameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
-
-        string accum = "";
-        foreach (GameObject go in allGameObjects)
-        {
-            Debug.Log("Name: " + go.name);
-            accum = $"{accum} {go.name}";
-        }
-
-        _debugText.SetText(accum);
+        
     }
 
     // Update is called once per frame
     async void Update()
     {
+        if (isPageLancuhed)
+        {
+            isPageLancuhed = false;
+            GameObject[] allGameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
+
+            string accum = "";
+            foreach (GameObject go in allGameObjects)
+            {
+                Debug.Log("Name: " + go.name);
+                accum = $"{accum} {go.name}";
+            }
+
+            _debugText.SetText(accum);
+        }
+
+
         if (_startAppPlatonicTransform != null)
         {
             _startAppPlatonicTransform.Rotate(Vector3.up * (100.0f * Time.deltaTime));
@@ -98,5 +106,11 @@ public class WorldInitializer : MonoBehaviour
     public void OnPlatonicTouched()
     {
         _hasPlatonicBeenTouched = true;
+    }
+
+    public void OnWebPageLaunched(string url)
+    {
+        UnityEngine.WSA.Launcher.LaunchUri(url, false);
+        isPageLancuhed = true;
     }
 }

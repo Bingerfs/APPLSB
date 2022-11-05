@@ -18,7 +18,7 @@ namespace MRTKGestureVoice
             MixedRealityPose indexTipPose = new MixedRealityPose(indexTipTransform.position, indexTipTransform.rotation);
             MixedRealityPose ringTipPose = new MixedRealityPose(ringTipTransform.position, ringTipTransform.rotation);
             MixedRealityPose palmPose = new MixedRealityPose(palmTransform.position, palmTransform.rotation);
-            return directionVector == Vector3.up ? IsPalmUpwardsMeetingThresholdRequirements(indexTipPose, ringTipPose, palmPose, trackedHand) : IsPalmDownwardsMeetingThresholdRequirements(indexTipPose, ringTipPose, palmPose, trackedHand);
+            return directionVector == Vector3.up ? IsPalmUpwardsMeetingThresholdRequirements(indexTipPose, ringTipPose, palmPose, trackedHand) : IsPalmSidewaysMeetingThresholdRequirements(indexTipPose, ringTipPose, palmPose, trackedHand);
         }
 
         private static bool IsPalmUpwardsMeetingThresholdRequirements(MixedRealityPose indexTipPose, MixedRealityPose ringTipPose, MixedRealityPose palmPose, Handedness trackedHand)
@@ -39,7 +39,7 @@ namespace MRTKGestureVoice
             
             float palmCameraAngle = Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up);
             float facingCameraTrackingThreshold = 90.0f;
-            var respuesta = palmCameraAngle <= facingCameraTrackingThreshold && palmCameraAngle >= facingCameraTrackingThreshold - 20.0f; ;
+            var respuesta = palmCameraAngle <= facingCameraTrackingThreshold && palmCameraAngle >= facingCameraTrackingThreshold - 20.0f && palmPose.Up.y < 0 && palmPose.Up.y < palmPose.Up.x;
             // Check if the palm angle meets the prescribed threshold
             if (respuesta)
             {
@@ -48,7 +48,7 @@ namespace MRTKGestureVoice
             return respuesta;
         }
 
-        private static bool IsPalmDownwardsMeetingThresholdRequirements(MixedRealityPose indexTipPose, MixedRealityPose ringTipPose, MixedRealityPose palmPose, Handedness trackedHand)
+        private static bool IsPalmSidewaysMeetingThresholdRequirements(MixedRealityPose indexTipPose, MixedRealityPose ringTipPose, MixedRealityPose palmPose, Handedness trackedHand)
         {
 
             // Check if the triangle's normal formed from the palm, to index, to ring finger tip roughly matches the palm normal.
@@ -64,9 +64,9 @@ namespace MRTKGestureVoice
             }
 
 
-            float palmCameraAngle = Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up);
-            float facingCameraTrackingThreshold = -90.0f;
-            var respuesta = palmCameraAngle <= facingCameraTrackingThreshold && palmCameraAngle >= facingCameraTrackingThreshold - 20.0f; ;
+            float palmCameraAngle = Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.down);
+            float facingCameraTrackingThreshold = 90.0f;
+            var respuesta = palmCameraAngle <= facingCameraTrackingThreshold + 20 && palmCameraAngle >= facingCameraTrackingThreshold - 20.0f && palmPose.Up.x > 0.4 && palmPose.Up.x > palmPose.Up.y;
             // Check if the palm angle meets the prescribed threshold
             if (respuesta)
             {

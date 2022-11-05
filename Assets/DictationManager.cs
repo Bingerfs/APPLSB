@@ -113,6 +113,11 @@ public class DictationManager : MonoBehaviour
         _currentModule = LSBModule.EVALUATION;
     }
 
+    public void OnSwapToInterpretationMode()
+    {
+        _currentModule = LSBModule.INTERPRETATION;
+    }
+
     // Update is called once per frame
     void Update()
     {

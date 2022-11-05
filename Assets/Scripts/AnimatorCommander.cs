@@ -111,5 +111,10 @@ namespace LSB
         {
             _currentModule = LSBModule.EVALUATION;
         }
+
+        public void OnSwapToInterpretationMode()
+        {
+            _currentModule = LSBModule.INTERPRETATION;
+        }
     }
 }

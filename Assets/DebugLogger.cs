@@ -1,3 +1,6 @@
+using Microsoft.MixedReality.Toolkit;
+using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -9,6 +12,12 @@ public class DebugLogger : MonoBehaviour
 
     [SerializeField]
     private TextMeshPro debugText;
+
+    private IMixedRealityHandJointService _handJointService;
+
+    private IMixedRealityHandJointService HandJointService =>
+        _handJointService ??
+        (_handJointService = CoreServices.GetInputSystemDataProvider<IMixedRealityHandJointService>());
 
     private void Awake()
     {
@@ -38,5 +47,8 @@ public class DebugLogger : MonoBehaviour
     void Update()
     {
         
+        
     }
+
+    
 }

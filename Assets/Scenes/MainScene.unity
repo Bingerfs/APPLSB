@@ -8005,6 +8005,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5478a242b0e320c4c833907e3a975bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _mediumDialogPrefab: {fileID: 1231799312788918984, guid: a0ef6c45c87675f4abf9738395165413,
+    type: 3}
   OnResult:
     m_PersistentCalls:
       m_Calls:
@@ -8055,6 +8057,8 @@ MonoBehaviour:
   _moduleSelectionMenu: {fileID: 452480122}
   _hasSetResponseBeenActivated: 0
   _hasEvaluationBeenActivated: 0
+  _animatorCommander: {fileID: 196228218}
+  _dictationManager: {fileID: 626981925}
 --- !u!4 &1089773301
 Transform:
   m_ObjectHideFlags: 0
@@ -11099,7 +11103,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427476098}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 690.12286, y: 923.4818, z: -14.25}
+  m_LocalPosition: {x: 0.02, y: -0.23, z: 1.5}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 626981923}
@@ -11899,10 +11903,9 @@ MonoBehaviour:
   OnRecord:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1655692979}
-        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.Input.DictationHandler,
-          Microsoft.MixedReality.Toolkit.SDK
-        m_MethodName: StartRecording
+      - m_Target: {fileID: 626981925}
+        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
+        m_MethodName: OnStartRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -11912,9 +11915,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 626981925}
-        m_TargetAssemblyTypeName: DictationManager, Assembly-CSharp
-        m_MethodName: OnStartRecording
+      - m_Target: {fileID: 1655692979}
+        m_TargetAssemblyTypeName: Microsoft.MixedReality.Toolkit.Input.DictationHandler,
+          Microsoft.MixedReality.Toolkit.SDK
+        m_MethodName: StartRecording
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

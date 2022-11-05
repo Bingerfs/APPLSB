@@ -1,4 +1,4 @@
-using Assets;
+﻿using Assets;
 using Assets.DataPersistence;
 using Assets.Util;
 using LSB;
@@ -17,6 +17,9 @@ public class EvaluationController : MonoBehaviour
     public int SelectedModule { get; set; } = 1;
 
     public int NumberOfSigns { get; set; } = 5;
+
+    [SerializeField]
+    private GameObject _mediumDialogPrefab;
 
     [Serializable] public class ResultHandler : UnityEvent<IEnumerable<Expression>> { }
     public ResultHandler OnResult;
@@ -64,7 +67,7 @@ public class EvaluationController : MonoBehaviour
     {
         get
         {
-            var moduleName = $"M�dulo {SelectedModule}";
+            var moduleName = $"Módulo {SelectedModule}";
             var listOfBaseCodes = _modulesDictionary[moduleName];
             var filteredSignCodes = _signCodes.Where(code => listOfBaseCodes.Any(baseCode => code.Contains(baseCode)));
             System.Random rnd = new System.Random();
@@ -79,6 +82,11 @@ public class EvaluationController : MonoBehaviour
     private Dictionary<string, IEnumerable<string>> _modulesDictionary = new Dictionary<string, IEnumerable<string>>(); 
 
 
+    [SerializeField]
+    private AnimatorCommander _animatorCommander;
+
+    [SerializeField]
+    private DictationManager _dictationManager;
 
     void Start()
     {
@@ -146,6 +154,12 @@ public class EvaluationController : MonoBehaviour
 
             ResponseFeedbackIncorrect.SetActive(false);
             ResponseFeedbackCorrect.SetActive(false);
+            Dialog myDialog = Dialog.Open(_mediumDialogPrefab, DialogButtonType.OK, "<align=\"center\">Resultados", EvaluationResponses.Aggregate("", (current, next) => $"{current}<align=\"center\">- {next.Expression.Word} {(next.IsCorrect ? "✓" : "✕")}\n"), true);
+            if (myDialog != null)
+            {
+                myDialog.OnClosed += OnDialogClosed;
+            }
+
             float experienceGained = EvaluationResponses.Aggregate(0f, (current, next) => next.IsCorrect ? current + 1 : current);
             if (experienceGained > 0)
             {
@@ -161,6 +175,11 @@ public class EvaluationController : MonoBehaviour
         }
     }
 
+    private async void  OnDialogClosed(DialogResult obj)
+    {
+        _animatorCommander.OnSwapToInterpretationMode();
+        _dictationManager.OnSwapToInterpretationMode();
+    }
     //private IEnumerable<string> GetAllModuleCategories(Module module)
     //{
     //    IEnumerable<string> categories = Enumerable.Empty<string>();

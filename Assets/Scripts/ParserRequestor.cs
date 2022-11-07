@@ -15,10 +15,6 @@ namespace LSB
         private static readonly string API_URL = "https://lsbapi.herokuapp.com"; 
         [Serializable] public class ResultHandler : UnityEvent<UnityWebRequest, string> { }
         public ResultHandler OnResult;
-
-        public InputField inputField;
-
-        public GameObject connectionStatusImage;
         [SerializeField]
         public GameObject mainTextToolTip;
         public GameObject progressIndicator;
@@ -73,12 +69,10 @@ namespace LSB
         {
             if (hasConnectionProblems())
             {
-                connectionStatusImage.SetActive(true);
                 mainTextToolTip.SetActive(false);
             }
             else
             {
-                connectionStatusImage.SetActive(false);
                 toolTip.ToolTipText = "";
                 mainTextToolTip.SetActive(false);
             }

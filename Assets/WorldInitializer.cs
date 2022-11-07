@@ -1,7 +1,9 @@
 using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Extensions.SceneTransitions;
+using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.SceneSystem;
 using Microsoft.MixedReality.Toolkit.UI;
+using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -48,7 +50,6 @@ public class WorldInitializer : MonoBehaviour
         
     }
 
-    // Update is called once per frame
     async void Update()
     {
         if (isPageLancuhed)

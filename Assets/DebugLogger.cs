@@ -1,5 +1,6 @@
 using Microsoft.MixedReality.Toolkit;
 using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
@@ -11,13 +12,12 @@ public class DebugLogger : MonoBehaviour
     public static DebugLogger Instance;
 
     [SerializeField]
-    private TextMeshPro debugText;
+    private TextMeshPro _debugText;
 
-    private IMixedRealityHandJointService _handJointService;
+    [SerializeField]
+    private GameObject _smalDialogPrefab;
 
-    private IMixedRealityHandJointService HandJointService =>
-        _handJointService ??
-        (_handJointService = CoreServices.GetInputSystemDataProvider<IMixedRealityHandJointService>());
+    private Dialog _errorDialog;
 
     private void Awake()
     {
@@ -34,7 +34,22 @@ public class DebugLogger : MonoBehaviour
     {
         if (type == LogType.Exception || type == LogType.Error)
         {
-            debugText.text = ($"{logString}-{ stackTrace}-{ type}");
+            _debugText.text = ($"{logString}-{ stackTrace}-{ type}");
+            OpenErrorDialog();
+        }
+    }
+
+    private void OpenErrorDialog()
+    {
+        if (_errorDialog != null)
+        {
+            Destroy(_errorDialog);
+            _errorDialog = null;
+        }
+
+        if (_smalDialogPrefab != null)
+        {
+            _errorDialog = Dialog.Open(_smalDialogPrefab, DialogButtonType.OK, "<align=\"center\">Error", "Ocurrio un error en la aplicacion. Comuniquese con el desarrollador.", false);
         }
     }
 

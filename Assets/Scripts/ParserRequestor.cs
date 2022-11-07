@@ -67,7 +67,7 @@ namespace LSB
 
         private void setConnectionStatusImage()
         {
-            if (hasConnectionProblems())
+            if (HasConnectionProblems())
             {
                 mainTextToolTip.SetActive(false);
             }
@@ -85,7 +85,7 @@ namespace LSB
             return request;
         }
 
-        private bool hasConnectionProblems()
+        private bool HasConnectionProblems()
         {
             return Application.internetReachability == NetworkReachability.NotReachable;
         }

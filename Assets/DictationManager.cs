@@ -22,6 +22,9 @@ public class DictationManager : MonoBehaviour
     [SerializeField]
     public GameObject mainTextToolTip;
 
+    [SerializeField]
+    private GameObject _microphoneIcon;
+
     private ToolTip toolTip;
 
     private LSBModule _currentModule = LSBModule.INTERPRETATION;
@@ -55,8 +58,7 @@ public class DictationManager : MonoBehaviour
     public void OnStartRecording()
     {
         Debug.Log("------------------------------Recording started");
-        mainTextToolTip.SetActive(true);
-        toolTip.ToolTipText = "Grabando...";
+        _microphoneIcon.SetActive(true);
     }
 
     public void OnResult(string sentence)
@@ -68,7 +70,7 @@ public class DictationManager : MonoBehaviour
     public void OnComplete(string sentence)
     {
         Debug.Log("-----------------------Complete");
-        mainTextToolTip.SetActive(false);
+        _microphoneIcon.SetActive(false);
         Debug.Log(sentence);
         string[] bufferString = new string[1];
         bufferString[0] = sentence;
@@ -83,7 +85,6 @@ public class DictationManager : MonoBehaviour
             default:
                 break;
         }
-        OnStopRecording.Invoke("");
     }
 
     public void OnHypo(string sentence)
@@ -96,7 +97,7 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
-        toolTip.ToolTipText = "Error: " + message;
+        _microphoneIcon.SetActive(false);
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
     }
@@ -104,6 +105,7 @@ public class DictationManager : MonoBehaviour
     public void OnCancel()
     {
         Debug.Log("________________Cancelled");
+        _microphoneIcon.SetActive(false);
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
     }

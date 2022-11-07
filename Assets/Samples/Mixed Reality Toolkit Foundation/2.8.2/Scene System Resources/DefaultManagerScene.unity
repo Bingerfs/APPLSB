@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4222,8 +4222,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daead95092afe6a4a891c21a36d402bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _debugText: {fileID: 0}
-  _smalDialogPrefab: {fileID: 0}
+  _debugText: {fileID: 742286042}
+  _smalDialogPrefab: {fileID: 2680377478557818543, guid: 8e686c90124b8e14cbf8093893109e9a,
+    type: 3}
 --- !u!4 &937441673
 Transform:
   m_ObjectHideFlags: 0

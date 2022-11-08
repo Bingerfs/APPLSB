@@ -1,4 +1,5 @@
 using Microsoft.MixedReality.Toolkit;
+using Microsoft.MixedReality.Toolkit.Extensions.HandPhysics;
 using Microsoft.MixedReality.Toolkit.Extensions.SceneTransitions;
 using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.SceneSystem;
@@ -12,9 +13,9 @@ using UnityEngine.SceneManagement;
 
 public class WorldInitializer : MonoBehaviour
 {
-    private bool _isSceneAlreadyChanged = false;
-
     private bool _hasPlatonicBeenTouched = false;
+
+    public bool HasPlatonicBeenTouched { get => _hasPlatonicBeenTouched; set => _hasPlatonicBeenTouched = value; }
 
     [SerializeField]
     private Transform _startAppPlatonicTransform;
@@ -24,8 +25,6 @@ public class WorldInitializer : MonoBehaviour
 
     [SerializeField]
     private TextMeshPro _debugText;
-
-    private bool isPageLancuhed = false;
 
     private Renderer _targetRenderer;
 
@@ -37,8 +36,6 @@ public class WorldInitializer : MonoBehaviour
 
     private float _timeOfPlatonicTouch = 0;
 
-    private readonly string uri = "https://google.com";
-
     async void Start()
     {
         _targetRenderer = _startAppPlatonicTransform.GetComponent<Renderer>();
@@ -46,28 +43,10 @@ public class WorldInitializer : MonoBehaviour
         {
             _originalColor = _targetRenderer.material.color;
         }
-
-        
     }
 
     async void Update()
     {
-        if (isPageLancuhed)
-        {
-            isPageLancuhed = false;
-            GameObject[] allGameObjects = SceneManager.GetActiveScene().GetRootGameObjects();
-
-            string accum = "";
-            foreach (GameObject go in allGameObjects)
-            {
-                Debug.Log("Name: " + go.name);
-                accum = $"{accum} {go.name}";
-            }
-
-            _debugText.SetText(accum);
-        }
-
-
         if (_startAppPlatonicTransform != null)
         {
             _startAppPlatonicTransform.Rotate(Vector3.up * (100.0f * Time.deltaTime));
@@ -93,25 +72,12 @@ public class WorldInitializer : MonoBehaviour
             }
 
             _uiElements.SetActive(false);
-            IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
-            ISceneTransitionService transition = MixedRealityToolkit.Instance.GetService<ISceneTransitionService>();
-            if (!transition.TransitionInProgress)
-            {
-                await transition.DoSceneTransition(
-                () => sceneSystem.LoadContent("MainMenuScene", LoadSceneMode.Single)
-            );
-            }
+            await SceneHandler.Instance.TransitionToAnotherScene("MainMenuScene");
         }
-    }
-
-    public void OnPlatonicTouched()
-    {
-        _hasPlatonicBeenTouched = true;
     }
 
     public void OnWebPageLaunched(string url)
     {
         UnityEngine.WSA.Launcher.LaunchUri(url, false);
-        isPageLancuhed = true;
     }
 }

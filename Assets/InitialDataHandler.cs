@@ -29,7 +29,7 @@ public class InitialDataHandler : MonoBehaviour
 
     public void OnReturningUserSelected(string enteredUserCode)
     {
-        _userPreferences.UserId = enteredUserCode;
+        _userPreferences.UserId = enteredUserCode.Trim();
         _userPreferences.UserName = "";
         _userPreferences.isGuestUser = false;
     }
@@ -43,7 +43,7 @@ public class InitialDataHandler : MonoBehaviour
 
     public void OnNewUserSelected(string enteredUsername)
     {
-        _userPreferences.UserName = enteredUsername;
+        _userPreferences.UserName = enteredUsername.Trim().ToUpper();
         _userPreferences.UserId = "";
         _userPreferences.IsGuestUser = false;
     }
@@ -60,16 +60,7 @@ public class InitialDataHandler : MonoBehaviour
 
     public async void OnNextSceneLoad()
     {
-        IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
-        ISceneTransitionService transition = MixedRealityToolkit.Instance.GetService<ISceneTransitionService>();
-        //ListenToSceneTransition(sceneSystem, transition);
-        if (!transition.TransitionInProgress)
-        {
-            await transition.DoSceneTransition(
-            () => sceneSystem.LoadContent("MainScene", LoadSceneMode.Single)
-        );
-        }
-        
+        await SceneHandler.Instance.TransitionToAnotherScene("MainScene");
     }
 
     //private async void ListenToSceneTransition(IMixedRealitySceneSystem sceneSystem, ISceneTransitionService transition)

@@ -3,16 +3,21 @@
 
 using Assets.Util;
 using Microsoft.MixedReality.Toolkit.Experimental.UI;
+using Microsoft.MixedReality.Toolkit.UI;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.Events;
 
 public class SystemKeyboardHandler : MonoBehaviour
 {
     private MixedRealityKeyboard wmrKeyboard;
 
     private UserType _userType = UserType.NEW_USER;
+
+    [SerializeField]
+    private ToolTip _promptText;
 
 #pragma warning disable 0414
     [SerializeField]
@@ -27,6 +32,7 @@ public class SystemKeyboardHandler : MonoBehaviour
     public void OpenSystemKeyboard(int userType)
     {
         _userType = (UserType)userType;
+        _promptText.ToolTipText = _userType == UserType.NEW_USER ? "Ingresar nombre de usuario" : "Ingresar codigo de usuario";
         wmrKeyboard.ShowKeyboard(wmrKeyboard.Text, false);
     }
 
@@ -65,20 +71,7 @@ public class SystemKeyboardHandler : MonoBehaviour
         {
             wmrKeyboard.OnCommitText.AddListener(() =>
             {
-                if (_initialDataHandler != null)
-                {
-                    switch (_userType)
-                    {
-                        case UserType.NEW_USER:
-                            _initialDataHandler.OnNewUserSelected(wmrKeyboard.Text);
-                            break;
-                        case UserType.RETURNING_USER:
-                            _initialDataHandler.OnReturningUserSelected(wmrKeyboard.Text);
-                            break;
-                        default:
-                            break;
-                    }
-                }
+                OnCommitTextByUserType(wmrKeyboard.Text);
             });
             wmrKeyboard.OnCommitText.AddListener(() =>
             {
@@ -104,6 +97,21 @@ public class SystemKeyboardHandler : MonoBehaviour
                 mixedRealityKeyboardPreview.Text = string.Empty;
                 mixedRealityKeyboardPreview.CaretIndex = 0;
             }
+        }
+    }
+
+    private void OnCommitTextByUserType(string text)
+    {
+        switch (_userType)
+        {
+            case UserType.NEW_USER:
+                _initialDataHandler.OnNewUserSelected(text);
+                break;
+            case UserType.RETURNING_USER:
+                _initialDataHandler.OnReturningUserSelected(text);
+                break;
+            default:
+                break;
         }
     }
 }

@@ -25,7 +25,7 @@ public class WordProgressContainer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        _signNameText.SetText(WordProgressData.wordCode);
+        _signNameText.SetText(WordProgressData.word);
         _progressRatioText.SetText($"{WordProgressData.totalCorrectResponses}/{WordProgressData.totalResponses}");
         if (_progressBar != null)
         {

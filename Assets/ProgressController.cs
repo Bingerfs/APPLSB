@@ -56,14 +56,14 @@ public class ProgressController : MonoBehaviour, IDataPersistence
 
     public void OnProgressSlateSpawned(int moduleNumber)
     {
-        var expressionsByModule = ModuleDataManager.Instance.GetExpressionsByModule(moduleNumber);
-        var signProgressByModule = _dictionaryProgressBySign.Values.Where(ps => expressionsByModule.Any(e => e.WholeCode.Equals(ps.signCode)));
+         var expressionsByModule = ModuleDataManager.Instance.GetExpressionsByModule(moduleNumber);
+        var signProgressByModule = _dictionaryProgressBySign.Values.Where(ps => expressionsByModule.Any(e => e.WholeCode.Equals(ps.signCode))).ToList();
         expressionsByModule = expressionsByModule.Where(e => signProgressByModule.Any(sp => sp.signCode.Equals(e.WholeCode))).ToList();
         var expressionGroupedByCategory = expressionsByModule.GroupBy(e => e.CategoryCode);
         var categoriesProgress = expressionGroupedByCategory.Select(c => {
             var categoryProgress = new UserCategoryProgress();
             categoryProgress.categoryName = c.Key;
-            categoryProgress.expressionsProgress = signProgressByModule.Select(sp => new UserExpresssionProgress { wordCode = sp.signCode, totalCorrectResponses = sp.correctResponses, totalResponses = sp.totalTries }).ToList();
+            categoryProgress.expressionsProgress = signProgressByModule.Select(sp => new UserExpresssionProgress { word = sp.signWord, totalCorrectResponses = sp.correctResponses, totalResponses = sp.totalTries }).ToList();
             return categoryProgress;
         });
 

@@ -9,7 +9,7 @@ namespace Assets.Util
     [Serializable]
     public  class UserExpresssionProgress
     {
-        public string wordCode;
+        public string word;
 
         public long totalResponses;
 

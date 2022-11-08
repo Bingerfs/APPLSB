@@ -154,7 +154,7 @@ public class EvaluationController : MonoBehaviour
 
             ResponseFeedbackIncorrect.SetActive(false);
             ResponseFeedbackCorrect.SetActive(false);
-            Dialog myDialog = Dialog.Open(_mediumDialogPrefab, DialogButtonType.OK, "<align=\"center\">Resultados", EvaluationResponses.Aggregate("", (current, next) => $"{current}<align=\"center\">- {next.Expression.Word} {(next.IsCorrect ? "✓" : "✕")}\n"), true);
+            Dialog myDialog = Dialog.Open(_mediumDialogPrefab, DialogButtonType.OK, "<align=\"center\">Resultados", EvaluationResponses.Aggregate("", (current, next) => $"{current}<align=\"center\">- {next.Expression.Word} {(next.IsCorrect ? "\U00002705" : "\U0000274C")}\n"), true);
             if (myDialog != null)
             {
                 myDialog.OnClosed += OnDialogClosed;

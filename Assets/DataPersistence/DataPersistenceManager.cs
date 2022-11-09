@@ -114,6 +114,7 @@ public class DataPersistenceManager : MonoBehaviour
             }
         }
 
+        _userPreferences.UserName = _userData.userName;
         PushDataToAllObjects();
     }
 

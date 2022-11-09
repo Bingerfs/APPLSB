@@ -7,7 +7,12 @@ public class ProgressLevelUtil
 {
     private static long LevelsSequence(int index)
     {
-        return (long)(5 * Math.Pow(2, index) + 5 * index);
+        if (index < 0)
+        {
+            return 0;
+        }
+
+        return (long)(5 * Math.Pow(index, 2) + 5 * index);
     }
 
     public static long GetNextClosestThreshold(long experience)
@@ -21,7 +26,7 @@ public class ProgressLevelUtil
         return LevelsSequence(index);
     }
 
-    public static long GetPreviousClosestThreshold(long experience)
+    public static long GetPreviousClosestThreshold(float experience)
     {
         var index = 0;
         while (experience >= LevelsSequence(index))
@@ -46,7 +51,7 @@ public class ProgressLevelUtil
         return currentPercentage;
     }
 
-    public static int GetLevel(long experience)
+    public static int GetLevel(float experience)
     {
         var index = 0;
         while (experience >= LevelsSequence(index))

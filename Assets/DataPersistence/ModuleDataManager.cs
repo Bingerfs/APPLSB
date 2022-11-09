@@ -34,6 +34,8 @@ namespace Assets.DataPersistence
 
         private IDataHandler<List<CategoryCodeFileModel>> _fileDataHandlerCategories;
 
+        private List<string> _allWordCodes;
+
         private void Awake()
         {
             if (Instance != null)
@@ -61,7 +63,7 @@ namespace Assets.DataPersistence
         {
             TextAsset readCodes = Resources.Load<TextAsset>(ALL_SIGN_CODES_FILENAME);
             char[] delimiters = new char[] { '\r', '\n' };
-            var signCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries);
+            _allWordCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).ToList();
             var modules = _fileDataHandlerModules.Load();
             var categories = _fileDataHandlerCategories.Load();
             foreach (var module in modules)
@@ -81,7 +83,7 @@ namespace Assets.DataPersistence
                     categoryData.Name = category.Name;
                     categoryData.SetCode = category.Set;
                     categoryData.Code = moduleCategories.First(c => c.Name.Equals(category.Name)).Code;
-                    var categoryExpression = signCodes.Where(c => c.Contains(categoryData.IdentifierCode));
+                    var categoryExpression = _allWordCodes.Where(c => c.Contains(categoryData.IdentifierCode));
                     categoryData.Expressions = categoryExpression.Select(ce => {
                         var splitCode = ce.Split('#');
                         var expressionCode = splitCode[1].Remove(0, ($"{categoryData.Code}{categoryData.SetCode}").Length);
@@ -111,6 +113,13 @@ namespace Assets.DataPersistence
         public IDictionary<int, IDictionary<string, CategoryData>> GetModules()
         {
             return _moduleDictionary;
+        }
+
+        public string GetWordByCode(string code)
+        {
+            var wordCode = _allWordCodes.FirstOrDefault(w => w.Contains(code));
+            var splitWordCode = wordCode.Split('#');
+            return splitWordCode[0];
         }
     }
 }

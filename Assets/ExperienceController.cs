@@ -53,6 +53,7 @@ public class ExperienceController : MonoBehaviour, IDataPersistence
         progressSlateComponent.Progress = ProgressLevelUtil.GetPercentageToNextLevel(gainedExperience);
         progressSlateComponent.Username = _userPreferences.UserName;
         progressSlateComponent.UserId = _userPreferences.UserId;
+        progressSlateComponent.UserLevel = ProgressLevelUtil.GetLevel(gainedExperience);
         if (!slatePrefab.activeSelf)
         {
             slatePrefab.SetActive(true);

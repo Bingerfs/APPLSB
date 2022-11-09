@@ -70,7 +70,11 @@ namespace Assets.DataPersistence
             try
             {
                 //Debug.LogError("About to create directory");
-                Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
+                if (!new DirectoryInfo(Application.persistentDataPath).Exists)
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
+                }
+                
                 //Debug.LogError("Directory created. About to create file");
                 string dataToStore = JsonUtility.ToJson(data, true);
                 using (FileStream stream = new FileStream(fullPath, FileMode.Create))
@@ -83,7 +87,7 @@ namespace Assets.DataPersistence
             }
             catch (Exception e)
             {
-                Debug.Log($"{e.Message}");
+                Debug.LogError($"{e.Message}");
             }
         }
 

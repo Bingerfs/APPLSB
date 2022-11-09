@@ -43,6 +43,8 @@ public class WorldInitializer : MonoBehaviour
         {
             _originalColor = _targetRenderer.material.color;
         }
+
+        _debugText.SetText("hétérogénéité");
     }
 
     async void Update()

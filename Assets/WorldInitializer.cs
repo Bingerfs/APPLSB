@@ -99,7 +99,7 @@ public class WorldInitializer : MonoBehaviour
         {
             disableTumbleUcb = true;
             var position = _ucbBrochureTransform.position;
-            position.z = 0.1f;
+            position.z = 0.011f;
             _ucbBrochureTransform.position = position;
         }
 
@@ -107,7 +107,7 @@ public class WorldInitializer : MonoBehaviour
         {
             disableTumbleLsb = true;
             var position = _lsbBrochureTransform.position;
-            position.z = 0.1f;
+            position.z = 0.01f;
             _lsbBrochureTransform.position = position;
         }
     }

@@ -62,7 +62,8 @@ public class ProgressController : MonoBehaviour, IDataPersistence
         var expressionGroupedByCategory = expressionsByModule.GroupBy(e => e.CategoryCode).ToList();
         var categoriesProgress = expressionGroupedByCategory.Select(c => {
             var categoryProgress = new UserCategoryProgress();
-            categoryProgress.categoryName = c.Key;
+            var category = ModuleDataManager.Instance.GetCategoryByCode(c.Key);
+            categoryProgress.categoryName = category.Name;
             categoryProgress.expressionsProgress = c.Select(exp => {
                 var expressionProgress = signProgressByModule.FirstOrDefault(sp => sp.signCode.Equals(exp.WholeCode));
                 return new UserExpresssionProgress { word = exp.Expression, totalCorrectResponses = expressionProgress.correctResponses, totalResponses = expressionProgress.totalTries };

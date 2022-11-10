@@ -41,10 +41,10 @@ namespace MRTKGestureVoice
             float facingCameraTrackingThreshold = 90.0f;
             var respuesta = palmCameraAngle <= facingCameraTrackingThreshold && palmCameraAngle >= facingCameraTrackingThreshold - 20.0f && palmPose.Up.y < 0 && palmPose.Up.y < palmPose.Up.x;
             // Check if the palm angle meets the prescribed threshold
-            if (respuesta)
-            {
-                Debug.Log($"UP: {palmPose.Up} SIGN: {Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up)} ACTION: RECORD");
-            }
+            //if (respuesta)
+            //{
+            //    Debug.Log($"UP: {palmPose.Up} SIGN: {Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up)} ACTION: RECORD");
+            //}
             return respuesta;
         }
 
@@ -68,10 +68,10 @@ namespace MRTKGestureVoice
             float facingCameraTrackingThreshold = 140.0f;
             var respuesta = palmCameraAngle >= facingCameraTrackingThreshold && palmPose.Up.z < 0 && palmPose.Up.z < palmPose.Up.x && palmPose.Up.z < palmPose.Up.y;
             // Check if the palm angle meets the prescribed threshold
-            if (respuesta)
-            {
-                Debug.Log($"UP: {palmPose.Up} SIGN: {Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up)} ACTION: STOP");
-            }
+            //if (respuesta)
+            //{
+            //    Debug.Log($"UP: {palmPose.Up} SIGN: {Vector3.SignedAngle(palmPose.Up, CameraCache.Main.transform.forward, Vector3.up)} ACTION: STOP");
+            //}
             return respuesta;
         }
     }

@@ -1,0 +1,7764 @@
+fileFormatVersion: 2
+guid: 12dab48c2d125ca43b67804ea25f041e
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1501343702332621297
+    second: joypixels-sprite-40-symbols_0
+  - first:
+      213: 8950372578300939696
+    second: joypixels-sprite-40-symbols_1
+  - first:
+      213: -1800992983698256286
+    second: joypixels-sprite-40-symbols_2
+  - first:
+      213: 6204193931107276015
+    second: joypixels-sprite-40-symbols_3
+  - first:
+      213: 889292081100366824
+    second: joypixels-sprite-40-symbols_4
+  - first:
+      213: 1007748131626989370
+    second: joypixels-sprite-40-symbols_5
+  - first:
+      213: -7731488078944819879
+    second: joypixels-sprite-40-symbols_6
+  - first:
+      213: 7301193338744758715
+    second: joypixels-sprite-40-symbols_7
+  - first:
+      213: 3759603186271663196
+    second: joypixels-sprite-40-symbols_8
+  - first:
+      213: 6222737350791237932
+    second: joypixels-sprite-40-symbols_9
+  - first:
+      213: -8129726928255008113
+    second: joypixels-sprite-40-symbols_10
+  - first:
+      213: -6037549516844619599
+    second: joypixels-sprite-40-symbols_11
+  - first:
+      213: 9021662765475928593
+    second: joypixels-sprite-40-symbols_12
+  - first:
+      213: 3260233114750021
+    second: joypixels-sprite-40-symbols_13
+  - first:
+      213: -4299469796338275628
+    second: joypixels-sprite-40-symbols_14
+  - first:
+      213: 3554874464481405467
+    second: joypixels-sprite-40-symbols_15
+  - first:
+      213: -540433367995321128
+    second: joypixels-sprite-40-symbols_16
+  - first:
+      213: -4021143917459284564
+    second: joypixels-sprite-40-symbols_17
+  - first:
+      213: 4246398334892487822
+    second: joypixels-sprite-40-symbols_18
+  - first:
+      213: -1189357185186319497
+    second: joypixels-sprite-40-symbols_19
+  - first:
+      213: 381168090388773242
+    second: joypixels-sprite-40-symbols_20
+  - first:
+      213: -4539574467621957770
+    second: joypixels-sprite-40-symbols_21
+  - first:
+      213: 7862919018501875048
+    second: joypixels-sprite-40-symbols_22
+  - first:
+      213: -7936736538614787906
+    second: joypixels-sprite-40-symbols_23
+  - first:
+      213: -7495173227929492039
+    second: joypixels-sprite-40-symbols_24
+  - first:
+      213: -543902182109779361
+    second: joypixels-sprite-40-symbols_25
+  - first:
+      213: 6035562987271732915
+    second: joypixels-sprite-40-symbols_26
+  - first:
+      213: 2569805936082607806
+    second: joypixels-sprite-40-symbols_27
+  - first:
+      213: 3561138504767631136
+    second: joypixels-sprite-40-symbols_28
+  - first:
+      213: -138378219994297273
+    second: joypixels-sprite-40-symbols_29
+  - first:
+      213: -7025115291620484698
+    second: joypixels-sprite-40-symbols_30
+  - first:
+      213: -2967756396025139097
+    second: joypixels-sprite-40-symbols_31
+  - first:
+      213: -3791885298154893941
+    second: joypixels-sprite-40-symbols_32
+  - first:
+      213: -608743623098347175
+    second: joypixels-sprite-40-symbols_33
+  - first:
+      213: 4243124012778744872
+    second: joypixels-sprite-40-symbols_34
+  - first:
+      213: -3673623240270331691
+    second: joypixels-sprite-40-symbols_35
+  - first:
+      213: 2234659604103617846
+    second: joypixels-sprite-40-symbols_36
+  - first:
+      213: -7161517213999962086
+    second: joypixels-sprite-40-symbols_37
+  - first:
+      213: 336975495400839795
+    second: joypixels-sprite-40-symbols_38
+  - first:
+      213: -6560304052653257214
+    second: joypixels-sprite-40-symbols_39
+  - first:
+      213: 6616475717639904621
+    second: joypixels-sprite-40-symbols_40
+  - first:
+      213: -677922473504888070
+    second: joypixels-sprite-40-symbols_41
+  - first:
+      213: 2464112408734587850
+    second: joypixels-sprite-40-symbols_42
+  - first:
+      213: 3901817225228314379
+    second: joypixels-sprite-40-symbols_43
+  - first:
+      213: 894851510240731120
+    second: joypixels-sprite-40-symbols_44
+  - first:
+      213: -990635412142798145
+    second: joypixels-sprite-40-symbols_45
+  - first:
+      213: 7566154748461296390
+    second: joypixels-sprite-40-symbols_46
+  - first:
+      213: 7227099669653571135
+    second: joypixels-sprite-40-symbols_47
+  - first:
+      213: -2637522358468746556
+    second: joypixels-sprite-40-symbols_48
+  - first:
+      213: -4829139618297205902
+    second: joypixels-sprite-40-symbols_49
+  - first:
+      213: 7217746503968740689
+    second: joypixels-sprite-40-symbols_50
+  - first:
+      213: 9134462544824195490
+    second: joypixels-sprite-40-symbols_51
+  - first:
+      213: 8281586638152672615
+    second: joypixels-sprite-40-symbols_52
+  - first:
+      213: -1047295240059906948
+    second: joypixels-sprite-40-symbols_53
+  - first:
+      213: -7500455294149722396
+    second: joypixels-sprite-40-symbols_54
+  - first:
+      213: 3197489896537112373
+    second: joypixels-sprite-40-symbols_55
+  - first:
+      213: -157327686873347103
+    second: joypixels-sprite-40-symbols_56
+  - first:
+      213: -5357293495580848122
+    second: joypixels-sprite-40-symbols_57
+  - first:
+      213: -7814335914493286688
+    second: joypixels-sprite-40-symbols_58
+  - first:
+      213: -7740188228233021130
+    second: joypixels-sprite-40-symbols_59
+  - first:
+      213: 119679548195842573
+    second: joypixels-sprite-40-symbols_60
+  - first:
+      213: -1525580199075873236
+    second: joypixels-sprite-40-symbols_61
+  - first:
+      213: 3025510490699699430
+    second: joypixels-sprite-40-symbols_62
+  - first:
+      213: -7776007187873836286
+    second: joypixels-sprite-40-symbols_63
+  - first:
+      213: -1837006066913334855
+    second: joypixels-sprite-40-symbols_64
+  - first:
+      213: 8221185755297352512
+    second: joypixels-sprite-40-symbols_65
+  - first:
+      213: -8980353127064260721
+    second: joypixels-sprite-40-symbols_66
+  - first:
+      213: -4143545819939825388
+    second: joypixels-sprite-40-symbols_67
+  - first:
+      213: 7125774666969599004
+    second: joypixels-sprite-40-symbols_68
+  - first:
+      213: -4218632076320979930
+    second: joypixels-sprite-40-symbols_69
+  - first:
+      213: -5438370611283099300
+    second: joypixels-sprite-40-symbols_70
+  - first:
+      213: 8889087213470530658
+    second: joypixels-sprite-40-symbols_71
+  - first:
+      213: 8186828625405045821
+    second: joypixels-sprite-40-symbols_72
+  - first:
+      213: 993303495576008275
+    second: joypixels-sprite-40-symbols_73
+  - first:
+      213: -32899120544292057
+    second: joypixels-sprite-40-symbols_74
+  - first:
+      213: 1035011566110017435
+    second: joypixels-sprite-40-symbols_75
+  - first:
+      213: -2034148199218183119
+    second: joypixels-sprite-40-symbols_76
+  - first:
+      213: 6412970282719625036
+    second: joypixels-sprite-40-symbols_77
+  - first:
+      213: 8493960833818056262
+    second: joypixels-sprite-40-symbols_78
+  - first:
+      213: -7102996785754070087
+    second: joypixels-sprite-40-symbols_79
+  - first:
+      213: -2864277933059069138
+    second: joypixels-sprite-40-symbols_80
+  - first:
+      213: 8712384733060258908
+    second: joypixels-sprite-40-symbols_81
+  - first:
+      213: 4262561966584019790
+    second: joypixels-sprite-40-symbols_82
+  - first:
+      213: 5502687899682611032
+    second: joypixels-sprite-40-symbols_83
+  - first:
+      213: -4837678074324102050
+    second: joypixels-sprite-40-symbols_84
+  - first:
+      213: -8063094273869850677
+    second: joypixels-sprite-40-symbols_85
+  - first:
+      213: 7006004015525595532
+    second: joypixels-sprite-40-symbols_86
+  - first:
+      213: -7368026267059269075
+    second: joypixels-sprite-40-symbols_87
+  - first:
+      213: 5316229183542304436
+    second: joypixels-sprite-40-symbols_88
+  - first:
+      213: -8484107520396331912
+    second: joypixels-sprite-40-symbols_89
+  - first:
+      213: 7379053397469081996
+    second: joypixels-sprite-40-symbols_90
+  - first:
+      213: -3310706535436005252
+    second: joypixels-sprite-40-symbols_91
+  - first:
+      213: -762202989551393318
+    second: joypixels-sprite-40-symbols_92
+  - first:
+      213: 8743714590750556004
+    second: joypixels-sprite-40-symbols_93
+  - first:
+      213: 7516935673623315239
+    second: joypixels-sprite-40-symbols_94
+  - first:
+      213: -8078116838443516177
+    second: joypixels-sprite-40-symbols_95
+  - first:
+      213: 4918199761749811682
+    second: joypixels-sprite-40-symbols_96
+  - first:
+      213: 9169883432976169088
+    second: joypixels-sprite-40-symbols_97
+  - first:
+      213: -4202960791037467545
+    second: joypixels-sprite-40-symbols_98
+  - first:
+      213: 1314538507303616441
+    second: joypixels-sprite-40-symbols_99
+  - first:
+      213: 5286410346202426252
+    second: joypixels-sprite-40-symbols_100
+  - first:
+      213: -6567115935536437126
+    second: joypixels-sprite-40-symbols_101
+  - first:
+      213: 5509989466633028440
+    second: joypixels-sprite-40-symbols_102
+  - first:
+      213: 7720940060199506619
+    second: joypixels-sprite-40-symbols_103
+  - first:
+      213: -2405698846350367398
+    second: joypixels-sprite-40-symbols_104
+  - first:
+      213: -4517568487019991741
+    second: joypixels-sprite-40-symbols_105
+  - first:
+      213: -1558015050170923330
+    second: joypixels-sprite-40-symbols_106
+  - first:
+      213: 7381027651615414491
+    second: joypixels-sprite-40-symbols_107
+  - first:
+      213: 6371440123795548185
+    second: joypixels-sprite-40-symbols_108
+  - first:
+      213: 2858436782803661893
+    second: joypixels-sprite-40-symbols_109
+  - first:
+      213: -5955888827732320700
+    second: joypixels-sprite-40-symbols_110
+  - first:
+      213: -3220455805158862496
+    second: joypixels-sprite-40-symbols_111
+  - first:
+      213: -4364091217677280203
+    second: joypixels-sprite-40-symbols_112
+  - first:
+      213: -8556178932306206495
+    second: joypixels-sprite-40-symbols_113
+  - first:
+      213: 5295026104503243834
+    second: joypixels-sprite-40-symbols_114
+  - first:
+      213: 651422222145785630
+    second: joypixels-sprite-40-symbols_115
+  - first:
+      213: -7899433214393423015
+    second: joypixels-sprite-40-symbols_116
+  - first:
+      213: 941574770640281319
+    second: joypixels-sprite-40-symbols_117
+  - first:
+      213: -649229919629554329
+    second: joypixels-sprite-40-symbols_118
+  - first:
+      213: -2088534977435525005
+    second: joypixels-sprite-40-symbols_119
+  - first:
+      213: 6520998457809534632
+    second: joypixels-sprite-40-symbols_120
+  - first:
+      213: -2129610370628367465
+    second: joypixels-sprite-40-symbols_121
+  - first:
+      213: 5333076938557658373
+    second: joypixels-sprite-40-symbols_122
+  - first:
+      213: 4390195038853106970
+    second: joypixels-sprite-40-symbols_123
+  - first:
+      213: 7551329862929400123
+    second: joypixels-sprite-40-symbols_124
+  - first:
+      213: -1162835128864154250
+    second: joypixels-sprite-40-symbols_125
+  - first:
+      213: 9101095879675271699
+    second: joypixels-sprite-40-symbols_126
+  - first:
+      213: -4932493181388580551
+    second: joypixels-sprite-40-symbols_127
+  - first:
+      213: -8352169241226261234
+    second: joypixels-sprite-40-symbols_128
+  - first:
+      213: -9145844547048260357
+    second: joypixels-sprite-40-symbols_129
+  - first:
+      213: 3103805127298097655
+    second: joypixels-sprite-40-symbols_130
+  - first:
+      213: 7713295024232364086
+    second: joypixels-sprite-40-symbols_131
+  - first:
+      213: -4453121878336203720
+    second: joypixels-sprite-40-symbols_132
+  - first:
+      213: -8571521083873157769
+    second: joypixels-sprite-40-symbols_133
+  - first:
+      213: -3069433342320623203
+    second: joypixels-sprite-40-symbols_134
+  - first:
+      213: 2818253776521042955
+    second: joypixels-sprite-40-symbols_135
+  - first:
+      213: -7331162541626313790
+    second: joypixels-sprite-40-symbols_136
+  - first:
+      213: -3020327659909656230
+    second: joypixels-sprite-40-symbols_137
+  - first:
+      213: 2396882004042712377
+    second: joypixels-sprite-40-symbols_138
+  - first:
+      213: -3429174511366217413
+    second: joypixels-sprite-40-symbols_139
+  - first:
+      213: -6928548374177793725
+    second: joypixels-sprite-40-symbols_140
+  - first:
+      213: 659003922700065882
+    second: joypixels-sprite-40-symbols_141
+  - first:
+      213: 162996109861844
+    second: joypixels-sprite-40-symbols_142
+  - first:
+      213: 7253309619010886403
+    second: joypixels-sprite-40-symbols_143
+  - first:
+      213: 4539489149708637275
+    second: joypixels-sprite-40-symbols_144
+  - first:
+      213: 9145835342133125159
+    second: joypixels-sprite-40-symbols_145
+  - first:
+      213: -5563155996911553026
+    second: joypixels-sprite-40-symbols_146
+  - first:
+      213: -5605287726826573778
+    second: joypixels-sprite-40-symbols_147
+  - first:
+      213: -2680851961914126530
+    second: joypixels-sprite-40-symbols_148
+  - first:
+      213: -3052960278270138690
+    second: joypixels-sprite-40-symbols_149
+  - first:
+      213: -8823472255025082007
+    second: joypixels-sprite-40-symbols_150
+  - first:
+      213: -5022837596359032898
+    second: joypixels-sprite-40-symbols_151
+  - first:
+      213: 8717083485713712143
+    second: joypixels-sprite-40-symbols_152
+  - first:
+      213: -2485547378633010631
+    second: joypixels-sprite-40-symbols_153
+  - first:
+      213: 2091270328331083119
+    second: joypixels-sprite-40-symbols_154
+  - first:
+      213: 690766637653131981
+    second: joypixels-sprite-40-symbols_155
+  - first:
+      213: 8008304529659618467
+    second: joypixels-sprite-40-symbols_156
+  - first:
+      213: 9171897000564873480
+    second: joypixels-sprite-40-symbols_157
+  - first:
+      213: -5049708914242904671
+    second: joypixels-sprite-40-symbols_158
+  - first:
+      213: 8507678747071122948
+    second: joypixels-sprite-40-symbols_159
+  - first:
+      213: -1486335211999319695
+    second: joypixels-sprite-40-symbols_160
+  - first:
+      213: 8676561989190743704
+    second: joypixels-sprite-40-symbols_161
+  - first:
+      213: -2623246323453225952
+    second: joypixels-sprite-40-symbols_162
+  - first:
+      213: -1460014063076737456
+    second: joypixels-sprite-40-symbols_163
+  - first:
+      213: 8514516990753249617
+    second: joypixels-sprite-40-symbols_164
+  - first:
+      213: -192518236037678674
+    second: joypixels-sprite-40-symbols_165
+  - first:
+      213: 3375428557780107094
+    second: joypixels-sprite-40-symbols_166
+  - first:
+      213: -7152403434993714777
+    second: joypixels-sprite-40-symbols_167
+  - first:
+      213: 2342736385592818221
+    second: joypixels-sprite-40-symbols_168
+  - first:
+      213: -5096657424973200505
+    second: joypixels-sprite-40-symbols_169
+  - first:
+      213: 9104728584811940030
+    second: joypixels-sprite-40-symbols_170
+  - first:
+      213: 1456326896997831595
+    second: joypixels-sprite-40-symbols_171
+  - first:
+      213: 8886089254071883512
+    second: joypixels-sprite-40-symbols_172
+  - first:
+      213: -1629839239057631502
+    second: joypixels-sprite-40-symbols_173
+  - first:
+      213: -7375933753479428559
+    second: joypixels-sprite-40-symbols_174
+  - first:
+      213: 5941525696318536553
+    second: joypixels-sprite-40-symbols_175
+  - first:
+      213: -3344857773548881989
+    second: joypixels-sprite-40-symbols_176
+  - first:
+      213: 71129311272591088
+    second: joypixels-sprite-40-symbols_177
+  - first:
+      213: -1536762619362715081
+    second: joypixels-sprite-40-symbols_178
+  - first:
+      213: 2083491139619248851
+    second: joypixels-sprite-40-symbols_179
+  - first:
+      213: -5603769832195558991
+    second: joypixels-sprite-40-symbols_180
+  - first:
+      213: 8459351586964518176
+    second: joypixels-sprite-40-symbols_181
+  - first:
+      213: 3006177310778837488
+    second: joypixels-sprite-40-symbols_182
+  - first:
+      213: -5854344949359331661
+    second: joypixels-sprite-40-symbols_183
+  - first:
+      213: -4835798215108824299
+    second: joypixels-sprite-40-symbols_184
+  - first:
+      213: 4034854224135309276
+    second: joypixels-sprite-40-symbols_185
+  - first:
+      213: -6385440919160473836
+    second: joypixels-sprite-40-symbols_186
+  - first:
+      213: 3330378731361102085
+    second: joypixels-sprite-40-symbols_187
+  - first:
+      213: 2387867502662229756
+    second: joypixels-sprite-40-symbols_188
+  - first:
+      213: -3254038740992140008
+    second: joypixels-sprite-40-symbols_189
+  - first:
+      213: 3567078107305821988
+    second: joypixels-sprite-40-symbols_190
+  - first:
+      213: -6977368939591206263
+    second: joypixels-sprite-40-symbols_191
+  - first:
+      213: -4818983624741953492
+    second: joypixels-sprite-40-symbols_192
+  - first:
+      213: -1696862221825988295
+    second: joypixels-sprite-40-symbols_193
+  - first:
+      213: -964345507796387525
+    second: joypixels-sprite-40-symbols_194
+  - first:
+      213: 1280342611565813806
+    second: joypixels-sprite-40-symbols_195
+  - first:
+      213: -7504197019475827261
+    second: joypixels-sprite-40-symbols_196
+  - first:
+      213: 182995407025361851
+    second: joypixels-sprite-40-symbols_197
+  - first:
+      213: 1407357587108696276
+    second: joypixels-sprite-40-symbols_198
+  - first:
+      213: -1238714025059878796
+    second: joypixels-sprite-40-symbols_199
+  - first:
+      213: -2429238675549207940
+    second: joypixels-sprite-40-symbols_200
+  - first:
+      213: 3822806481023263274
+    second: joypixels-sprite-40-symbols_201
+  - first:
+      213: -8226553949576171698
+    second: joypixels-sprite-40-symbols_202
+  - first:
+      213: -7705014634220879088
+    second: joypixels-sprite-40-symbols_203
+  - first:
+      213: 7071148992735287302
+    second: joypixels-sprite-40-symbols_204
+  - first:
+      213: 582765525953696155
+    second: joypixels-sprite-40-symbols_205
+  - first:
+      213: -2370835015483567573
+    second: joypixels-sprite-40-symbols_206
+  - first:
+      213: 58379156560934137
+    second: joypixels-sprite-40-symbols_207
+  - first:
+      213: 3727464060318156856
+    second: joypixels-sprite-40-symbols_208
+  - first:
+      213: 6772264197064652365
+    second: joypixels-sprite-40-symbols_209
+  - first:
+      213: 2920633407004706716
+    second: joypixels-sprite-40-symbols_210
+  - first:
+      213: 7882625540490064864
+    second: joypixels-sprite-40-symbols_211
+  - first:
+      213: 8033981468859234597
+    second: joypixels-sprite-40-symbols_212
+  - first:
+      213: -5928461179037916197
+    second: joypixels-sprite-40-symbols_213
+  - first:
+      213: -3777725318701521624
+    second: joypixels-sprite-40-symbols_214
+  - first:
+      213: -1217720815804440182
+    second: joypixels-sprite-40-symbols_215
+  - first:
+      213: 1490357426487509687
+    second: joypixels-sprite-40-symbols_216
+  - first:
+      213: 6102870761771494291
+    second: joypixels-sprite-40-symbols_217
+  - first:
+      213: 9198546949915617197
+    second: joypixels-sprite-40-symbols_218
+  - first:
+      213: -3921454646945335389
+    second: joypixels-sprite-40-symbols_219
+  - first:
+      213: -2698709987671083005
+    second: joypixels-sprite-40-symbols_220
+  - first:
+      213: 1492906460694232552
+    second: joypixels-sprite-40-symbols_221
+  - first:
+      213: 7699583783106530557
+    second: joypixels-sprite-40-symbols_222
+  - first:
+      213: -8069908199694962223
+    second: joypixels-sprite-40-symbols_223
+  - first:
+      213: -7003822778553675147
+    second: joypixels-sprite-40-symbols_224
+  - first:
+      213: -1408735896724169666
+    second: joypixels-sprite-40-symbols_225
+  - first:
+      213: -2477806795576612721
+    second: joypixels-sprite-40-symbols_226
+  - first:
+      213: 8539281738124399493
+    second: joypixels-sprite-40-symbols_227
+  - first:
+      213: -6286997314405531470
+    second: joypixels-sprite-40-symbols_228
+  - first:
+      213: 2994953837854065444
+    second: joypixels-sprite-40-symbols_229
+  - first:
+      213: 3377059420984726739
+    second: joypixels-sprite-40-symbols_230
+  - first:
+      213: 427787499204021714
+    second: joypixels-sprite-40-symbols_231
+  - first:
+      213: 5422473208093722075
+    second: joypixels-sprite-40-symbols_232
+  - first:
+      213: 7619403032554435176
+    second: joypixels-sprite-40-symbols_233
+  - first:
+      213: -760344508048680839
+    second: joypixels-sprite-40-symbols_234
+  - first:
+      213: 21554601204014825
+    second: joypixels-sprite-40-symbols_235
+  - first:
+      213: -8914152411499124257
+    second: joypixels-sprite-40-symbols_236
+  - first:
+      213: -752576897195732078
+    second: joypixels-sprite-40-symbols_237
+  - first:
+      213: 6158996511760810016
+    second: joypixels-sprite-40-symbols_238
+  - first:
+      213: -4833088256127173520
+    second: joypixels-sprite-40-symbols_239
+  - first:
+      213: -7869662294250756833
+    second: joypixels-sprite-40-symbols_240
+  - first:
+      213: 8483929831333260844
+    second: joypixels-sprite-40-symbols_241
+  - first:
+      213: 4266020555629321703
+    second: joypixels-sprite-40-symbols_242
+  - first:
+      213: 8912498929949323700
+    second: joypixels-sprite-40-symbols_243
+  - first:
+      213: -4508982942090062529
+    second: joypixels-sprite-40-symbols_244
+  - first:
+      213: -7476829691509295224
+    second: joypixels-sprite-40-symbols_245
+  - first:
+      213: 883146466641629856
+    second: joypixels-sprite-40-symbols_246
+  - first:
+      213: 4585404157935489749
+    second: joypixels-sprite-40-symbols_247
+  - first:
+      213: -1354359996715018501
+    second: joypixels-sprite-40-symbols_248
+  - first:
+      213: -907152839225931170
+    second: joypixels-sprite-40-symbols_249
+  - first:
+      213: 4864376196070226382
+    second: joypixels-sprite-40-symbols_250
+  - first:
+      213: -5829495203092474018
+    second: joypixels-sprite-40-symbols_251
+  - first:
+      213: -3463215985110888374
+    second: joypixels-sprite-40-symbols_252
+  - first:
+      213: -7293041661418345326
+    second: joypixels-sprite-40-symbols_253
+  - first:
+      213: -8821146445413320584
+    second: joypixels-sprite-40-symbols_254
+  - first:
+      213: -4107089802620164992
+    second: joypixels-sprite-40-symbols_255
+  - first:
+      213: -3623099277281668059
+    second: joypixels-sprite-40-symbols_256
+  - first:
+      213: 9045506730841306024
+    second: joypixels-sprite-40-symbols_257
+  - first:
+      213: -3341433448121718757
+    second: joypixels-sprite-40-symbols_258
+  - first:
+      213: -8631089420219703713
+    second: joypixels-sprite-40-symbols_259
+  - first:
+      213: -348612776134052758
+    second: joypixels-sprite-40-symbols_260
+  - first:
+      213: -3811094960158211209
+    second: joypixels-sprite-40-symbols_261
+  - first:
+      213: 5837432419295649321
+    second: joypixels-sprite-40-symbols_262
+  - first:
+      213: -6693998135866561376
+    second: joypixels-sprite-40-symbols_263
+  - first:
+      213: 5135943606725123593
+    second: joypixels-sprite-40-symbols_264
+  - first:
+      213: -8785733343355350541
+    second: joypixels-sprite-40-symbols_265
+  - first:
+      213: -6599315473459406123
+    second: joypixels-sprite-40-symbols_266
+  - first:
+      213: -8084667018098925121
+    second: joypixels-sprite-40-symbols_267
+  - first:
+      213: -7204585950937418017
+    second: joypixels-sprite-40-symbols_268
+  - first:
+      213: -2318906272395236932
+    second: joypixels-sprite-40-symbols_269
+  - first:
+      213: -3485857303256467170
+    second: joypixels-sprite-40-symbols_270
+  - first:
+      213: -2460629728782407149
+    second: joypixels-sprite-40-symbols_271
+  - first:
+      213: -9222589155113376236
+    second: joypixels-sprite-40-symbols_272
+  - first:
+      213: -4565341147373100307
+    second: joypixels-sprite-40-symbols_273
+  - first:
+      213: 4497316531449532632
+    second: joypixels-sprite-40-symbols_274
+  - first:
+      213: -3931464584336279621
+    second: joypixels-sprite-40-symbols_275
+  - first:
+      213: -3813920597886093033
+    second: joypixels-sprite-40-symbols_276
+  - first:
+      213: 9165985833563682877
+    second: joypixels-sprite-40-symbols_277
+  - first:
+      213: 2281925782966793934
+    second: joypixels-sprite-40-symbols_278
+  - first:
+      213: 7159150117576150559
+    second: joypixels-sprite-40-symbols_279
+  - first:
+      213: 2328580128838079935
+    second: joypixels-sprite-40-symbols_280
+  - first:
+      213: 8756437456656767062
+    second: joypixels-sprite-40-symbols_281
+  - first:
+      213: 1484407031839362241
+    second: joypixels-sprite-40-symbols_282
+  - first:
+      213: -8390827810899560643
+    second: joypixels-sprite-40-symbols_283
+  - first:
+      213: -679752826804937396
+    second: joypixels-sprite-40-symbols_284
+  - first:
+      213: 1222856039393064610
+    second: joypixels-sprite-40-symbols_285
+  - first:
+      213: -4332828927506474176
+    second: joypixels-sprite-40-symbols_286
+  - first:
+      213: 2902661437124775267
+    second: joypixels-sprite-40-symbols_287
+  - first:
+      213: 3790976088066472972
+    second: joypixels-sprite-40-symbols_288
+  - first:
+      213: 9004202806973879534
+    second: joypixels-sprite-40-symbols_289
+  - first:
+      213: 663645636388361284
+    second: joypixels-sprite-40-symbols_290
+  - first:
+      213: -889867590291459457
+    second: joypixels-sprite-40-symbols_291
+  - first:
+      213: -5831645100256673662
+    second: joypixels-sprite-40-symbols_292
+  - first:
+      213: 7957436257531324926
+    second: joypixels-sprite-40-symbols_293
+  - first:
+      213: -4592416281500620415
+    second: joypixels-sprite-40-symbols_294
+  - first:
+      213: -8725490932269826403
+    second: joypixels-sprite-40-symbols_295
+  - first:
+      213: 8764749579669107953
+    second: joypixels-sprite-40-symbols_296
+  - first:
+      213: -3655958902916231584
+    second: joypixels-sprite-40-symbols_297
+  - first:
+      213: 1944063382863240803
+    second: joypixels-sprite-40-symbols_298
+  - first:
+      213: -3291696529841738089
+    second: joypixels-sprite-40-symbols_299
+  - first:
+      213: -1215713791789647030
+    second: joypixels-sprite-40-symbols_300
+  - first:
+      213: -4920040245363758341
+    second: joypixels-sprite-40-symbols_301
+  - first:
+      213: -5556105490753132243
+    second: joypixels-sprite-40-symbols_302
+  - first:
+      213: 7281581039279026517
+    second: joypixels-sprite-40-symbols_303
+  - first:
+      213: 2026199792998647097
+    second: joypixels-sprite-40-symbols_304
+  - first:
+      213: -1941883803712252196
+    second: joypixels-sprite-40-symbols_305
+  - first:
+      213: -3699529313590267165
+    second: joypixels-sprite-40-symbols_306
+  - first:
+      213: -8516263572533099277
+    second: joypixels-sprite-40-symbols_307
+  - first:
+      213: -2285392254041643812
+    second: joypixels-sprite-40-symbols_308
+  - first:
+      213: 1209695869590556290
+    second: joypixels-sprite-40-symbols_309
+  - first:
+      213: -4861475845757329359
+    second: joypixels-sprite-40-symbols_310
+  - first:
+      213: 2681130342136485757
+    second: joypixels-sprite-40-symbols_311
+  - first:
+      213: -7017691340596460231
+    second: joypixels-sprite-40-symbols_312
+  - first:
+      213: -2288653982801381605
+    second: joypixels-sprite-40-symbols_313
+  - first:
+      213: -1973880255928628589
+    second: joypixels-sprite-40-symbols_314
+  - first:
+      213: 2626600361995655105
+    second: joypixels-sprite-40-symbols_315
+  - first:
+      213: 191628312185711849
+    second: joypixels-sprite-40-symbols_316
+  - first:
+      213: 5222709814349412331
+    second: joypixels-sprite-40-symbols_317
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 40
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0eb1b07bd72a2be0800000000000000
+      internalID: -1501343702332621297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_1
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0bd4609507c163c70800000000000000
+      internalID: 8950372578300939696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_2
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26ec1b36c669107e0800000000000000
+      internalID: -1800992983698256286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_3
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe498455289b91650800000000000000
+      internalID: 6204193931107276015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_4
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e32e83af66675c00800000000000000
+      internalID: 889292081100366824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_5
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a37b0b0269d3cfd00800000000000000
+      internalID: 1007748131626989370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_6
+      rect:
+        serializedVersion: 2
+        x: 246
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 955a35d2e8c34b490800000000000000
+      internalID: -7731488078944819879
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_7
+      rect:
+        serializedVersion: 2
+        x: 287
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb1645088ac035560800000000000000
+      internalID: 7301193338744758715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_8
+      rect:
+        serializedVersion: 2
+        x: 328
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c54362ebd2bcc2430800000000000000
+      internalID: 3759603186271663196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_9
+      rect:
+        serializedVersion: 2
+        x: 369
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c21977ca6aa9b5650800000000000000
+      internalID: 6222737350791237932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_10
+      rect:
+        serializedVersion: 2
+        x: 410
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f82ce609e686d2f80800000000000000
+      internalID: -8129726928255008113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_11
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b825a6e3b0563ca0800000000000000
+      internalID: -6037549516844619599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_12
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11a9f838c72633d70800000000000000
+      internalID: 9021662765475928593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_13
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54c80bc2a259b0000800000000000000
+      internalID: 3260233114750021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_14
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4da6cb2fff63554c0800000000000000
+      internalID: -4299469796338275628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_15
+      rect:
+        serializedVersion: 2
+        x: 615
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1a658cad73755130800000000000000
+      internalID: 3554874464481405467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_16
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d4fed317beff78f0800000000000000
+      internalID: -540433367995321128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_17
+      rect:
+        serializedVersion: 2
+        x: 697
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: caddd1979e60238c0800000000000000
+      internalID: -4021143917459284564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_18
+      rect:
+        serializedVersion: 2
+        x: 738
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e84b31689cc3eea30800000000000000
+      internalID: 4246398334892487822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_19
+      rect:
+        serializedVersion: 2
+        x: 779
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77339e901fd8e7fe0800000000000000
+      internalID: -1189357185186319497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_20
+      rect:
+        serializedVersion: 2
+        x: 820
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a793653db5e2a4500800000000000000
+      internalID: 381168090388773242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_21
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67fc5f9c2113001c0800000000000000
+      internalID: -4539574467621957770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_22
+      rect:
+        serializedVersion: 2
+        x: 861
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 865a7731033be1d60800000000000000
+      internalID: 7862919018501875048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_23
+      rect:
+        serializedVersion: 2
+        x: 902
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb090043b2c0bd190800000000000000
+      internalID: -7936736538614787906
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_24
+      rect:
+        serializedVersion: 2
+        x: 943
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b5ae3b09abcbf790800000000000000
+      internalID: -7495173227929492039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_25
+      rect:
+        serializedVersion: 2
+        x: 984
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5a69cad8dba378f0800000000000000
+      internalID: -543902182109779361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_26
+      rect:
+        serializedVersion: 2
+        x: 1025
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3beb3d32f80a2c350800000000000000
+      internalID: 6035562987271732915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_27
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebed4e922e8c9a320800000000000000
+      internalID: 2569805936082607806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_28
+      rect:
+        serializedVersion: 2
+        x: 1107
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02fe3a43a94bb6130800000000000000
+      internalID: 3561138504767631136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_29
+      rect:
+        serializedVersion: 2
+        x: 1148
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74cc698fdb1641ef0800000000000000
+      internalID: -138378219994297273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_30
+      rect:
+        serializedVersion: 2
+        x: 1189
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a9dbc8ecd6c18e90800000000000000
+      internalID: -7025115291620484698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_31
+      rect:
+        serializedVersion: 2
+        x: 1230
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 760370b184960d6d0800000000000000
+      internalID: -2967756396025139097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_32
+      rect:
+        serializedVersion: 2
+        x: 1271
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8d837e5964806bc0800000000000000
+      internalID: -3791885298154893941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_33
+      rect:
+        serializedVersion: 2
+        x: 1312
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95150f966ee4d87f0800000000000000
+      internalID: -608743623098347175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_34
+      rect:
+        serializedVersion: 2
+        x: 1353
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82c6b9ffeca92ea30800000000000000
+      internalID: 4243124012778744872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_35
+      rect:
+        serializedVersion: 2
+        x: 1394
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d0411d602ba40dc0800000000000000
+      internalID: -3673623240270331691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_36
+      rect:
+        serializedVersion: 2
+        x: 1435
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63dd288f11b130f10800000000000000
+      internalID: 2234659604103617846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_37
+      rect:
+        serializedVersion: 2
+        x: 1476
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a18efa6890e2d9c90800000000000000
+      internalID: -7161517213999962086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_38
+      rect:
+        serializedVersion: 2
+        x: 1517
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37ad06d7d6d2da400800000000000000
+      internalID: 336975495400839795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_39
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e0c0bd83e15f4a0800000000000000
+      internalID: -6560304052653257214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_40
+      rect:
+        serializedVersion: 2
+        x: 1599
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d9cee0c9172db50800000000000000
+      internalID: 6616475717639904621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_41
+      rect:
+        serializedVersion: 2
+        x: 1640
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afaac752a198796f0800000000000000
+      internalID: -677922473504888070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_42
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acbd1492e29423220800000000000000
+      internalID: 2464112408734587850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_43
+      rect:
+        serializedVersion: 2
+        x: 1722
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b07eb38f71a062630800000000000000
+      internalID: 3901817225228314379
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_44
+      rect:
+        serializedVersion: 2
+        x: 1763
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffde9a15b62b6c00800000000000000
+      internalID: 894851510240731120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_45
+      rect:
+        serializedVersion: 2
+        x: 1804
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fba4e4d575e8042f0800000000000000
+      internalID: -990635412142798145
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_46
+      rect:
+        serializedVersion: 2
+        x: 1845
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60baba118a1600960800000000000000
+      internalID: 7566154748461296390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_47
+      rect:
+        serializedVersion: 2
+        x: 1886
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f364b06dbd0db4460800000000000000
+      internalID: 7227099669653571135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_48
+      rect:
+        serializedVersion: 2
+        x: 1927
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c2e150a363a56bd0800000000000000
+      internalID: -2637522358468746556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_49
+      rect:
+        serializedVersion: 2
+        x: 1968
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27b21a06a137bfcb0800000000000000
+      internalID: -4829139618297205902
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_50
+      rect:
+        serializedVersion: 2
+        x: 2009
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 155dfdf34369a2460800000000000000
+      internalID: 7217746503968740689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_51
+      rect:
+        serializedVersion: 2
+        x: 2050
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a95b5eb94124ce70800000000000000
+      internalID: 9134462544824195490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_52
+      rect:
+        serializedVersion: 2
+        x: 2091
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76526bf6b2b1ee270800000000000000
+      internalID: 8281586638152672615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_53
+      rect:
+        serializedVersion: 2
+        x: 2132
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c74954927824771f0800000000000000
+      internalID: -1047295240059906948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_54
+      rect:
+        serializedVersion: 2
+        x: 2173
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eef18a26a709e790800000000000000
+      internalID: -7500455294149722396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_55
+      rect:
+        serializedVersion: 2
+        x: 2214
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53fbeffae14cf5c20800000000000000
+      internalID: 3197489896537112373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_56
+      rect:
+        serializedVersion: 2
+        x: 2255
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1eb84966d4f01ddf0800000000000000
+      internalID: -157327686873347103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_57
+      rect:
+        serializedVersion: 2
+        x: 2296
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 600946e23f117a5b0800000000000000
+      internalID: -5357293495580848122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_58
+      rect:
+        serializedVersion: 2
+        x: 2337
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6ec0d43e6ed8390800000000000000
+      internalID: -7814335914493286688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_59
+      rect:
+        serializedVersion: 2
+        x: 2378
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 639b281d0d3559490800000000000000
+      internalID: -7740188228233021130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_60
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0aa71d3aef29a100800000000000000
+      internalID: 119679548195842573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_61
+      rect:
+        serializedVersion: 2
+        x: 2460
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e76bd44ec04dae0800000000000000
+      internalID: -1525580199075873236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_62
+      rect:
+        serializedVersion: 2
+        x: 2478
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e49f5ee2c5ccf920800000000000000
+      internalID: 3025510490699699430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_63
+      rect:
+        serializedVersion: 2
+        x: 2501
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20355e369a2161490800000000000000
+      internalID: -7776007187873836286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_64
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9a46b07b4a186e0800000000000000
+      internalID: -1837006066913334855
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_65
+      rect:
+        serializedVersion: 2
+        x: 2583
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b000103e4871270800000000000000
+      internalID: 8221185755297352512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_66
+      rect:
+        serializedVersion: 2
+        x: 2624
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8f24cf29606f5380800000000000000
+      internalID: -8980353127064260721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_67
+      rect:
+        serializedVersion: 2
+        x: 2665
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4199eebb70b2f76c0800000000000000
+      internalID: -4143545819939825388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_68
+      rect:
+        serializedVersion: 2
+        x: 2706
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1c433e3e46d3e260800000000000000
+      internalID: 7125774666969599004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_69
+      rect:
+        serializedVersion: 2
+        x: 2747
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 624c1d45a786475c0800000000000000
+      internalID: -4218632076320979930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_70
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c510c852eb60784b0800000000000000
+      internalID: -5438370611283099300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_71
+      rect:
+        serializedVersion: 2
+        x: 2829
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26cb06869b16c5b70800000000000000
+      internalID: 8889087213470530658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_72
+      rect:
+        serializedVersion: 2
+        x: 2870
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c644652457d9170800000000000000
+      internalID: 8186828625405045821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_73
+      rect:
+        serializedVersion: 2
+        x: 2911
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35636f7344ce8cd00800000000000000
+      internalID: 993303495576008275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_74
+      rect:
+        serializedVersion: 2
+        x: 2952
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 723e8869c6e1b8ff0800000000000000
+      internalID: -32899120544292057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_75
+      rect:
+        serializedVersion: 2
+        x: 2993
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97886029891d5e00800000000000000
+      internalID: 1035011566110017435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_76
+      rect:
+        serializedVersion: 2
+        x: 3034
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 134891d7df045c3e0800000000000000
+      internalID: -2034148199218183119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_77
+      rect:
+        serializedVersion: 2
+        x: 3075
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fb3a8ae727ff850800000000000000
+      internalID: 6412970282719625036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_78
+      rect:
+        serializedVersion: 2
+        x: 3116
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6465ecb106c90e570800000000000000
+      internalID: 8493960833818056262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_79
+      rect:
+        serializedVersion: 2
+        x: 3157
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b323608e061d6d90800000000000000
+      internalID: -7102996785754070087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_80
+      rect:
+        serializedVersion: 2
+        x: 3198
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2b260e356a0048d0800000000000000
+      internalID: -2864277933059069138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_81
+      rect:
+        serializedVersion: 2
+        x: 3239
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5cd79821cb98e870800000000000000
+      internalID: 8712384733060258908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_82
+      rect:
+        serializedVersion: 2
+        x: 3280
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4bb45b4689a72b30800000000000000
+      internalID: 4262561966584019790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_83
+      rect:
+        serializedVersion: 2
+        x: 3321
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85f1c628d797d5c40800000000000000
+      internalID: 5502687899682611032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_84
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e54573a2c6d1ddcb0800000000000000
+      internalID: -4837678074324102050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_85
+      rect:
+        serializedVersion: 2
+        x: 3403
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc7508f5a722a1090800000000000000
+      internalID: -8063094273869850677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_86
+      rect:
+        serializedVersion: 2
+        x: 3444
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c890d5068835a3160800000000000000
+      internalID: 7006004015525595532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_87
+      rect:
+        serializedVersion: 2
+        x: 3485
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d225f28c5238fb990800000000000000
+      internalID: -7368026267059269075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_88
+      rect:
+        serializedVersion: 2
+        x: 3526
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4be9a9d964a07c940800000000000000
+      internalID: 5316229183542304436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_89
+      rect:
+        serializedVersion: 2
+        x: 3567
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8747e823925624a80800000000000000
+      internalID: -8484107520396331912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_90
+      rect:
+        serializedVersion: 2
+        x: 3608
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c81b8c618f9a76660800000000000000
+      internalID: 7379053397469081996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_91
+      rect:
+        serializedVersion: 2
+        x: 3649
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c70d5c762f10e02d0800000000000000
+      internalID: -3310706535436005252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_92
+      rect:
+        serializedVersion: 2
+        x: 3690
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad56c095b6c1c65f0800000000000000
+      internalID: -762202989551393318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_93
+      rect:
+        serializedVersion: 2
+        x: 3731
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46f3617181ae75970800000000000000
+      internalID: 8743714590750556004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_94
+      rect:
+        serializedVersion: 2
+        x: 3772
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72387c13b25815860800000000000000
+      internalID: 7516935673623315239
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_95
+      rect:
+        serializedVersion: 2
+        x: 3813
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: feef87ef883c4ef80800000000000000
+      internalID: -8078116838443516177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_96
+      rect:
+        serializedVersion: 2
+        x: 3854
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e1228520a4f04440800000000000000
+      internalID: 4918199761749811682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_97
+      rect:
+        serializedVersion: 2
+        x: 3895
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 088b84ee568f14f70800000000000000
+      internalID: 9169883432976169088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_98
+      rect:
+        serializedVersion: 2
+        x: 3936
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7642155cd651ca5c0800000000000000
+      internalID: -4202960791037467545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_99
+      rect:
+        serializedVersion: 2
+        x: 3977
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bf7763cecd2e3210800000000000000
+      internalID: 1314538507303616441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_100
+      rect:
+        serializedVersion: 2
+        x: 4018
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8b6856833a1d5940800000000000000
+      internalID: 5286410346202426252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_101
+      rect:
+        serializedVersion: 2
+        x: 4059
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a782b87c9daecd4a0800000000000000
+      internalID: -6567115935536437126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_102
+      rect:
+        serializedVersion: 2
+        x: 4100
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8534eca0a3a677c40800000000000000
+      internalID: 5509989466633028440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_103
+      rect:
+        serializedVersion: 2
+        x: 4116
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb25644d31a462b60800000000000000
+      internalID: 7720940060199506619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_104
+      rect:
+        serializedVersion: 2
+        x: 4141
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5528ba25ad3d9ed0800000000000000
+      internalID: -2405698846350367398
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_105
+      rect:
+        serializedVersion: 2
+        x: 4182
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dacaa656f5e41c0800000000000000
+      internalID: -4517568487019991741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_106
+      rect:
+        serializedVersion: 2
+        x: 4223
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb689db0191d06ae0800000000000000
+      internalID: -1558015050170923330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_107
+      rect:
+        serializedVersion: 2
+        x: 4264
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd85fd3fa8dae6660800000000000000
+      internalID: 7381027651615414491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_108
+      rect:
+        serializedVersion: 2
+        x: 4305
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91821860907eb6850800000000000000
+      internalID: 6371440123795548185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_109
+      rect:
+        serializedVersion: 2
+        x: 4346
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5443cebfb153ba720800000000000000
+      internalID: 2858436782803661893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_110
+      rect:
+        serializedVersion: 2
+        x: 4387
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44e1c45baae685da0800000000000000
+      internalID: -5955888827732320700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_111
+      rect:
+        serializedVersion: 2
+        x: 4428
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06159a60284ae43d0800000000000000
+      internalID: -3220455805158862496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_112
+      rect:
+        serializedVersion: 2
+        x: 4469
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53c91f2d822af63c0800000000000000
+      internalID: -4364091217677280203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_113
+      rect:
+        serializedVersion: 2
+        x: 4510
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e02539f798524980800000000000000
+      internalID: -8556178932306206495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_114
+      rect:
+        serializedVersion: 2
+        x: 4551
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3416531036bb7940800000000000000
+      internalID: 5295026104503243834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_115
+      rect:
+        serializedVersion: 2
+        x: 4592
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f8bc54f015a0900800000000000000
+      internalID: 651422222145785630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_116
+      rect:
+        serializedVersion: 2
+        x: 4633
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95b682138539f5290800000000000000
+      internalID: -7899433214393423015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_117
+      rect:
+        serializedVersion: 2
+        x: 4674
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eedb75e345211d00800000000000000
+      internalID: 941574770640281319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_118
+      rect:
+        serializedVersion: 2
+        x: 4715
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76dcceee3d87df6f0800000000000000
+      internalID: -649229919629554329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_119
+      rect:
+        serializedVersion: 2
+        x: 4756
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3702af8e0880403e0800000000000000
+      internalID: -2088534977435525005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_120
+      rect:
+        serializedVersion: 2
+        x: 4797
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae7b923c8d3f7a50800000000000000
+      internalID: 6520998457809534632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_121
+      rect:
+        serializedVersion: 2
+        x: 4838
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b45bca6aa1272e0800000000000000
+      internalID: -2129610370628367465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_122
+      rect:
+        serializedVersion: 2
+        x: 4879
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5059e824835e20a40800000000000000
+      internalID: 5333076938557658373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_123
+      rect:
+        serializedVersion: 2
+        x: 4920
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1d8589a02b1dec30800000000000000
+      internalID: 4390195038853106970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_124
+      rect:
+        serializedVersion: 2
+        x: 4961
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31c4bd6086bbc860800000000000000
+      internalID: 7551329862929400123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_125
+      rect:
+        serializedVersion: 2
+        x: 5002
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67dd4bb7c97ccdfe0800000000000000
+      internalID: -1162835128864154250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_126
+      rect:
+        serializedVersion: 2
+        x: 5043
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31ad0de9b769d4e70800000000000000
+      internalID: 9101095879675271699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_127
+      rect:
+        serializedVersion: 2
+        x: 5084
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9391c42c5934c8bb0800000000000000
+      internalID: -4932493181388580551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_128
+      rect:
+        serializedVersion: 2
+        x: 5125
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0dc3c8a352271c80800000000000000
+      internalID: -8352169241226261234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_129
+      rect:
+        serializedVersion: 2
+        x: 5166
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfcbe3a57de631180800000000000000
+      internalID: -9145844547048260357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_130
+      rect:
+        serializedVersion: 2
+        x: 5207
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f1a3a0915ee21b20800000000000000
+      internalID: 3103805127298097655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_131
+      rect:
+        serializedVersion: 2
+        x: 5248
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 638782f25f02b0b60800000000000000
+      internalID: 7713295024232364086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_132
+      rect:
+        serializedVersion: 2
+        x: 5289
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 834104cce355332c0800000000000000
+      internalID: -4453121878336203720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_133
+      rect:
+        serializedVersion: 2
+        x: 5330
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77d18f2fcf6db0980800000000000000
+      internalID: -8571521083873157769
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_134
+      rect:
+        serializedVersion: 2
+        x: 5371
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d914d3143ae2765d0800000000000000
+      internalID: -3069433342320623203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_135
+      rect:
+        serializedVersion: 2
+        x: 5412
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c9074c0e27c1720800000000000000
+      internalID: 2818253776521042955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_136
+      rect:
+        serializedVersion: 2
+        x: 5453
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c3b6b3b28a724a90800000000000000
+      internalID: -7331162541626313790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_137
+      rect:
+        serializedVersion: 2
+        x: 5494
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a515cc5eef3a516d0800000000000000
+      internalID: -3020327659909656230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_138
+      rect:
+        serializedVersion: 2
+        x: 5535
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9350e73cb7f634120800000000000000
+      internalID: 2396882004042712377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_139
+      rect:
+        serializedVersion: 2
+        x: 5576
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b31613153ff1960d0800000000000000
+      internalID: -3429174511366217413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_140
+      rect:
+        serializedVersion: 2
+        x: 5617
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 349b50476f9d8df90800000000000000
+      internalID: -6928548374177793725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_141
+      rect:
+        serializedVersion: 2
+        x: 5658
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5c502e7390452900800000000000000
+      internalID: 659003922700065882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_142
+      rect:
+        serializedVersion: 2
+        x: 5699
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d36a3d7e34900000800000000000000
+      internalID: 162996109861844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_143
+      rect:
+        serializedVersion: 2
+        x: 5740
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30b51173baee8a460800000000000000
+      internalID: 7253309619010886403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_144
+      rect:
+        serializedVersion: 2
+        x: 5754
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b549f1694518ffe30800000000000000
+      internalID: 4539489149708637275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_145
+      rect:
+        serializedVersion: 2
+        x: 5781
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 720ee0679c88cee70800000000000000
+      internalID: 9145835342133125159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_146
+      rect:
+        serializedVersion: 2
+        x: 5822
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef5b00e7813bbc2b0800000000000000
+      internalID: -5563155996911553026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_147
+      rect:
+        serializedVersion: 2
+        x: 5863
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e2035a2b2840632b0800000000000000
+      internalID: -5605287726826573778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_148
+      rect:
+        serializedVersion: 2
+        x: 5904
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3f03ba2853bbcad0800000000000000
+      internalID: -2680851961914126530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_149
+      rect:
+        serializedVersion: 2
+        x: 5945
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb6a45c5dc4b1a5d0800000000000000
+      internalID: -3052960278270138690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_150
+      rect:
+        serializedVersion: 2
+        x: 5986
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96117b99bbabc8580800000000000000
+      internalID: -8823472255025082007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_151
+      rect:
+        serializedVersion: 2
+        x: 6027
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebffa8871db4b4ab0800000000000000
+      internalID: -5022837596359032898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_152
+      rect:
+        serializedVersion: 2
+        x: 6068
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f04c363ce3d49f870800000000000000
+      internalID: 8717083485713712143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_153
+      rect:
+        serializedVersion: 2
+        x: 6109
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9321d2004df818dd0800000000000000
+      internalID: -2485547378633010631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_154
+      rect:
+        serializedVersion: 2
+        x: 6150
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d1d79984fa50d10800000000000000
+      internalID: 2091270328331083119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_155
+      rect:
+        serializedVersion: 2
+        x: 6191
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc2810cd898169900800000000000000
+      internalID: 690766637653131981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_156
+      rect:
+        serializedVersion: 2
+        x: 6232
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a463873a86332f60800000000000000
+      internalID: 8008304529659618467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_157
+      rect:
+        serializedVersion: 2
+        x: 6273
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 809d32b2abf194f70800000000000000
+      internalID: 9171897000564873480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_158
+      rect:
+        serializedVersion: 2
+        x: 6314
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ad9d6b3f74dbe9b0800000000000000
+      internalID: -5049708914242904671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_159
+      rect:
+        serializedVersion: 2
+        x: 6355
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40e805eaeb8511670800000000000000
+      internalID: 8507678747071122948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_160
+      rect:
+        serializedVersion: 2
+        x: 6396
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17920a7eff97f5be0800000000000000
+      internalID: -1486335211999319695
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_161
+      rect:
+        serializedVersion: 2
+        x: 6437
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 896fe55a827596870800000000000000
+      internalID: 8676561989190743704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_162
+      rect:
+        serializedVersion: 2
+        x: 6478
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 024983c0e5b589bd0800000000000000
+      internalID: -2623246323453225952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_163
+      rect:
+        serializedVersion: 2
+        x: 6519
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05e7c33f1fcfcbbe0800000000000000
+      internalID: -1460014063076737456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_164
+      rect:
+        serializedVersion: 2
+        x: 6560
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15910eb5714a92670800000000000000
+      internalID: 8514516990753249617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_165
+      rect:
+        serializedVersion: 2
+        x: 6601
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea970303fa9045df0800000000000000
+      internalID: -192518236037678674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_166
+      rect:
+        serializedVersion: 2
+        x: 6642
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65f3137b36ee7de20800000000000000
+      internalID: 3375428557780107094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_167
+      rect:
+        serializedVersion: 2
+        x: 6683
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a97aee88fe8dbc90800000000000000
+      internalID: -7152403434993714777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_168
+      rect:
+        serializedVersion: 2
+        x: 6724
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2a74a19452138020800000000000000
+      internalID: 2342736385592818221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_169
+      rect:
+        serializedVersion: 2
+        x: 6765
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7838d9243190549b0800000000000000
+      internalID: -5096657424973200505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_170
+      rect:
+        serializedVersion: 2
+        x: 6806
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb88f02b86e7a5e70800000000000000
+      internalID: 9104728584811940030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_171
+      rect:
+        serializedVersion: 2
+        x: 6847
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba3176cc899e53410800000000000000
+      internalID: 1456326896997831595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_172
+      rect:
+        serializedVersion: 2
+        x: 6888
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6de57981bb15b70800000000000000
+      internalID: 8886089254071883512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_173
+      rect:
+        serializedVersion: 2
+        x: 6929
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f61afae8d5a169e0800000000000000
+      internalID: -1629839239057631502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_174
+      rect:
+        serializedVersion: 2
+        x: 6970
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1368b01a45b63a990800000000000000
+      internalID: -7375933753479428559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_175
+      rect:
+        serializedVersion: 2
+        x: 7011
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96bfbe8242a847250800000000000000
+      internalID: 5941525696318536553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_176
+      rect:
+        serializedVersion: 2
+        x: 7052
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb73a67a39da491d0800000000000000
+      internalID: -3344857773548881989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_177
+      rect:
+        serializedVersion: 2
+        x: 7093
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fe55835bb3bcf000800000000000000
+      internalID: 71129311272591088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_178
+      rect:
+        serializedVersion: 2
+        x: 7134
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73a59c03a825caae0800000000000000
+      internalID: -1536762619362715081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_179
+      rect:
+        serializedVersion: 2
+        x: 7175
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dadda5172c0aec10800000000000000
+      internalID: 2083491139619248851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_180
+      rect:
+        serializedVersion: 2
+        x: 7216
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b1fee417096b32b0800000000000000
+      internalID: -5603769832195558991
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_181
+      rect:
+        serializedVersion: 2
+        x: 7257
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0253823e277a56570800000000000000
+      internalID: 8459351586964518176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_182
+      rect:
+        serializedVersion: 2
+        x: 7298
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9cfc4365618b920800000000000000
+      internalID: 3006177310778837488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_183
+      rect:
+        serializedVersion: 2
+        x: 7339
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b6b5d4494031cea0800000000000000
+      internalID: -5854344949359331661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_184
+      rect:
+        serializedVersion: 2
+        x: 7380
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51378fef42bc3ecb0800000000000000
+      internalID: -4835798215108824299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_185
+      rect:
+        serializedVersion: 2
+        x: 7392
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd7c11e0a8eaef730800000000000000
+      internalID: 4034854224135309276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_186
+      rect:
+        serializedVersion: 2
+        x: 7421
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4173237c05b5267a0800000000000000
+      internalID: -6385440919160473836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_187
+      rect:
+        serializedVersion: 2
+        x: 7462
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5096b42afc1e73e20800000000000000
+      internalID: 3330378731361102085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_188
+      rect:
+        serializedVersion: 2
+        x: 7503
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfe91ea97d8632120800000000000000
+      internalID: 2387867502662229756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_189
+      rect:
+        serializedVersion: 2
+        x: 7544
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dddc5710557d2d0800000000000000
+      internalID: -3254038740992140008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_190
+      rect:
+        serializedVersion: 2
+        x: 7585
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4274900b3aec08130800000000000000
+      internalID: 3567078107305821988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_191
+      rect:
+        serializedVersion: 2
+        x: 7626
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98a72d8cae76b2f90800000000000000
+      internalID: -6977368939591206263
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_192
+      rect:
+        serializedVersion: 2
+        x: 7667
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c20e4d4ece78f1db0800000000000000
+      internalID: -4818983624741953492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_193
+      rect:
+        serializedVersion: 2
+        x: 7708
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9392843bcc88378e0800000000000000
+      internalID: -1696862221825988295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_194
+      rect:
+        serializedVersion: 2
+        x: 7749
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b397d07bed4fd92f0800000000000000
+      internalID: -964345507796387525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_195
+      rect:
+        serializedVersion: 2
+        x: 7790
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e202d2952d0b4c110800000000000000
+      internalID: 1280342611565813806
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_196
+      rect:
+        serializedVersion: 2
+        x: 7831
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c52999d19cbbd790800000000000000
+      internalID: -7504197019475827261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_197
+      rect:
+        serializedVersion: 2
+        x: 7872
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb356476a512a8200800000000000000
+      internalID: 182995407025361851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_198
+      rect:
+        serializedVersion: 2
+        x: 7913
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0909bd440f78310800000000000000
+      internalID: 1407357587108696276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_199
+      rect:
+        serializedVersion: 2
+        x: 7954
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 478f20e38243fcee0800000000000000
+      internalID: -1238714025059878796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_200
+      rect:
+        serializedVersion: 2
+        x: 7995
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c72cf359b4c994ed0800000000000000
+      internalID: -2429238675549207940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_201
+      rect:
+        serializedVersion: 2
+        x: 8036
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a22e37a8d365d0530800000000000000
+      internalID: 3822806481023263274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_202
+      rect:
+        serializedVersion: 2
+        x: 8077
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4fecedd4c865dd80800000000000000
+      internalID: -8226553949576171698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_203
+      rect:
+        serializedVersion: 2
+        x: 8118
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 013041a530a421590800000000000000
+      internalID: -7705014634220879088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_204
+      rect:
+        serializedVersion: 2
+        x: 8159
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60819d95b84c12260800000000000000
+      internalID: 7071148992735287302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_205
+      rect:
+        serializedVersion: 2
+        x: 8200
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9150d18826661800800000000000000
+      internalID: 582765525953696155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_206
+      rect:
+        serializedVersion: 2
+        x: 8241
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b225b095d1a191fd0800000000000000
+      internalID: -2370835015483567573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_207
+      rect:
+        serializedVersion: 2
+        x: 8282
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f4f91998876fc000800000000000000
+      internalID: 58379156560934137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_208
+      rect:
+        serializedVersion: 2
+        x: 8323
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8388c4c50dc9ab330800000000000000
+      internalID: 3727464060318156856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_209
+      rect:
+        serializedVersion: 2
+        x: 8364
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d46722ff76aebfd50800000000000000
+      internalID: 6772264197064652365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_210
+      rect:
+        serializedVersion: 2
+        x: 8405
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9787a70c9c288820800000000000000
+      internalID: 2920633407004706716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_211
+      rect:
+        serializedVersion: 2
+        x: 8446
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e3f4564a26b46d60800000000000000
+      internalID: 7882625540490064864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_212
+      rect:
+        serializedVersion: 2
+        x: 8487
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 529fc6f749f6e7f60800000000000000
+      internalID: 8033981468859234597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_213
+      rect:
+        serializedVersion: 2
+        x: 8528
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd360cec7ffd9bda0800000000000000
+      internalID: -5928461179037916197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_214
+      rect:
+        serializedVersion: 2
+        x: 8569
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 825ebcf76d2d29bc0800000000000000
+      internalID: -3777725318701521624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_215
+      rect:
+        serializedVersion: 2
+        x: 8610
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a81a06aae59c91fe0800000000000000
+      internalID: -1217720815804440182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_216
+      rect:
+        serializedVersion: 2
+        x: 8651
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b24722ee20dea410800000000000000
+      internalID: 1490357426487509687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_217
+      rect:
+        serializedVersion: 2
+        x: 8692
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39be1899f90c1b450800000000000000
+      internalID: 6102870761771494291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_218
+      rect:
+        serializedVersion: 2
+        x: 8733
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7297707bdc7af70800000000000000
+      internalID: 9198546949915617197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_219
+      rect:
+        serializedVersion: 2
+        x: 8774
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7b40e76c13499c0800000000000000
+      internalID: -3921454646945335389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_220
+      rect:
+        serializedVersion: 2
+        x: 8815
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308f01980914c8ad0800000000000000
+      internalID: -2698709987671083005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_221
+      rect:
+        serializedVersion: 2
+        x: 8856
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8edb098248ed7b410800000000000000
+      internalID: 1492906460694232552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_222
+      rect:
+        serializedVersion: 2
+        x: 8897
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc4c6618aa6ada60800000000000000
+      internalID: 7699583783106530557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_223
+      rect:
+        serializedVersion: 2
+        x: 8938
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d17b23af3de10090800000000000000
+      internalID: -8069908199694962223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_224
+      rect:
+        serializedVersion: 2
+        x: 8979
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 572d48e6a4c6dce90800000000000000
+      internalID: -7003822778553675147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_225
+      rect:
+        serializedVersion: 2
+        x: 9020
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e3c1a6d6a2a237ce0800000000000000
+      internalID: -1408735896724169666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_226
+      rect:
+        serializedVersion: 2
+        x: 9040
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f886b9fe8df0d9dd0800000000000000
+      internalID: -2477806795576612721
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_227
+      rect:
+        serializedVersion: 2
+        x: 9061
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58392ed6f7f918670800000000000000
+      internalID: 8539281738124399493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_228
+      rect:
+        serializedVersion: 2
+        x: 9102
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b00603a04910c8a0800000000000000
+      internalID: -6286997314405531470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_229
+      rect:
+        serializedVersion: 2
+        x: 9143
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4230cf7c5a6309920800000000000000
+      internalID: 2994953837854065444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_230
+      rect:
+        serializedVersion: 2
+        x: 9184
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d45e25a6a9bdde20800000000000000
+      internalID: 3377059420984726739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_231
+      rect:
+        serializedVersion: 2
+        x: 9225
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dd8869c67ecfe500800000000000000
+      internalID: 427787499204021714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_232
+      rect:
+        serializedVersion: 2
+        x: 9266
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd5cf7c37ae704b40800000000000000
+      internalID: 5422473208093722075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_233
+      rect:
+        serializedVersion: 2
+        x: 9307
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 862f0f350be8db960800000000000000
+      internalID: 7619403032554435176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_234
+      rect:
+        serializedVersion: 2
+        x: 9348
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 978d6dac2b6b275f0800000000000000
+      internalID: -760344508048680839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_235
+      rect:
+        serializedVersion: 2
+        x: 9389
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ee5a0cabc39c4000800000000000000
+      internalID: 21554601204014825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_236
+      rect:
+        serializedVersion: 2
+        x: 9430
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd927e66c919a4480800000000000000
+      internalID: -8914152411499124257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_237
+      rect:
+        serializedVersion: 2
+        x: 9471
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2939b70ac4f4e85f0800000000000000
+      internalID: -752576897195732078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_238
+      rect:
+        serializedVersion: 2
+        x: 9512
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0208f5812b6297550800000000000000
+      internalID: 6158996511760810016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_239
+      rect:
+        serializedVersion: 2
+        x: 9553
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07c7d6d76db6decb0800000000000000
+      internalID: -4833088256127173520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_240
+      rect:
+        serializedVersion: 2
+        x: 9594
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f15e5e0b6d759c290800000000000000
+      internalID: -7869662294250756833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_241
+      rect:
+        serializedVersion: 2
+        x: 9635
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e65f75b39fcb570800000000000000
+      internalID: 8483929831333260844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_242
+      rect:
+        serializedVersion: 2
+        x: 9676
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7eddccec713f33b30800000000000000
+      internalID: 4266020555629321703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_243
+      rect:
+        serializedVersion: 2
+        x: 9717
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1bdac6e8e8fab70800000000000000
+      internalID: 8912498929949323700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_244
+      rect:
+        serializedVersion: 2
+        x: 9758
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f351d6e57efdc61c0800000000000000
+      internalID: -4508982942090062529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_245
+      rect:
+        serializedVersion: 2
+        x: 9799
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887be7f6207fc3890800000000000000
+      internalID: -7476829691509295224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_246
+      rect:
+        serializedVersion: 2
+        x: 9840
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a2d0d44801914c00800000000000000
+      internalID: 883146466641629856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_247
+      rect:
+        serializedVersion: 2
+        x: 9881
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d2185189c0a2af30800000000000000
+      internalID: 4585404157935489749
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_248
+      rect:
+        serializedVersion: 2
+        x: 9922
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf65dc932c8543de0800000000000000
+      internalID: -1354359996715018501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_249
+      rect:
+        serializedVersion: 2
+        x: 9963
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5a83fc8c452963f0800000000000000
+      internalID: -907152839225931170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_250
+      rect:
+        serializedVersion: 2
+        x: 10004
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9b1a4b06cb18340800000000000000
+      internalID: 4864376196070226382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_251
+      rect:
+        serializedVersion: 2
+        x: 10045
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5754dfaff8791fa0800000000000000
+      internalID: -5829495203092474018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_252
+      rect:
+        serializedVersion: 2
+        x: 10086
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a40d203196f20ffc0800000000000000
+      internalID: -3463215985110888374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_253
+      rect:
+        serializedVersion: 2
+        x: 10127
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29ce807cf39e9ca90800000000000000
+      internalID: -7293041661418345326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_254
+      rect:
+        serializedVersion: 2
+        x: 10168
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87870795b0ef49580800000000000000
+      internalID: -8821146445413320584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_255
+      rect:
+        serializedVersion: 2
+        x: 10209
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0842236b59fa007c0800000000000000
+      internalID: -4107089802620164992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_256
+      rect:
+        serializedVersion: 2
+        x: 10250
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 524d6af376a28bdc0800000000000000
+      internalID: -3623099277281668059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_257
+      rect:
+        serializedVersion: 2
+        x: 10291
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a373315278188d70800000000000000
+      internalID: 9045506730841306024
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_258
+      rect:
+        serializedVersion: 2
+        x: 10332
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b18a81c8bf7d0a1d0800000000000000
+      internalID: -3341433448121718757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_259
+      rect:
+        serializedVersion: 2
+        x: 10373
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e1c2bd6e5383880800000000000000
+      internalID: -8631089420219703713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_260
+      rect:
+        serializedVersion: 2
+        x: 10414
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a64fd52f68a792bf0800000000000000
+      internalID: -348612776134052758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_261
+      rect:
+        serializedVersion: 2
+        x: 10455
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7730d7663554c1bc0800000000000000
+      internalID: -3811094960158211209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_262
+      rect:
+        serializedVersion: 2
+        x: 10496
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92e57787bd9b20150800000000000000
+      internalID: 5837432419295649321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_263
+      rect:
+        serializedVersion: 2
+        x: 10537
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0aceb8869242a13a0800000000000000
+      internalID: -6693998135866561376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_264
+      rect:
+        serializedVersion: 2
+        x: 10578
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e1a49bf79864740800000000000000
+      internalID: 5135943606725123593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_265
+      rect:
+        serializedVersion: 2
+        x: 10619
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f1dff1b21ec21680800000000000000
+      internalID: -8785733343355350541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_266
+      rect:
+        serializedVersion: 2
+        x: 10660
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5da96b3aa858a64a0800000000000000
+      internalID: -6599315473459406123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_267
+      rect:
+        serializedVersion: 2
+        x: 10680
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1a5e27e2e7dcf80800000000000000
+      internalID: -8084667018098925121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_268
+      rect:
+        serializedVersion: 2
+        x: 10701
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd6fa98cf3b240c90800000000000000
+      internalID: -7204585950937418017
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_269
+      rect:
+        serializedVersion: 2
+        x: 10742
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb9e476080791dfd0800000000000000
+      internalID: -2318906272395236932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_270
+      rect:
+        serializedVersion: 2
+        x: 10783
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1972b5604fbf9fc0800000000000000
+      internalID: -3485857303256467170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_271
+      rect:
+        serializedVersion: 2
+        x: 10824
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31aa8247c461addd0800000000000000
+      internalID: -2460629728782407149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_272
+      rect:
+        serializedVersion: 2
+        x: 10865
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 416e81cd608c20080800000000000000
+      internalID: -9222589155113376236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_273
+      rect:
+        serializedVersion: 2
+        x: 10906
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de22a582a66a4a0c0800000000000000
+      internalID: -4565341147373100307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_274
+      rect:
+        serializedVersion: 2
+        x: 10947
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d09a8bbe8da96e30800000000000000
+      internalID: 4497316531449532632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_275
+      rect:
+        serializedVersion: 2
+        x: 10988
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb77b935ac1a079c0800000000000000
+      internalID: -3931464584336279621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_276
+      rect:
+        serializedVersion: 2
+        x: 11029
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71934795c6b321bc0800000000000000
+      internalID: -3813920597886093033
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_277
+      rect:
+        serializedVersion: 2
+        x: 11070
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3873d95d8f143f70800000000000000
+      internalID: 9165985833563682877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_278
+      rect:
+        serializedVersion: 2
+        x: 11111
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec67a81d8670baf10800000000000000
+      internalID: 2281925782966793934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_279
+      rect:
+        serializedVersion: 2
+        x: 11152
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1e82d3e9196a5360800000000000000
+      internalID: 7159150117576150559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_280
+      rect:
+        serializedVersion: 2
+        x: 11193
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb55d623a47c05020800000000000000
+      internalID: 2328580128838079935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_281
+      rect:
+        serializedVersion: 2
+        x: 11234
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65893f5297d158970800000000000000
+      internalID: 8756437456656767062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_282
+      rect:
+        serializedVersion: 2
+        x: 11275
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cc80eaa45ca99410800000000000000
+      internalID: 1484407031839362241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_283
+      rect:
+        serializedVersion: 2
+        x: 11316
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d37fcdfff8acd8b80800000000000000
+      internalID: -8390827810899560643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_284
+      rect:
+        serializedVersion: 2
+        x: 11357
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4d593fc7680196f0800000000000000
+      internalID: -679752826804937396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_285
+      rect:
+        serializedVersion: 2
+        x: 11398
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a6f67fb61578f010800000000000000
+      internalID: 1222856039393064610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_286
+      rect:
+        serializedVersion: 2
+        x: 11439
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04b9077fb03bed3c0800000000000000
+      internalID: -4332828927506474176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_287
+      rect:
+        serializedVersion: 2
+        x: 11480
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36d0c07b233584820800000000000000
+      internalID: 2902661437124775267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_288
+      rect:
+        serializedVersion: 2
+        x: 11521
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cb339aaa04c9430800000000000000
+      internalID: 3790976088066472972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_289
+      rect:
+        serializedVersion: 2
+        x: 11562
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee4d0432fba55fc70800000000000000
+      internalID: 9004202806973879534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_290
+      rect:
+        serializedVersion: 2
+        x: 11603
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4449aada03eb53900800000000000000
+      internalID: 663645636388361284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_291
+      rect:
+        serializedVersion: 2
+        x: 11644
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f727b8f242e86a3f0800000000000000
+      internalID: -889867590291459457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_292
+      rect:
+        serializedVersion: 2
+        x: 11685
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 280cd0fbda5d11fa0800000000000000
+      internalID: -5831645100256673662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_293
+      rect:
+        serializedVersion: 2
+        x: 11726
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef9e7fcad1e7e6e60800000000000000
+      internalID: 7957436257531324926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_294
+      rect:
+        serializedVersion: 2
+        x: 11767
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1896f6049b57440c0800000000000000
+      internalID: -4592416281500620415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_295
+      rect:
+        serializedVersion: 2
+        x: 11808
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e3a2b0a34d8e680800000000000000
+      internalID: -8725490932269826403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_296
+      rect:
+        serializedVersion: 2
+        x: 11849
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f47e691e45a2a970800000000000000
+      internalID: 8764749579669107953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_297
+      rect:
+        serializedVersion: 2
+        x: 11890
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06e40467fbc634dc0800000000000000
+      internalID: -3655958902916231584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_298
+      rect:
+        serializedVersion: 2
+        x: 11931
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36e586cb853bafa10800000000000000
+      internalID: 1944063382863240803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_299
+      rect:
+        serializedVersion: 2
+        x: 11972
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79ea56e327b8152d0800000000000000
+      internalID: -3291696529841738089
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_300
+      rect:
+        serializedVersion: 2
+        x: 12013
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4bb5db5fbae02fe0800000000000000
+      internalID: -1215713791789647030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_301
+      rect:
+        serializedVersion: 2
+        x: 12054
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfaa77ed67188bbb0800000000000000
+      internalID: -4920040245363758341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_302
+      rect:
+        serializedVersion: 2
+        x: 12095
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d29ef016e7fb4e2b0800000000000000
+      internalID: -5556105490753132243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_303
+      rect:
+        serializedVersion: 2
+        x: 12136
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5513271306f5d0560800000000000000
+      internalID: 7281581039279026517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_304
+      rect:
+        serializedVersion: 2
+        x: 12177
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93587a9f9f18e1c10800000000000000
+      internalID: 2026199792998647097
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_305
+      rect:
+        serializedVersion: 2
+        x: 12218
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd695a418fa0d05e0800000000000000
+      internalID: -1941883803712252196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_306
+      rect:
+        serializedVersion: 2
+        x: 12259
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e2be43b0b1a8acc0800000000000000
+      internalID: -3699529313590267165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_307
+      rect:
+        serializedVersion: 2
+        x: 12300
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f4c091e66720d980800000000000000
+      internalID: -8516263572533099277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_308
+      rect:
+        serializedVersion: 2
+        x: 12320
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd42b6d7ad7a840e0800000000000000
+      internalID: -2285392254041643812
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_309
+      rect:
+        serializedVersion: 2
+        x: 12341
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28ec331fbf3b9c010800000000000000
+      internalID: 1209695869590556290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_310
+      rect:
+        serializedVersion: 2
+        x: 12382
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1302e79b971988cb0800000000000000
+      internalID: -4861475845757329359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_311
+      rect:
+        serializedVersion: 2
+        x: 12423
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d77119747d9453520800000000000000
+      internalID: 2681130342136485757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_312
+      rect:
+        serializedVersion: 2
+        x: 12464
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 935c96438e62c9e90800000000000000
+      internalID: -7017691340596460231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_313
+      rect:
+        serializedVersion: 2
+        x: 12505
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b17375514511d30e0800000000000000
+      internalID: -2288653982801381605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_314
+      rect:
+        serializedVersion: 2
+        x: 12546
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a87348d5e5b94e0800000000000000
+      internalID: -1973880255928628589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_315
+      rect:
+        serializedVersion: 2
+        x: 12587
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c7d9a7ec1f837420800000000000000
+      internalID: 2626600361995655105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_316
+      rect:
+        serializedVersion: 2
+        x: 12628
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ecacb44fecc8a200800000000000000
+      internalID: 191628312185711849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: joypixels-sprite-40-symbols_317
+      rect:
+        serializedVersion: 2
+        x: 12669
+        y: 0
+        width: 40
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be73e31b7eaca7840800000000000000
+      internalID: 5222709814349412331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b87705361b3bb504f9aea5af7726e95a
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

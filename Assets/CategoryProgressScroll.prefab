@@ -2131,28 +2131,28 @@ MonoBehaviour:
   _categoryName: SASS
   _categoryNameText: {fileID: 1149353346136750696}
   _expressionsProgress:
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
-  - wordCode: TIO
+  - word: 
     totalResponses: 600
     totalCorrectResponses: 100
   _objectCollectionTransform: {fileID: 1149353346136750856}
@@ -2256,7 +2256,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1149353346247433556
 Transform:
   m_ObjectHideFlags: 0

@@ -36,6 +36,16 @@ public class WorldInitializer : MonoBehaviour
 
     private float _timeOfPlatonicTouch = 0;
 
+    [SerializeField]
+    private Transform _ucbBrochureTransform;
+
+    [SerializeField]
+    private Transform _lsbBrochureTransform;
+
+    private bool disableTumbleUcb = false;
+
+    private bool disableTumbleLsb = false;
+
     async void Start()
     {
         _targetRenderer = _startAppPlatonicTransform.GetComponent<Renderer>();
@@ -81,5 +91,24 @@ public class WorldInitializer : MonoBehaviour
     public void OnWebPageLaunched(string url)
     {
         UnityEngine.WSA.Launcher.LaunchUri(url, false);
+    }
+
+    public void OnTumbleBrochure(int brochure)
+    {
+        if (!disableTumbleUcb && brochure == 0)
+        {
+            disableTumbleUcb = true;
+            var position = _ucbBrochureTransform.position;
+            position.z = 0.1f;
+            _ucbBrochureTransform.position = position;
+        }
+
+        if (!disableTumbleLsb && brochure == 1)
+        {
+            disableTumbleLsb = true;
+            var position = _lsbBrochureTransform.position;
+            position.z = 0.1f;
+            _lsbBrochureTransform.position = position;
+        }
     }
 }

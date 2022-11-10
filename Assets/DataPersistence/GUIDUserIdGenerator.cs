@@ -22,7 +22,7 @@ namespace Assets.DataPersistence
             do
             {
                 newGUID = Guid.NewGuid().ToString();
-                newGUID = newGUID.Substring(0, 8);
+                newGUID = newGUID.Substring(0, 6);
             } while (_fileDataHandler.DoesFileExist(newGUID));
 
             return newGUID;

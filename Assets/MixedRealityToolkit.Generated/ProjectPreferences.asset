@@ -32,4 +32,4 @@ MonoBehaviour:
     keys:
     - BuildDeployWindow_AppLauncherModelLocation
     values:
-    - Assets/Icons/ImageToStl.com_ic_launcher-web.glb
+    - Assets/Icons/3dIcon/ImageToStl.com_playstore-icon.glb

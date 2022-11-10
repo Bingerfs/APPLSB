@@ -9,6 +9,7 @@ using UnityEngine.Android;
 using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
 using Assets.Util;
+using Microsoft.MixedReality.Toolkit.Input;
 
 public class DictationManager : MonoBehaviour
 {
@@ -25,27 +26,28 @@ public class DictationManager : MonoBehaviour
     [SerializeField]
     private GameObject _microphoneIcon;
 
+    [SerializeField]
+    private DictationHandler _dictationHandler;
+
     private ToolTip toolTip;
 
     private LSBModule _currentModule = LSBModule.INTERPRETATION;
 
+    [SerializeField]
+    private GameObject _noSoundContainer;
+
+    [SerializeField]
+    private GameObject _smallDialogPrefab;
+
     // Start is called before the first frame update
     void Start()
     {
-        RequestUserMicrophonePermission();
+        
     }
 
     private void OnEnable()
     {
         toolTip = mainTextToolTip.GetComponent<ToolTip>();
-    }
-
-    private static void RequestUserMicrophonePermission()
-    {
-        if (!Permission.HasUserAuthorizedPermission(Permission.Microphone))
-        {
-            Permission.RequestUserPermission(Permission.Microphone);
-        }
     }
 
     public void SwitchWebSearch(string[] words)
@@ -57,8 +59,17 @@ public class DictationManager : MonoBehaviour
 
     public void OnStartRecording()
     {
-        Debug.Log("------------------------------Recording started");
-        _microphoneIcon.SetActive(true);
+        if (!_dictationHandler.IsListening)
+        {
+            Debug.Log("------------------------------Recording started");
+            if (_noSoundContainer.activeSelf)
+            {
+                _noSoundContainer.SetActive(false);
+            }
+
+            _microphoneIcon.SetActive(true);
+            _dictationHandler.StartRecording();
+        }
     }
 
     public void OnResult(string sentence)
@@ -72,6 +83,12 @@ public class DictationManager : MonoBehaviour
         Debug.Log("-----------------------Complete");
         _microphoneIcon.SetActive(false);
         Debug.Log(sentence);
+        if (string.IsNullOrEmpty(sentence))
+        {
+            StartCoroutine(OnNoSound());
+            return;
+        }
+
         string[] bufferString = new string[1];
         bufferString[0] = sentence;
         switch (_currentModule)
@@ -87,6 +104,13 @@ public class DictationManager : MonoBehaviour
         }
     }
 
+    private IEnumerator OnNoSound()
+    {
+        _noSoundContainer.SetActive(true);
+        yield return new WaitForSeconds(3);
+        _noSoundContainer.SetActive(false);
+    }
+
     public void OnHypo(string sentence)
     {
         Debug.Log("-------------------------hypothesis");
@@ -97,6 +121,7 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
+        Dialog myDialog = Dialog.Open(_smallDialogPrefab, DialogButtonType.OK, "Error", "Sucedio un error en el sistema de dictado.", true);
         _microphoneIcon.SetActive(false);
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");

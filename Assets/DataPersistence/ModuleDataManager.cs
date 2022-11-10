@@ -36,6 +36,8 @@ namespace Assets.DataPersistence
 
         private List<string> _allWordCodes;
 
+        private List<CategoryCodeFileModel> _categories;
+
         private void Awake()
         {
             if (Instance != null)
@@ -65,11 +67,11 @@ namespace Assets.DataPersistence
             char[] delimiters = new char[] { '\r', '\n' };
             _allWordCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).ToList();
             var modules = _fileDataHandlerModules.Load();
-            var categories = _fileDataHandlerCategories.Load();
+            _categories = _fileDataHandlerCategories.Load();
             foreach (var module in modules)
             {
                 int moduleNumber = int.Parse(module.Name.Split(' ')[1]);
-                var moduleCategories = categories.Where(category => module.Categories.Any(c => c.Name.Equals(category.Name)));
+                var moduleCategories = _categories.Where(category => module.Categories.Any(c => c.Name.Equals(category.Name)));
                 foreach (var category in module.Categories)
                 {
                     IDictionary<string, CategoryData> auxDict = null;
@@ -121,5 +123,29 @@ namespace Assets.DataPersistence
             var splitWordCode = wordCode.Split('#');
             return splitWordCode[0];
         }
+
+        public CategoryData GetCategoryByCode(string categoryCode)
+        {
+            categoryCode = categoryCode.Contains('#') ? categoryCode : $"#{categoryCode}";
+            CategoryData categoryData = null;
+            foreach (var module in _moduleDictionary)
+            {
+                foreach (var category in module.Value.Values)
+                {
+                    if (category.IdentifierCode.Equals(categoryCode))
+                    {
+                        categoryData = category;
+                        break;
+                    }
+                }
+
+                if (categoryData != null)
+                {
+                    break;
+                }
+            }
+
+            return categoryData;
+        } 
     }
 }

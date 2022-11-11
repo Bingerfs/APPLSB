@@ -89,7 +89,7 @@ namespace LSB
             {
                 if(letter != ' ')
                 {
-                    expressionCodes.Append(new ExpressionCode(getLetterAnimationCode(letter)));
+                    expressionCodes = expressionCodes.Append(new ExpressionCode(getLetterAnimationCode(letter)));
                 }
             }
 

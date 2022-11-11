@@ -111,8 +111,11 @@ namespace LSB
 
         public bool TryGetAnimationClips(out IEnumerable<AnimationClip> filteredAnimations, Expression expression)
         {
+            var listCodes = expression.Codes.ToList();
             var animations = Animator.runtimeAnimatorController.animationClips.AsEnumerable();
-            filteredAnimations = animations.Where(animation => expression.Codes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));
+            filteredAnimations = animations.Where(animation => listCodes.Any(code => animation.name.Contains(code.WholeCode.Substring(1))));
+            filteredAnimations = filteredAnimations.OrderBy(fm => listCodes.FindIndex(c => fm.name.Contains(c.WholeCode.Substring(1)))).ToList();
+            var visualizelist = filteredAnimations.ToList();
             return filteredAnimations.Any();
         }
 

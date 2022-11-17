@@ -27,25 +27,47 @@ namespace Assets.Util
             } 
         }
 
-        private string _setCode;
+        private Dictionary<string, Dictionary<string, ExpressionData>> _dictionaryOfSets; 
 
-        public string SetCode
+        public Dictionary<string, Dictionary<string, ExpressionData>> DictionaryOfSets { get => _dictionaryOfSets; set => _dictionaryOfSets = value; }  
+
+        public CategoryData()
         {
-            get => _setCode;
-            set
-            {
-                string codeValue = value;
-                if (value.Contains("#"))
-                {
-                    codeValue = codeValue.Replace("#", "");
-                }
+            _dictionaryOfSets = new Dictionary<string, Dictionary<string,ExpressionData>>();
+        }
+        public CategoryData(string name, string code)
+        {
+            Name = name;
+            Code = code;
+            _dictionaryOfSets = new Dictionary<string, Dictionary<string, ExpressionData>>();
+        }
 
-                _setCode = codeValue;
+        public void AddSet(string setCode)
+        {
+            if (!_dictionaryOfSets.ContainsKey(setCode))
+            {
+                _dictionaryOfSets.Add(setCode, new Dictionary<string, ExpressionData>());
             }
         }
 
-        public string IdentifierCode => $"#{Code}{SetCode}";
+        public void AddExpressionToSet(ExpressionData expressionData, string setCode)
+        {
+            if (_dictionaryOfSets.ContainsKey(setCode))
+            {
+                var set = _dictionaryOfSets[setCode];
+                if (!set.ContainsKey(expressionData.ExpressionCode))
+                {
+                    set.Add(expressionData.ExpressionCode, expressionData);
+                }
+            }
+        }
 
-        public List<ExpressionData> Expressions { get; set; }   
+        public void AddExpressionsToSet(List<ExpressionData> expressionsData, string setCode)
+        {
+            foreach (var expressionData in expressionsData)
+            {
+                AddExpressionToSet(expressionData, setCode);
+            }
+        }
     }
 }

@@ -46,6 +46,14 @@ public class WorldInitializer : MonoBehaviour
 
     private bool disableTumbleLsb = false;
 
+    private bool _isWindowActive = false;
+
+    public bool IsWindowActive { get => _isWindowActive; set => _isWindowActive = value; }
+
+    private void Awake()
+    {
+    }
+
     async void Start()
     {
         _targetRenderer = _startAppPlatonicTransform.GetComponent<Renderer>();
@@ -53,17 +61,10 @@ public class WorldInitializer : MonoBehaviour
         {
             _originalColor = _targetRenderer.material.color;
         }
-
-        _debugText.SetText("hétérogénéité");
     }
 
     async void Update()
     {
-        if (_startAppPlatonicTransform != null)
-        {
-            _startAppPlatonicTransform.Rotate(Vector3.up * (100.0f * Time.deltaTime));
-        }
-
         if (_hasPlatonicBeenTouched)
         {
             _timeOfPlatonicTouch = _timeOfPlatonicTouch == 0f ? Time.unscaledTime : _timeOfPlatonicTouch;
@@ -84,13 +85,18 @@ public class WorldInitializer : MonoBehaviour
             }
 
             _uiElements.SetActive(false);
+            gameObject.SetActive(false);
             await SceneHandler.Instance.TransitionToAnotherScene("MainMenuScene");
         }
     }
 
     public void OnWebPageLaunched(string url)
     {
-        UnityEngine.WSA.Launcher.LaunchUri(url, false);
+        if (!_isWindowActive)
+        {
+            _isWindowActive = true;
+            UnityEngine.WSA.Launcher.LaunchUri(url, false);
+        }
     }
 
     public void OnTumbleBrochure(int brochure)

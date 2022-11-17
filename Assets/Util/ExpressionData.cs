@@ -44,6 +44,23 @@ namespace Assets.Util
             }
         }
 
-        public string WholeCode => $"#{CategoryCode}{ExpressionCode}";
+        private string _setCode;
+
+        public string SetCode { get => _setCode; set => _setCode = value; }
+
+        public string WholeCode => $"#{_categoryCode}{_setCode}{_expressionCode}";
+
+        public ExpressionData()
+        {
+
+        }
+
+        public ExpressionData(string categoryCode, string setCode, string expressionCode, string expression)
+        {
+            _categoryCode = categoryCode;
+            _setCode = setCode;
+            _expressionCode = expressionCode;
+            Expression = expression;
+        }
     }
 }

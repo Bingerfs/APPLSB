@@ -38,6 +38,10 @@ namespace Assets.DataPersistence
 
         private List<CategoryCodeFileModel> _categories;
 
+        private Dictionary<string, CategoryData> _categoryDictionary;
+
+        private List<List<CategorySetData>> _modulesList;
+
         private void Awake()
         {
             if (Instance != null)
@@ -52,7 +56,8 @@ namespace Assets.DataPersistence
         {
             _fileDataHandlerModules = new AssetsDataHandler<List<ModuleDataModel>>(CONFIG_DIR, MODULES_CONFIG_FILENAME);
             _fileDataHandlerCategories = new AssetsDataHandler<List<CategoryCodeFileModel>>(CONFIG_DIR, CATEGORY_CONFIG_FILENAME);
-            _moduleDictionary = new Dictionary<int, IDictionary<string, CategoryData>>();
+            _categoryDictionary = new Dictionary<string, CategoryData>();
+            _modulesList = new List<List<CategorySetData>>();
             LoadAllData();
         }
 
@@ -67,8 +72,35 @@ namespace Assets.DataPersistence
             char[] delimiters = new char[] { '\r', '\n' };
             _allWordCodes = readCodes.text.Split(delimiters, StringSplitOptions.RemoveEmptyEntries).ToList();
             var modules = _fileDataHandlerModules.Load();
-            _categories = _fileDataHandlerCategories.Load();
+            var categories = _fileDataHandlerCategories.Load();
+            var categorySets = modules.Aggregate(new List<CategoryFileModel> { }, (current, next) => { current.AddRange(next.Categories); return current; }).ToList();
+            foreach (var category in categories)
+            {
+                var filteredCategorySets = categorySets.Where(cs => cs.Name.Equals(category.Name));
+                var categoryData = new CategoryData(category.Name, category.Code);
+                foreach (var set in filteredCategorySets)
+                {
+                    categoryData.AddSet(set.Set);
+                    var categorySetExpressions = _allWordCodes.Where(c => c.Contains($"#{categoryData.Code}{set.Set}")).ToList();
+                    var expressionsData = categorySetExpressions.Select(exp => {
+                        var splitExpressionTexts = exp.Split('#');
+                        var categorySetCode = $"{categoryData.Code}{set.Set}";
+                        var expressionCode = exp.Substring(exp.IndexOf(categorySetCode) + categorySetCode.Length);
+                        return new ExpressionData(categoryData.Code, set.Set, expressionCode, splitExpressionTexts[0]);
+                    }).ToList();
+                    categoryData.AddExpressionsToSet(expressionsData, set.Set);
+                }
+
+                _categoryDictionary.Add(categoryData.Code, categoryData);
+            }
+
             foreach (var module in modules)
+            {
+                var listOfCategorySets = module.Categories.Select(c => new CategorySetData(GetCategoryCodeByName(c.Name), c.Set)).ToList();
+                _modulesList.Add(listOfCategorySets);
+            }
+
+            /*foreach (var module in modules)
             {
                 int moduleNumber = int.Parse(module.Name.Split(' ')[1]);
                 var moduleCategories = _categories.Where(category => module.Categories.Any(c => c.Name.Equals(category.Name)));
@@ -94,55 +126,54 @@ namespace Assets.DataPersistence
                     }).ToList();
                     auxDict.Add(categoryData.IdentifierCode, categoryData);
                 }
+            }*/
+        }
+
+        public string GetCategoryCodeByName(string categoryName)
+        {
+            string code = null;
+            foreach (var categoryValuePair in _categoryDictionary)
+            {
+                if (categoryValuePair.Value.Name.Equals(categoryName))
+                {
+                    code = categoryValuePair.Key;
+                    break;
+                }
             }
+
+            return code;
         }
 
         public List<ExpressionData> GetExpressionsByModule(int moduleNumber)
         {
-            List<ExpressionData> moduleExpressions = new List<ExpressionData>();
-            IDictionary<string, CategoryData> categories = null;
-            if (_moduleDictionary.TryGetValue(moduleNumber, out categories))
+            List<ExpressionData> expressions = new List<ExpressionData>();
+            if (moduleNumber > 0)
             {
-                foreach (var category in categories)
+                var categorySets = _modulesList[moduleNumber - 1];
+                foreach (var categorySet in categorySets)
                 {
-                    moduleExpressions.AddRange(category.Value.Expressions);
+                    if (_categoryDictionary.ContainsKey(categorySet.CategoryCode))
+                    {
+                        var category = _categoryDictionary[categorySet.CategoryCode];
+                        if (category.DictionaryOfSets.ContainsKey(categorySet.SetCode))
+                        {
+                            var foundExpressions = category.DictionaryOfSets[categorySet.SetCode];
+                            expressions.AddRange(foundExpressions.Values);
+                        }
+                    }
                 }
             }
 
-            return moduleExpressions;
-        }
-
-        public IDictionary<int, IDictionary<string, CategoryData>> GetModules()
-        {
-            return _moduleDictionary;
-        }
-
-        public string GetWordByCode(string code)
-        {
-            var wordCode = _allWordCodes.FirstOrDefault(w => w.Contains(code));
-            var splitWordCode = wordCode.Split('#');
-            return splitWordCode[0];
+            return expressions;
         }
 
         public CategoryData GetCategoryByCode(string categoryCode)
         {
             categoryCode = categoryCode.Contains('#') ? categoryCode : $"#{categoryCode}";
             CategoryData categoryData = null;
-            foreach (var module in _moduleDictionary)
+            if (_categoryDictionary.ContainsKey(categoryCode))
             {
-                foreach (var category in module.Value.Values)
-                {
-                    if (category.IdentifierCode.Equals(categoryCode))
-                    {
-                        categoryData = category;
-                        break;
-                    }
-                }
-
-                if (categoryData != null)
-                {
-                    break;
-                }
+                categoryData = _categoryDictionary[categoryCode];
             }
 
             return categoryData;

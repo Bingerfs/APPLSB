@@ -6,7 +6,6 @@ using System.Linq;
 using TMPro;
 using UnityEngine;
 
-//[ExecuteInEditMode]
 public class CategoryProgressContainer : MonoBehaviour
 {
     [SerializeField]
@@ -28,8 +27,9 @@ public class CategoryProgressContainer : MonoBehaviour
     [SerializeField]
     private GameObject _wordProgressPrefab;
 
-    [SerializeField]
-    private 
+    private bool requireItemsUpdate = false;
+
+    private GridObjectCollection gridObjectCollection = null;
 
     void Start()
     {
@@ -43,14 +43,17 @@ public class CategoryProgressContainer : MonoBehaviour
                 progresScript.WordProgressData = expressionProgress;
             }
 
-            var gridObjectCollection = _objectCollectionTransform.gameObject.GetComponent<GridObjectCollection>();
-            gridObjectCollection.UpdateCollection();
+            gridObjectCollection = _objectCollectionTransform.gameObject.GetComponent<GridObjectCollection>();
+            requireItemsUpdate = true;
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        if (requireItemsUpdate)
+        {
+            requireItemsUpdate = false;
+            gridObjectCollection.UpdateCollection();
+        }
     }
 }

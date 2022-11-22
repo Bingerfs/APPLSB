@@ -5,11 +5,14 @@ using Microsoft.MixedReality.Toolkit.Input;
 using Microsoft.MixedReality.Toolkit.SceneSystem;
 using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Windows.Speech;
+using UnityEngine.WSA;
 
 public class WorldInitializer : MonoBehaviour
 {
@@ -49,10 +52,6 @@ public class WorldInitializer : MonoBehaviour
     private bool _isWindowActive = false;
 
     public bool IsWindowActive { get => _isWindowActive; set => _isWindowActive = value; }
-
-    private void Awake()
-    {
-    }
 
     async void Start()
     {

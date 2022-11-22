@@ -8,6 +8,8 @@ using TMPro;
 using Microsoft.MixedReality.Toolkit.UI;
 using Assets.Util;
 using Microsoft.MixedReality.Toolkit.Input;
+using Microsoft.MixedReality.Toolkit;
+using UnityEngine.WSA;
 
 public class DictationManager : MonoBehaviour
 {
@@ -37,10 +39,61 @@ public class DictationManager : MonoBehaviour
     [SerializeField]
     private GameObject _smallDialogPrefab;
 
-    // Start is called before the first frame update
-    void Start()
+    private bool registered = true;
+
+    private void OnApplicationFocus(bool focus)
     {
-        
+        Debug.Log("focused");
+        if (focus)
+        {
+            UnRegister();
+            Register();
+        }
+    }
+
+    private void OnApplicationPause(bool pause)
+    {
+        Debug.Log("paused");
+        if (!pause)
+        {
+            UnRegister();
+            Register();
+        }
+    }
+
+    private void UnRegister()
+    {
+        if (registered)
+        {
+            if (CoreServices.InputSystem != null)
+            {
+                CoreServices.InputSystem.UnregisterHandler<IMixedRealityDictationHandler>(_dictationHandler);
+            }
+
+            registered = false;
+        }
+        else
+        {
+            Debug.LogError("Keyword listener already unregistered");
+        }
+    }
+
+    private void Register()
+    {
+        if (!registered)
+        {
+            registered = true;
+            CoreServices.InputSystem.RegisterHandler<IMixedRealityDictationHandler>(_dictationHandler);
+            UnityEngine.Windows.Speech.PhraseRecognitionSystem.Shutdown();
+            UnityEngine.Windows.Speech.PhraseRecognitionSystem.Restart();
+            CoreServices.ResetCacheReferences();
+            var dict = CoreServices.GetInputSystemDataProvider<IMixedRealityDictationSystem>();
+            dict.Reset();
+        }
+        else
+        {
+            Debug.LogError("Keyword listener already registered");
+        }
     }
 
     private void OnEnable()
@@ -57,6 +110,7 @@ public class DictationManager : MonoBehaviour
 
     public void OnStartRecording()
     {
+        Debug.Log("------------------------------Gesture activated. Current status");
         if (!_dictationHandler.IsListening)
         {
             Debug.Log("------------------------------Recording started");
@@ -65,8 +119,11 @@ public class DictationManager : MonoBehaviour
                 _noSoundContainer.SetActive(false);
             }
 
-            _microphoneIcon.SetActive(true);
             _dictationHandler.StartRecording();
+            if (_dictationHandler.IsListening)
+            {
+                _microphoneIcon.SetActive(true);
+            }
         }
     }
 
@@ -119,7 +176,7 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
-        Dialog myDialog = Dialog.Open(_smallDialogPrefab, DialogButtonType.OK, "Error", "Sucedio un error en el sistema de dictado.", true);
+        Dialog myDialog = Dialog.Open(_smallDialogPrefab, DialogButtonType.OK, "Error", $"Sucedio un error en el sistema de dictado: {message}", true);
         _microphoneIcon.SetActive(false);
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
@@ -141,11 +198,5 @@ public class DictationManager : MonoBehaviour
     public void OnSwapToInterpretationMode()
     {
         _currentModule = LSBModule.INTERPRETATION;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

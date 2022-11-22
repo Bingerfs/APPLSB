@@ -1,4 +1,5 @@
 using Assets.Util;
+using Microsoft.MixedReality.Toolkit.UI;
 using Microsoft.MixedReality.Toolkit.Utilities;
 using System.Collections;
 using System.Collections.Generic;
@@ -27,6 +28,9 @@ public class CategoryProgressContainer : MonoBehaviour
     [SerializeField]
     private GameObject _wordProgressPrefab;
 
+    [SerializeField]
+    private ScrollingObjectCollection scrollObject;
+
     private bool requireItemsUpdate = false;
 
     private GridObjectCollection gridObjectCollection = null;
@@ -44,6 +48,7 @@ public class CategoryProgressContainer : MonoBehaviour
             }
 
             gridObjectCollection = _objectCollectionTransform.gameObject.GetComponent<GridObjectCollection>();
+            gridObjectCollection.UpdateCollection();
             requireItemsUpdate = true;
         }
     }
@@ -53,7 +58,7 @@ public class CategoryProgressContainer : MonoBehaviour
         if (requireItemsUpdate)
         {
             requireItemsUpdate = false;
-            gridObjectCollection.UpdateCollection();
+            scrollObject.UpdateContent();
         }
     }
 }

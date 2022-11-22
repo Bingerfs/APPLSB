@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 351675945234304212}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.2275, y: -0.1475, z: 0}
-  m_LocalScale: {x: 0.45, y: 0.29, z: 0.14}
+  m_LocalPosition: {x: 0.2275, y: -0.1475, z: 0.0325}
+  m_LocalScale: {x: 0.45, y: 0.29, z: 0.075}
   m_Children: []
   m_Father: {fileID: 8825591396642171087}
   m_RootOrder: 1
@@ -115,80 +115,6 @@ MonoBehaviour:
   localCenter: {x: -0.000000052154064, y: -0.000000029802322, z: -0.5}
   bounds: {x: 1, y: 1}
   touchableCollider: {fileID: 7334361393020652608}
---- !u!1 &4079736215268028639
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 4079736215268028638}
-  - component: {fileID: 4079736215268028625}
-  m_Layer: 0
-  m_Name: CategoryProgressCollection
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4079736215268028638
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4079736215268028639}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 4079736215470069981}
-  m_Father: {fileID: 8825591397106595995}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4079736215268028625
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4079736215268028639}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 81bf15af81791a842954d24fd44c48b6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _objectCollectionTransform: {fileID: 4079736215470069981}
-  _categoriesProgress:
-  - categoryName: FAMILIA
-    expressionsProgress:
-    - word: 
-      totalResponses: 100
-      totalCorrectResponses: 10
-    - word: 
-      totalResponses: 100
-      totalCorrectResponses: 10
-    - word: 
-      totalResponses: 100
-      totalCorrectResponses: 10
-    - word: 
-      totalResponses: 100
-      totalCorrectResponses: 10
-    - word: 
-      totalResponses: 100
-      totalCorrectResponses: 10
-  - categoryName: COSAS
-    expressionsProgress:
-    - word: 
-      totalResponses: 300
-      totalCorrectResponses: 10
-    - word: 
-      totalResponses: 2
-      totalCorrectResponses: 1
-  _categoryContainerPrefab: {fileID: 1149353346136750398, guid: 18a775b58f35741478b8abe8c9d6f9e6,
-    type: 3}
-  scrollObject: {fileID: 8825591396642171084}
 --- !u!1 &4079736215470069978
 GameObject:
   m_ObjectHideFlags: 0
@@ -199,6 +125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4079736215470069981}
   - component: {fileID: 4079736215470069980}
+  - component: {fileID: 146284934954463083}
   m_Layer: 0
   m_Name: CategoryList
   m_TagString: Untagged
@@ -214,10 +141,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4079736215470069978}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.02, y: 0, z: 0.05}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 4079736215268028638}
+  m_Father: {fileID: 8825591397106595995}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &4079736215470069980
@@ -330,6 +257,54 @@ MonoBehaviour:
   cellWidth: 0.45
   cellHeight: 0.2
   assetVersion: 1
+--- !u!114 &146284934954463083
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4079736215470069978}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81bf15af81791a842954d24fd44c48b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _objectCollectionTransform: {fileID: 4079736215470069981}
+  _categoriesProgress:
+  - categoryName: FAMILIA
+    expressionsProgress:
+    - word: ass
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass2
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass3
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass4
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass5
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass5
+      totalResponses: 100
+      totalCorrectResponses: 10
+    - word: ass5
+      totalResponses: 100
+      totalCorrectResponses: 10
+  - categoryName: COSAS
+    expressionsProgress:
+    - word: 
+      totalResponses: 300
+      totalCorrectResponses: 10
+    - word: 
+      totalResponses: 2
+      totalCorrectResponses: 1
+  _categoryContainerPrefab: {fileID: 1149353346136750398, guid: 18a775b58f35741478b8abe8c9d6f9e6,
+    type: 3}
+  scrollObject: {fileID: 8825591396642171084}
 --- !u!1 &8825591396642171120
 GameObject:
   m_ObjectHideFlags: 0
@@ -1060,10 +1035,10 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8825591397106595996}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.02, y: -0.028, z: 0.05}
+  m_LocalPosition: {x: 0, y: -0.028, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 4079736215268028638}
+  - {fileID: 4079736215470069981}
   m_Father: {fileID: 8825591396642171087}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}

@@ -7,6 +7,7 @@ using Microsoft.MixedReality.Toolkit.UI;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -160,6 +161,23 @@ public class DataPersistenceManager : MonoBehaviour
             default:
                 break;
         }
+    }
+
+    public async Task<SortedList<float, string>> GetLeaderboard(int selectedModule)
+    {
+        var moduleExpressions = ModuleDataManager.Instance.GetExpressionsByModule(selectedModule);
+        var usersList = await dataHandler.LoadAllInDirectory();
+        SortedList<float, string> sortedLeaderboard = new SortedList<float, string>();
+        foreach (var user in usersList)
+        {
+            var tempFilteredProgress = user.progress.Where(pk => moduleExpressions.Any(me => me.WholeCode == pk.Key));
+            var totalTries = tempFilteredProgress.Aggregate((long)0, (current, next) => current + next.Value.totalTries);
+            var totalCorrectOnes = tempFilteredProgress.Aggregate((long)0, (current, next) => current + next.Value.correctResponses);
+            float distribution = totalCorrectOnes == 0 ? 0 : (float)totalCorrectOnes / (float)totalTries;
+            sortedLeaderboard.Add(distribution, user.userName);
+        }
+
+        return sortedLeaderboard;
     }
 
     public void OnApplicationQuit()

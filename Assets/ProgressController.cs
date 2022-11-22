@@ -82,13 +82,8 @@ public class ProgressController : MonoBehaviour, IDataPersistence
         instantiatedPrefab.SetActive(true);
     }
 
-    void Start()
+    async void Update()
     {
-        
-    }
-
-    void Update()
-    {
-        
+        var ugh = await DataPersistenceManager.Instance.GetLeaderboard(1);
     }
 }

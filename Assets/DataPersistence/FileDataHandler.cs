@@ -64,6 +64,66 @@ namespace Assets.DataPersistence
             return userData;
         }
 
+        public async Task<T> LoadAsync()
+        {
+            var fullPath = _dataFileName != null ? Path.Combine(_dataDirPath, _dataFileName) : null;
+            T userData = default(T);
+            if (fullPath != null && File.Exists(fullPath))
+            {
+                try
+                {
+                    string dataToLoad = "";
+                    using (FileStream stream = new FileStream(fullPath, FileMode.Open))
+                    {
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            dataToLoad = await reader.ReadToEndAsync();
+                        }
+                    }
+
+                    userData = JsonUtility.FromJson<T>(dataToLoad);
+                }
+                catch (ArgumentException ex)
+                {
+                    string dataToLoad = "";
+                    using (FileStream stream = new FileStream(fullPath, FileMode.Open))
+                    {
+                        using (StreamReader reader = new StreamReader(stream))
+                        {
+                            dataToLoad = reader.ReadToEnd();
+                        }
+                    }
+
+                    userData = JsonConvert.DeserializeObject<T>(dataToLoad);
+                }
+                catch (Exception e)
+                {
+                    Debug.LogError($"{e.Message}");
+                }
+            }
+
+            return userData;
+        }
+
+        public async Task<List<T>> LoadAllInDirectory()
+        {
+            var files = Directory.GetFiles(_dataDirPath, "*.json");
+            List<T> retrievedData = new List<T>();
+            if (files.Any())
+            {
+                var originalFileName = _dataFileName;
+                foreach (var file in files)
+                {
+                    _dataFileName = file;
+                    retrievedData.Add(await LoadAsync());
+                }
+
+                _dataFileName = originalFileName;
+            }
+
+            return retrievedData;
+        }
+
         public void Save(T data)
         {
             var fullPath = Path.Combine(_dataDirPath, _dataFileName);

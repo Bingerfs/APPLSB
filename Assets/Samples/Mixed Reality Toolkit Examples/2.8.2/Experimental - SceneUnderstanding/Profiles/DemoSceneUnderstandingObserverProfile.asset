@@ -26,16 +26,16 @@ MonoBehaviour:
   defaultMaterial: {fileID: 2100000, guid: a2137747e94e9744b9c97181972d0ed8, type: 2}
   defaultWorldMeshMaterial: {fileID: 2100000, guid: f6d42d214eaa65e44965e766112eb678,
     type: 2}
-  shouldLoadFromFile: 1
-  serializedScene: {fileID: 4900000, guid: e30b559269c665843830f741cf5a3a9b, type: 3}
+  shouldLoadFromFile: 0
+  serializedScene: {fileID: 4900000, guid: 09d2cc44ed39105488c79d1ea99841de, type: 3}
   createGameObjects: 1
-  requestPlaneData: 0
-  requestMeshData: 1
+  requestPlaneData: 1
+  requestMeshData: 0
   inferRegions: 0
   firstAutoUpdateDelay: 1
   worldMeshLevelOfDetail: 1
   usePersistentObjects: 1
   queryRadius: 10
-  requestOcclusionMask: 0
+  requestOcclusionMask: 1
   occlusionMaskResolution: {x: 256, y: 256}
   orientScene: 1

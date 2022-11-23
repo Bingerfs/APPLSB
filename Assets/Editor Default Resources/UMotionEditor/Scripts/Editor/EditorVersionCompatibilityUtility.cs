@@ -5,7 +5,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using UnityEditor.Compilation;
 #if UNITY_2018_3_OR_NEWER
-using UnityEditor.Experimental.SceneManagement;
+
 #endif
 
 namespace UMotionEditor
@@ -53,7 +53,7 @@ namespace UMotionEditor
 		public static bool IsInPrefabStage()
 		{
 			#if UNITY_2018_3_OR_NEWER
-			return (PrefabStageUtility.GetCurrentPrefabStage() != null);
+			return (UnityEditor.SceneManagement.PrefabStageUtility.GetCurrentPrefabStage() != null);
 			#else
 			return false;
 			#endif

@@ -53,6 +53,16 @@ public class WorldInitializer : MonoBehaviour
 
     public bool IsWindowActive { get => _isWindowActive; set => _isWindowActive = value; }
 
+    Vector3? foundPosition = null;
+
+    [SerializeField]
+    private bool isPlaced = false;
+
+    public bool IsPlaced { get => isPlaced; set => isPlaced = value; }
+
+    [SerializeField]
+    public GameObject _indicatingSurfaceArrows = null;
+
     async void Start()
     {
         _targetRenderer = _startAppPlatonicTransform.GetComponent<Renderer>();
@@ -87,6 +97,8 @@ public class WorldInitializer : MonoBehaviour
             gameObject.SetActive(false);
             await SceneHandler.Instance.TransitionToAnotherScene("MainMenuScene");
         }
+
+        CheckLocationOnSpatialMap();
     }
 
     public void OnWebPageLaunched(string url)
@@ -115,5 +127,32 @@ public class WorldInitializer : MonoBehaviour
             position.z = 0.01f;
             _lsbBrochureTransform.position = position;
         }
+    }
+
+    private void CheckLocationOnSpatialMap()
+    {
+        foundPosition = LookingDirectionHelpers.GetPositionOnSpatialMap(3.0f);
+        if (isPlaced)
+        {
+            isPlaced = false;
+            var newPosition = _uiElements.transform.position;
+            newPosition.x = foundPosition.Value.x;
+            newPosition.z = foundPosition.Value.z;
+            _uiElements.transform.position = newPosition;
+        }
+        
+            if (foundPosition != null)
+            {
+                if (CameraCache.Main.transform.position.y - foundPosition.Value.y > 1f)
+                { 
+                    _indicatingSurfaceArrows.transform.position = foundPosition.Value;
+                    _indicatingSurfaceArrows.SetActive(true);
+                }
+                else
+                {
+                    foundPosition = null;
+                }
+            }
+        
     }
 }

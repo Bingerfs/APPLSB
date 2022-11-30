@@ -113,7 +113,6 @@ public class DictationManager : MonoBehaviour
         Debug.Log("------------------------------Gesture activated. Current status");
         if (!_dictationHandler.IsListening)
         {
-            Debug.Log("------------------------------Recording started");
             if (_noSoundContainer.activeSelf)
             {
                 _noSoundContainer.SetActive(false);
@@ -123,6 +122,7 @@ public class DictationManager : MonoBehaviour
             if (_dictationHandler.IsListening)
             {
                 _microphoneIcon.SetActive(true);
+                Debug.Log("------------------------------Recording started");
             }
         }
     }

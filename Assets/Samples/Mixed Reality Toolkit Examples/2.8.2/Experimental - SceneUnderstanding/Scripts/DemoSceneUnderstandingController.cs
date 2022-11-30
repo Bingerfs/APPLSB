@@ -117,13 +117,13 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
                 observedSceneObjects.Add(eventData.SpatialObject.SurfaceType, new Dictionary<int, SpatialAwarenessSceneObject> { { eventData.Id, eventData.SpatialObject } });
             }
 
-            if (InstantiatePrefabs && eventData.SpatialObject.Quads.Count > 0)
+            if (InstantiatePrefabs && eventData.SpatialObject.Quads.Count > 0 && eventData.SpatialObject.SurfaceType == SpatialAwarenessSurfaceTypes.Wall)
             {
                 var prefab = Instantiate(InstantiatedPrefab);
                 prefab.transform.SetPositionAndRotation(eventData.SpatialObject.Position, eventData.SpatialObject.Rotation);
-                float sx = eventData.SpatialObject.Quads[0].Extents.x;
-                float sy = eventData.SpatialObject.Quads[0].Extents.y;
-                prefab.transform.localScale = new Vector3(sx, sy, .1f);
+                //float sx = eventData.SpatialObject.Quads[0].Extents.x;
+                //float sy = eventData.SpatialObject.Quads[0].Extents.y;
+                prefab.transform.localScale = new Vector3(1f, 1f, 1f);
                 if (InstantiatedParent)
                 {
                     prefab.transform.SetParent(InstantiatedParent);
@@ -134,7 +134,7 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
             {
                 foreach (var quad in eventData.SpatialObject.Quads)
                 {
-                    quad.GameObject.GetComponent<Renderer>().material.color = ColorForSurfaceType(eventData.SpatialObject.SurfaceType);
+                    //quad.GameObject.GetComponent<Renderer>().material.color = ColorForSurfaceType(eventData.SpatialObject.SurfaceType);
                 }
 
             }
@@ -407,23 +407,23 @@ namespace Microsoft.MixedReality.Toolkit.Experimental.SceneUnderstanding
             switch (surfaceType)
             {
                 case SpatialAwarenessSurfaceTypes.Unknown:
-                    return new Color32(220, 50, 47, 255); // red
+                    return new Color32(220, 50, 47, 0); // red
                 case SpatialAwarenessSurfaceTypes.Floor:
-                    return new Color32(38, 139, 210, 255); // blue
+                    return new Color32(38, 139, 210, 0); // blue
                 case SpatialAwarenessSurfaceTypes.Ceiling:
-                    return new Color32(108, 113, 196, 255); // violet
+                    return new Color32(108, 113, 196, 0); // violet
                 case SpatialAwarenessSurfaceTypes.Wall:
-                    return new Color32(181, 137, 0, 255); // yellow
+                    return new Color32(181, 137, 0, 0); // yellow
                 case SpatialAwarenessSurfaceTypes.Platform:
-                    return new Color32(133, 153, 0, 255); // green
+                    return new Color32(133, 153, 0, 0); // green
                 case SpatialAwarenessSurfaceTypes.Background:
-                    return new Color32(203, 75, 22, 255); // orange
+                    return new Color32(203, 75, 22, 0); // orange
                 case SpatialAwarenessSurfaceTypes.World:
-                    return new Color32(211, 54, 130, 255); // magenta
+                    return new Color32(211, 54, 130, 0); // magenta
                 case SpatialAwarenessSurfaceTypes.Inferred:
-                    return new Color32(42, 161, 152, 255); // cyan
+                    return new Color32(42, 161, 152, 0); // cyan
                 default:
-                    return new Color32(220, 50, 47, 255); // red
+                    return new Color32(220, 50, 47, 0); // red
             }
         }
 

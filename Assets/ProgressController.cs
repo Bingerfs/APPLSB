@@ -84,6 +84,6 @@ public class ProgressController : MonoBehaviour, IDataPersistence
 
     async void Update()
     {
-        var ugh = await DataPersistenceManager.Instance.GetLeaderboard(1);
+
     }
 }

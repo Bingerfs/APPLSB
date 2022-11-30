@@ -98,7 +98,7 @@ public class WorldInitializer : MonoBehaviour
             await SceneHandler.Instance.TransitionToAnotherScene("MainMenuScene");
         }
 
-        CheckLocationOnSpatialMap();
+        //CheckLocationOnSpatialMap();
     }
 
     public void OnWebPageLaunched(string url)

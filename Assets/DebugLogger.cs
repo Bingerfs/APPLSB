@@ -34,7 +34,7 @@ public class DebugLogger : MonoBehaviour
     {
         if (type == LogType.Exception || type == LogType.Error)
         {
-            _debugText.text = ($"{logString}-{ stackTrace}-{ type}");
+            //_debugText.text = ($"{logString}-{ stackTrace}-{ type}");
             OpenErrorDialog();
         }
     }

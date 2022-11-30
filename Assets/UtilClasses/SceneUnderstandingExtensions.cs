@@ -6,10 +6,8 @@ using NumericsConversion;
 
 
 using Microsoft.MixedReality.SceneUnderstanding;
-using Microsoft.Windows.Perception.Spatial.Preview;
 using Microsoft.Windows.Perception.Spatial;
 using Microsoft.MixedReality.OpenXR;
-using UnityEditor.PackageManager.UI;
 
 internal static class SceneUnderstandingExtensions
 {

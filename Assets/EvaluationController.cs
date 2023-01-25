@@ -203,7 +203,7 @@ public class EvaluationController : MonoBehaviour
 
     public void OnEvaluationResponse(string response)
     {
-        
+        response = response.Trim().TrimEnd('.');
         HasSetResponseBeenActivated = false;
         CurrentSignEvaluated.Response = response;
         if (CurrentSignEvaluated.IsCorrect)

@@ -29,7 +29,8 @@ namespace LSB
                 { 
                     if(request.error== REQUEST_TIME_OUT)
                     {
-                        Debug.LogError("Hubo un problema con la conexión, inténtalo más tarde");
+                        Debug.LogWarning("Hubo un problema con la conexión, inténtalo más tarde");
+                        OnError.Invoke(word);
                         //Toast.Instance.Show("Hubo un problema con la conexión, inténtalo más tarde", 3f, Toast.ToastColor.Red);
                     }
                     else
@@ -40,7 +41,8 @@ namespace LSB
             }
             catch (Exception)
             {
-                Debug.LogError("Hubo un problema con el servidor, inténtalo más tarde.");
+                Debug.LogWarning("Hubo un problema con el servidor, inténtalo más tarde.");
+                OnError.Invoke(word);
                 //Toast.Instance.Show("Hubo un problema con el servidor, inténtalo más tarde", 3f,Toast.ToastColor.Red);
             }
         }

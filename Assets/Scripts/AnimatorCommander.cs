@@ -62,11 +62,6 @@ namespace LSB
             }
         }
 
-        public void OnEnable()
-        {
-            
-        }
-
         public void SetSlowSpeed()
         {
             //animationDuration = 1.5f;
@@ -87,7 +82,14 @@ namespace LSB
 
         public void SetSpeed(SliderEventData eventData)
         {
-            animationSpeed = eventData.NewValue;
+            //OldRange = (OldMax - OldMin)
+            //NewRange = (NewMax - NewMin)
+            //NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin
+            var oldRange = 1.0f - 0f;
+            var newRange = 3.0f - 1.0f;
+            var newValue = (((eventData.NewValue - 0f) * newRange) / oldRange) + 1f;
+            animationSpeed = newValue;
+            anim.speed = newValue;
         }
 
         public void OnCommand(IEnumerable<Expression> expressions)
@@ -102,8 +104,12 @@ namespace LSB
 
         public void OnError(string word)
         {
+            if (_currentModule == LSBModule.INTERPRETATION)
+            {
+                OnInterpretationExperience.Invoke(0.5f);
+            }
+
             ExpressionList expressions = LocalParser.ParseExpressionList(word);
-            Debug.Log(expressions.tokens.Count);
             StartCoroutine(_controller.Scene(expressions.tokens));
         }
 

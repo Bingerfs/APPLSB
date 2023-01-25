@@ -22,15 +22,30 @@ public class WordProgressContainer : MonoBehaviour
     [SerializeField]
     private WordProgressIndicatorBar _progressBar;
 
+    private float? _percentageRatio;
+
+    public float? PercentageRatio { get => _percentageRatio; set => _percentageRatio = value; }
+
     // Start is called before the first frame update
     void Start()
     {
         _signNameText.SetText(WordProgressData.word);
-        _progressRatioText.SetText($"{WordProgressData.totalCorrectResponses}/{WordProgressData.totalResponses}");
-        if (_progressBar != null)
+        if (_percentageRatio != null)
         {
-            float percentageSuccessTries = (float)WordProgressData.totalCorrectResponses / (float)WordProgressData.totalResponses;
-            _progressBar.PercentageProgress = percentageSuccessTries;
+            _progressRatioText.SetText($"{Mathf.RoundToInt(_percentageRatio.Value * 100)}%");
+            if (_progressBar != null)
+            {
+                _progressBar.PercentageProgress = _percentageRatio.Value;
+            }
+        }
+        else
+        {
+            _progressRatioText.SetText($"{WordProgressData.totalCorrectResponses}/{WordProgressData.totalResponses}");
+            if (_progressBar != null)
+            {
+                float percentageSuccessTries = WordProgressData.totalCorrectResponses == 0 ? 0 : (float)WordProgressData.totalCorrectResponses / (float)WordProgressData.totalResponses;
+                _progressBar.PercentageProgress = percentageSuccessTries;
+            }
         }
     }
 

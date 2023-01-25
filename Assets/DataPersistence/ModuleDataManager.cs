@@ -169,7 +169,7 @@ namespace Assets.DataPersistence
 
         public CategoryData GetCategoryByCode(string categoryCode)
         {
-            categoryCode = categoryCode.Contains('#') ? categoryCode : $"#{categoryCode}";
+            categoryCode = categoryCode.Contains('#') ? categoryCode.Substring(1) : categoryCode;
             CategoryData categoryData = null;
             if (_categoryDictionary.ContainsKey(categoryCode))
             {

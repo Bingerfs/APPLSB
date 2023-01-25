@@ -21,12 +21,12 @@ namespace Assets
             {
                 var normalizedValue = value;
                 normalizedValue = LocalParser.RemoveDiacritics(normalizedValue);
-                normalizedValue = normalizedValue.Trim('.');
+                normalizedValue = normalizedValue.Trim(' ').Trim('.');
                 _response = normalizedValue; 
             }
         }
 
-        public bool IsCorrect => Expression.Word.ToLower().Equals(Response.ToLower());
+        public bool IsCorrect => LocalParser.RemoveDiacritics(Expression.Word.ToLower()).Equals(Response.ToLower());
 
         public bool IsAlreadyResponded => !string.IsNullOrWhiteSpace(Response);
 

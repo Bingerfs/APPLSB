@@ -1084,7 +1084,7 @@ MonoBehaviour:
   pivot: {fileID: 634166088}
   label: {fileID: 2146365774}
   contentParent: {fileID: 1243415658}
-  toolTipText: Informacion
+  toolTipText: "Informaci\xF3n"
   backgroundPadding: {x: 0.075, y: 0.015}
   backgroundOffset: {x: 0, y: 0, z: 0}
   contentScale: 2
@@ -5563,8 +5563,6 @@ MonoBehaviour:
   _debugText: {fileID: 742286042}
   _ucbBrochureTransform: {fileID: 69269352}
   _lsbBrochureTransform: {fileID: 676901489}
-  isPlaced: 0
-  _indicatingSurfaceArrows: {fileID: 0}
 --- !u!4 &1778323253
 Transform:
   m_ObjectHideFlags: 0
@@ -5647,7 +5645,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 1778323252}
         m_TargetAssemblyTypeName: WorldInitializer, Assembly-CSharp
-        m_MethodName: OnWebPageLaunched
+        m_MethodName: OnWebPageLaunchedUcb
         m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5693,7 +5691,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _debugText: {fileID: 0}
-  _smalDialogPrefab: {fileID: 0}
+  _smalDialogPrefab: {fileID: 4476591784129955008, guid: 471fb6226e3b7144fafe85cccce8dfd1,
+    type: 3}
 --- !u!4 &1861565226
 Transform:
   m_ObjectHideFlags: 0
@@ -5807,7 +5806,7 @@ Transform:
   m_GameObject: {fileID: 2032697291}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0.001}
-  m_LocalScale: {x: 0.14662755, y: 0.032958195, z: 1}
+  m_LocalScale: {x: 0.14624941, y: 0.032958195, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1243415659}
@@ -6403,7 +6402,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Informacion
+  m_text: "Informaci\xF3n"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afc8299d5d5bbd440a0616c8ecbc7217, type: 2}
   m_sharedMaterial: {fileID: 21340371490990018, guid: afc8299d5d5bbd440a0616c8ecbc7217,

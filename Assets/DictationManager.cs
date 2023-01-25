@@ -41,7 +41,7 @@ public class DictationManager : MonoBehaviour
 
     private bool registered = true;
 
-    private void OnApplicationFocus(bool focus)
+    /*private void OnApplicationFocus(bool focus)
     {
         Debug.Log("focused");
         if (focus)
@@ -94,7 +94,7 @@ public class DictationManager : MonoBehaviour
         {
             Debug.LogError("Keyword listener already registered");
         }
-    }
+    }*/
 
     private void OnEnable()
     {
@@ -176,10 +176,20 @@ public class DictationManager : MonoBehaviour
     {
         Debug.Log("----------------------------------Error");
         Debug.Log(message);
-        Dialog myDialog = Dialog.Open(_smallDialogPrefab, DialogButtonType.OK, "Error", $"Sucedio un error en el sistema de dictado: {message}", true);
+        Dialog myDialog = Dialog.Open(_smallDialogPrefab, DialogButtonType.OK, "Error", $"Sucedió un error en el sistema de dictado: {message}", true);
+        if (myDialog != null)
+        {
+            myDialog.OnClosed += OnDialogClosed;
+        }
+
         _microphoneIcon.SetActive(false);
         mainTextToolTip.SetActive(false);
         OnStopRecording.Invoke("");
+    }
+
+    private async void OnDialogClosed(DialogResult result)
+    {
+        UnityEngine.Application.Quit();
     }
 
     public void OnCancel()

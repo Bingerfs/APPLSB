@@ -39,6 +39,11 @@ public class HandVoiceHandler : MonoBehaviour
 
     private Vector3? previousDirectionVector = null;
 
+    [SerializeField]
+    private GameObject character;
+
+    private IMixedRealityGazeProvider GazeProvider => CoreServices.InputSystem.GazeProvider;
+
     // Start is called before the first frame update
     void Start()
     {

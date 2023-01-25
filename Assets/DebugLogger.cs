@@ -49,8 +49,17 @@ public class DebugLogger : MonoBehaviour
 
         if (_smalDialogPrefab != null)
         {
-            _errorDialog = Dialog.Open(_smalDialogPrefab, DialogButtonType.OK, "<align=\"center\">Error", "Ocurrio un error en la aplicacion. Comuniquese con el desarrollador.", false);
+            _errorDialog = Dialog.Open(_smalDialogPrefab, DialogButtonType.OK, "<align=\"center\">Error", "Ocurrió un error en la aplicación. Comuníquese con el desarrollador.", false);
+            if (_errorDialog != null)
+            {
+                _errorDialog.OnClosed += OnDialogClosed;
+            }
         }
+    }
+
+    private async void OnDialogClosed(DialogResult result)
+    {
+        UnityEngine.Application.Quit();
     }
 
     void Start()

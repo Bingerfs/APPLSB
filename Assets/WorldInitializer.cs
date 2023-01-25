@@ -51,17 +51,9 @@ public class WorldInitializer : MonoBehaviour
 
     private bool _isWindowActive = false;
 
+    private bool _isWindowActiveUcb = false;
+
     public bool IsWindowActive { get => _isWindowActive; set => _isWindowActive = value; }
-
-    Vector3? foundPosition = null;
-
-    [SerializeField]
-    private bool isPlaced = false;
-
-    public bool IsPlaced { get => isPlaced; set => isPlaced = value; }
-
-    [SerializeField]
-    public GameObject _indicatingSurfaceArrows = null;
 
     async void Start()
     {
@@ -103,9 +95,17 @@ public class WorldInitializer : MonoBehaviour
 
     public void OnWebPageLaunched(string url)
     {
-        if (!_isWindowActive)
-        {
+        
             _isWindowActive = true;
+            UnityEngine.WSA.Launcher.LaunchUri(url, false);
+        
+    }
+
+    public void OnWebPageLaunchedUcb(string url)
+    {
+        if (!_isWindowActiveUcb)
+        {
+            _isWindowActiveUcb = true;
             UnityEngine.WSA.Launcher.LaunchUri(url, false);
         }
     }
@@ -127,32 +127,5 @@ public class WorldInitializer : MonoBehaviour
             position.z = 0.01f;
             _lsbBrochureTransform.position = position;
         }
-    }
-
-    private void CheckLocationOnSpatialMap()
-    {
-        foundPosition = LookingDirectionHelpers.GetPositionOnSpatialMap(3.0f);
-        if (isPlaced)
-        {
-            isPlaced = false;
-            var newPosition = _uiElements.transform.position;
-            newPosition.x = foundPosition.Value.x;
-            newPosition.z = foundPosition.Value.z;
-            _uiElements.transform.position = newPosition;
-        }
-        
-            if (foundPosition != null)
-            {
-                if (CameraCache.Main.transform.position.y - foundPosition.Value.y > 1f)
-                { 
-                    _indicatingSurfaceArrows.transform.position = foundPosition.Value;
-                    _indicatingSurfaceArrows.SetActive(true);
-                }
-                else
-                {
-                    foundPosition = null;
-                }
-            }
-        
     }
 }

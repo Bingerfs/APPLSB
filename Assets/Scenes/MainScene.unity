@@ -3967,7 +3967,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Grabando...
+  m_text: Escuchando...
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: afc8299d5d5bbd440a0616c8ecbc7217, type: 2}
   m_sharedMaterial: {fileID: 21340371490990018, guid: afc8299d5d5bbd440a0616c8ecbc7217,
@@ -4211,6 +4211,8 @@ MonoBehaviour:
   _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
   slatePrefab: {fileID: 5307488933587275968, guid: b248881ca410db34b8e147024c5cb9e4,
     type: 3}
+  leaderboardSlatePrefab: {fileID: 4642423526855259662, guid: 8269fc3006ec4224db9688728f9203c3,
+    type: 3}
 --- !u!4 &626412405
 Transform:
   m_ObjectHideFlags: 0
@@ -4320,7 +4322,7 @@ MonoBehaviour:
   _microphoneIcon: {fileID: 258139098}
   _dictationHandler: {fileID: 1655692979}
   _noSoundContainer: {fileID: 1264720230}
-  _smallDialogPrefab: {fileID: 2680377478557818543, guid: 8e686c90124b8e14cbf8093893109e9a,
+  _smallDialogPrefab: {fileID: 4476591784129955008, guid: 471fb6226e3b7144fafe85cccce8dfd1,
     type: 3}
 --- !u!1 &662572534
 GameObject:
@@ -6982,7 +6984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _fileName: 
   _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
-  _smallDialog: {fileID: 2680377478557818543, guid: 8e686c90124b8e14cbf8093893109e9a,
+  _smallDialog: {fileID: 4476591784129955008, guid: 471fb6226e3b7144fafe85cccce8dfd1,
     type: 3}
 --- !u!4 &927737642
 Transform:
@@ -7815,7 +7817,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5478a242b0e320c4c833907e3a975bfa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _mediumDialogPrefab: {fileID: 1231799312788918984, guid: a0ef6c45c87675f4abf9738395165413,
+  _mediumDialogPrefab: {fileID: 4476591784129955008, guid: 471fb6226e3b7144fafe85cccce8dfd1,
     type: 3}
   OnResult:
     m_PersistentCalls:
@@ -9031,7 +9033,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Modulo a evaluar
+  m_text: "M\xF3dulo a evaluar"
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -9280,7 +9282,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Posicionar Contenido
+  m_text: Posicionar contenido
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -11538,7 +11540,7 @@ PrefabInstance:
     - target: {fileID: 4610887704086509466, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: sliderValue
-      value: 1
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4610887704086509466, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
@@ -11723,7 +11725,7 @@ PrefabInstance:
     - target: {fileID: 5729869670440608062, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
       propertyPath: m_text
-      value: Evaluacion
+      value: "Evaluaci\xF3n"
       objectReference: {fileID: 0}
     - target: {fileID: 5729869670440608062, guid: f514427e4d7588143a828462e0fc1321,
         type: 3}
@@ -12038,6 +12040,18 @@ GameObject:
 --- !u!114 &1381025216 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 2938491648976802004, guid: f514427e4d7588143a828462e0fc1321,
+    type: 3}
+  m_PrefabInstance: {fileID: 1381025212}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410eac1ae94b4d4492a09cc368e152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1381025217 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2938491650763439583, guid: f514427e4d7588143a828462e0fc1321,
     type: 3}
   m_PrefabInstance: {fileID: 1381025212}
   m_PrefabAsset: {fileID: 0}
@@ -13310,6 +13324,7 @@ MonoBehaviour:
   trackedHandJoint: 6
   trackedHand: 2
   _userPreferences: {fileID: 11400000, guid: e261a87d5cfc8a74dbec172f58b88d18, type: 2}
+  character: {fileID: 794119032}
 --- !u!1 &1571592285
 GameObject:
   m_ObjectHideFlags: 0
@@ -16286,6 +16301,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: -299.72913
       objectReference: {fileID: 0}
+    - target: {fileID: 316955300249585948, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Cerrar
+      objectReference: {fileID: 0}
     - target: {fileID: 316955300337092819, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_AnchorMax.y
@@ -16310,6 +16330,41 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -26.6
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300432031691, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Di "Select"
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300517335391, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300517335391, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 316955300517335391, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnProgressSlateSpawned
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300517335391, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300517335391, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300621688805, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: "INFORMACI\xD3N"
       objectReference: {fileID: 0}
     - target: {fileID: 316955300703814161, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16340,6 +16395,71 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -63.08696
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300746915152, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: "S\xEDgueme"
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300790886945, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300790886945, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 316955300790886945, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnProgressSlateSpawned
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300790886945, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300790886945, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 1381025217}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: set_IsToggled
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: Microsoft.MixedReality.Toolkit.UI.Interactable, Microsoft.MixedReality.Toolkit.SDK
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955300797331993, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 316955301185364317, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16404,12 +16524,12 @@ PrefabInstance:
     - target: {fileID: 316955301277890955, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 4
+      value: "M\xF3dulo 4"
       objectReference: {fileID: 0}
     - target: {fileID: 316955301403589157, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 3
+      value: "M\xF3dulo 3"
       objectReference: {fileID: 0}
     - target: {fileID: 316955301444148124, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16444,7 +16564,32 @@ PrefabInstance:
     - target: {fileID: 316955301859372681, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 1
+      value: "M\xF3dulo 1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955301916087669, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955301916087669, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 316955301916087669, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnProgressSlateSpawned
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955301916087669, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955301916087669, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 316955301936531491, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16511,10 +16656,45 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 316955302021977648, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Di "Select"
+      objectReference: {fileID: 0}
     - target: {fileID: 316955302091670187, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 2
+      value: "M\xF3dulo 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955302095142307, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955302095142307, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 316955302095142307, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnProgressSlateSpawned
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955302095142307, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 316955302095142307, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 517604530949497611, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Di "Select"
       objectReference: {fileID: 0}
     - target: {fileID: 1374459221881430953, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16556,15 +16736,45 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 39.91
       objectReference: {fileID: 0}
+    - target: {fileID: 1695119688151673777, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Di "Select"
+      objectReference: {fileID: 0}
     - target: {fileID: 1767578679669087513, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 1
+      value: "M\xF3dulo 1"
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108562925887378027, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108562925887378027, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 2108562925887378027, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeaderboardSlate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108562925887378027, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2108562925887378027, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2137157513606379547, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 4
+      value: "M\xF3dulo 4"
       objectReference: {fileID: 0}
     - target: {fileID: 2149774324770331123, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16590,6 +16800,31 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.y
       value: -63.086967
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444360755011018447, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444360755011018447, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 2444360755011018447, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeaderboardSlate
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444360755011018447, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2444360755011018447, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2831705167895972076, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16651,17 +16886,47 @@ PrefabInstance:
     - target: {fileID: 3076700161773103806, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 3
+      value: "M\xF3dulo 3"
       objectReference: {fileID: 0}
     - target: {fileID: 3336671685081168995, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4798678543161438934, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: m_text
+      value: Tabla de posicionamiento
+      objectReference: {fileID: 0}
     - target: {fileID: 5018129602791080434, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_text
-      value: Modulo 2
+      value: "M\xF3dulo 2"
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209073401031520063, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209073401031520063, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 5209073401031520063, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeaderboardSlate
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209073401031520063, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5209073401031520063, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6494762274747891048, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
@@ -16690,6 +16955,31 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 11400000, guid: c020ebf06513a084caa57aa68a245a6b,
         type: 2}
+    - target: {fileID: 7044202014159660613, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044202014159660613, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 626412404}
+    - target: {fileID: 7044202014159660613, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnLeaderboardSlate
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044202014159660613, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: ProgressController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7044202014159660613, guid: 73dd06651acf3994f887bc8f4aa6090b,
+        type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7352807956804617416, guid: 73dd06651acf3994f887bc8f4aa6090b,
         type: 3}
       propertyPath: m_Materials.Array.data[0]

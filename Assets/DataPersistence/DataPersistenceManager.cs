@@ -95,7 +95,7 @@ public class DataPersistenceManager : MonoBehaviour
         if (_userData == null && !string.IsNullOrEmpty(_userPreferences.UserId))
         {
             NewGuestSession();
-            Dialog myDialog = Dialog.Open(MediumDialog, DialogButtonType.Yes | DialogButtonType.No, "Usuario no encontrado", "No se encontre el id del usuario ingresado. Desea continuar como un invitado?", true);
+            Dialog myDialog = Dialog.Open(MediumDialog, DialogButtonType.Yes | DialogButtonType.No, "Usuario no encontrado", "No se encontró el código del usuario ingresado. ¿Desea continuar como un invitado?", true);
             if (myDialog != null)
             {
                 myDialog.OnClosed += OnClosedDialogEvent;
@@ -106,7 +106,7 @@ public class DataPersistenceManager : MonoBehaviour
             if (!string.IsNullOrEmpty(_userPreferences.UserName) && string.IsNullOrEmpty(_userPreferences.UserId))
             {
                 NewUserData(_userPreferences.UserName);
-                Dialog myDialog = Dialog.Open(MediumDialog, DialogButtonType.OK, "Usuario Nuevo", $"Su codigo de usuario es: {_userPreferences.UserId}. No olvide anotarlo antes de cerrar el dialogo, este codigo le sirve para poder recuperar su progreso en otra sesion.", true);
+                Dialog myDialog = Dialog.Open(MediumDialog, DialogButtonType.OK, "Usuario Nuevo", $"Su código de usuario es: {_userPreferences.UserId}. No olvide anotarlo antes de cerrar el diálogo, este código le sirve para poder recuperar su progreso en otra sesión. Este código también se puede encontrar en su perfil.", true);
             }
 
             if (_userPreferences.isGuestUser)

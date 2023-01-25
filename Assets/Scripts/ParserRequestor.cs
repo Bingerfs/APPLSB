@@ -38,6 +38,7 @@ namespace LSB
 
         public void OnRequest(string word)
         {
+            word = word.Trim().TrimEnd('.');
             HandleProgressIndicator(progressIndicatorRotatingOrbs);
             StartCoroutine(Request(word));
         }
